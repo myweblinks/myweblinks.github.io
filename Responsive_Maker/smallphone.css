@@ -1,0 +1,19 @@
+.navlinks{
+  
+    width: 100%;
+}
+.container{
+    flex-direction: column;
+    /* border: 2px solid red; */
+    width: 100%;
+}
+.navitems{
+    width: 100%;
+}
+.navigation{
+    /* border: 2px solid red; */
+    height: 6rem;
+}
+#profilemain{
+    margin-bottom: 0.6rem;
+}
