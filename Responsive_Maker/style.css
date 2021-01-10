@@ -425,7 +425,21 @@ width: 3.8rem;
     border: 0.3rem solid grey;
     width: 38rem;
     height: 12rem;
-    background-color: white;
+    position: relative;
+    z-index: 12;
+    background-color: rgb(255, 255, 255);
+}
+.container3::before{
+    content: "";
+    background-image: url(/Files/downloadsback.jpg);
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 38rem;
+    height: 12rem;
+    z-index: -1;
+    opacity: 0.4;
 }
 #breaker2{
     width: 1rem;
@@ -439,8 +453,21 @@ width: 3.8rem;
     /* border-collapse: separate; */
     width: 38rem;
     height: 12rem;
-    background-color: white;
+    background-color: rgb(68, 61, 61);
+    position: relative;
+    z-index: 12;
 }
+.container4::before{
+    content: "";
+    background-image: url(/Files/softwareback.jpg);
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 38rem;
+    height: 12rem;
+    z-index: -1;
+    opacity: 0.4;}
 /* Container Parent 1 Section  */
 .containerparent1{
     /* border: 2px solid red; */
@@ -457,13 +484,43 @@ width: 3.8rem;
     height: 12rem;
     background-color: white;
     border: 0.3rem solid grey;
+    position: relative;
+    z-index: 12;
+}
+.container5::before{
+    
+    content: "";
+    background-image: url(/Files/musicback.jpg);
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 38rem;
+    height: 12rem;
+    z-index: -1;
+    opacity: 0.4;
 }
 .container6{
     border: 2px solid red;
     height: 12rem;
     width: 38rem;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     border: 0.3rem solid grey;
+    position: relative;
+    z-index: 12;
+}
+.container6::before{
+    
+    content: "";
+    background-image: url(/Files/shoppingback.jpg);
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 38rem;
+    height: 12rem;
+    z-index: -1;
+    opacity: 0.5;
 }
 .containerparent2{
     /* border: 2px solid red; */
@@ -480,13 +537,43 @@ width: 3.8rem;
     height: 12rem;
     background-color: white;
     border: 0.3rem solid grey;
+    position: relative;
+    z-index: 12;
+}
+.container7::before{
+    
+    content: "";
+    background-image: url(/Files/sportsback.jpg);
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 38rem;
+    height: 12rem;
+    z-index: -1;
+    opacity: 0.5;
 }
 .container8{
     border: 2px solid red;
     height: 12rem;
     width: 38rem;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     border: 0.3rem solid grey;
+    position: relative;
+    z-index: 12;
+}
+.container8::before{
+    
+    content: "";
+    background-image: url(/Files/newsback.jpg);
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 38rem;
+    height: 12rem;
+    z-index: -1;
+    opacity: 0.3;
 }
 @media only screen and (max-width: 500px){
     .navlinks{
@@ -628,10 +715,13 @@ width: 3.8rem;
     cursor: default;
     font-weight: bolder;
     margin-bottom: 0.6rem;
-    color: #93e386;
+    color: #1cc403;
     border-bottom-color: grey;
     border-bottom-width: 0.3rem;
-    border-bottom-style: dashed;
+    border-bottom-style: solid;
+    background-color: whitesmoke;
+    position: relative;
+    /* z-index: -2; */
 }
 #packagemainicon{
     /* border: 2px solid red; */
@@ -651,7 +741,7 @@ width: 3.8rem;
     font-size: 1.2rem;
     font-weight: 500;
     text-decoration: none;
-    color: black;
+    color: rgb(0, 0, 0);
     margin-left: 1rem;
     margin-bottom: 1rem;
     height: 2rem;
@@ -659,9 +749,12 @@ width: 3.8rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-top: 2px solid rgb(107, 76, 76);
 }
 .extradownloads:hover{
     background-color: rgb(233, 233, 233);
+    color: black;
+    border-top: 2px solid rgb(219, 119, 119);
 }
 .containerofextradownloads{
 
@@ -684,7 +777,7 @@ width: 3.8rem;
     /* border: 2px solid red; */
     border-bottom-color: grey;
     border-bottom-width: 0.3rem;
-    border-bottom-style: dashed;
+    border-bottom-style: solid;
     margin: 0rem;
     width: 37rem;
     height: 3rem;
@@ -698,7 +791,8 @@ width: 3.8rem;
     font-size: 2rem;
     font-weight: bolder;
     margin-bottom: 0.6rem;
-    color: #7c7c7c;
+    color: #e925be;
+    background-color: whitesmoke;
 }
 #packagemainicon1{
     /* border: 2px solid red; */
@@ -712,7 +806,7 @@ width: 3.8rem;
     font-size: 1.2rem;
     font-weight: 500;
     text-decoration: none;
-    color: black;
+    color: rgb(235, 235, 235);
     margin-left: 1rem;
     margin-bottom: 1rem;
     height: 1.6rem;
@@ -720,9 +814,12 @@ width: 3.8rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-top: 2px solid rgb(235, 225, 225);
 }
 .extrasoftware:hover{
     background-color: rgb(233, 233, 233);
+    color: black;
+    border-top: 2px solid rgb(236, 93, 93);
 }
 #googleplay{
     width: 6.5rem;
@@ -748,7 +845,7 @@ width: 3.8rem;
     /* border: 2px solid red; */
     border-bottom-color: grey;
     border-bottom-width: 0.3rem;
-    border-bottom-style: dashed;
+    border-bottom-style: solid;
     margin: 0rem;
     width: 37rem;
     height: 3rem;
@@ -763,6 +860,7 @@ width: 3.8rem;
     cursor: default;
     margin-bottom: 0.6rem;
     color: #7871db;
+    background-color: whitesmoke;
 }
 #packagemainicon2{
     /* border: 2px solid red; */
@@ -787,9 +885,11 @@ width: 3.8rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-top: 2px solid rgb(107, 76, 76);
 }
 .extramusic:hover{
     background-color: rgb(233, 233, 233);
+    border-top: 2px solid rgb(201, 102, 102);
 }
 .containerofextramusic{
     /* border: 2px solid red; */
@@ -805,7 +905,7 @@ width: 3.8rem;
     /* border: 2px solid red; */
     border-bottom-color: grey;
     border-bottom-width: 0.3rem;
-    border-bottom-style: dashed;
+    border-bottom-style: solid;
     margin: 0rem;
     width: 37rem;
     height: 3rem;
@@ -820,6 +920,7 @@ width: 3.8rem;
     font-weight: bolder;
     margin-bottom: 0.6rem;
     color: #71cbdb;
+    background-color: rgb(245, 245, 245);
 }
 #packagemainicon3{
     /* border: 2px solid red; */
@@ -844,9 +945,11 @@ width: 3.8rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-top: 2px solid rgb(107, 76, 76);
 }
 .extrashopping:hover{
     background-color: rgb(233, 233, 233);
+    border-top: 2px solid rgb(201, 102, 102);
 }
 .containerofextrashopping{
     /* border: 2px solid red; */
@@ -864,7 +967,7 @@ width: 3.8rem;
     /* border: 2px solid red; */
     border-bottom-color: grey;
     border-bottom-width: 0.3rem;
-    border-bottom-style: dashed;
+    border-bottom-style: solid;
     margin: 0rem;
     width: 37rem;
     height: 3rem;
@@ -878,7 +981,8 @@ width: 3.8rem;
     font-size: 2rem;
     font-weight: bolder;
     margin-bottom: 0.6rem;
-    color: #db71d6;
+    color: #b624af;
+    background-color: whitesmoke;
 }
 #packagemainicon5{
     /* border: 2px solid red; */
@@ -900,9 +1004,11 @@ width: 3.8rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-top: 2px solid rgb(107, 76, 76);
 }
 .extrasports:hover{
     background-color: rgb(233, 233, 233);
+    border-top: 2px solid rgb(201, 102, 102);
 }
 .containerofextrasports{
     /* border: 2px solid red; */
@@ -930,7 +1036,7 @@ width: 3.8rem;
     /* border: 2px solid red; */
     border-bottom-color: grey;
     border-bottom-width: 0.3rem;
-    border-bottom-style: dashed;
+    border-bottom-style: solid;
     margin: 0rem;
     width: 37rem;
     height: 3rem;
@@ -966,9 +1072,11 @@ width: 3.8rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-top: 2px solid rgb(107, 76, 76);
 }
 .extranews:hover{
     background-color: rgb(233, 233, 233);
+    border-top: 2px solid rgb(201, 102, 102);
 }
 .containerofextranews{
     /* border: 2px solid red; */
