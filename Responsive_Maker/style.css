@@ -719,7 +719,7 @@ width: 3.8rem;
     border-bottom-color: grey;
     border-bottom-width: 0.3rem;
     border-bottom-style: solid;
-    background-color: whitesmoke;
+    background-color: white;
     position: relative;
     /* z-index: -2; */
 }
@@ -792,7 +792,7 @@ width: 3.8rem;
     font-weight: bolder;
     margin-bottom: 0.6rem;
     color: #e925be;
-    background-color: whitesmoke;
+    background-color: white;
 }
 #packagemainicon1{
     /* border: 2px solid red; */
@@ -860,7 +860,7 @@ width: 3.8rem;
     cursor: default;
     margin-bottom: 0.6rem;
     color: #7871db;
-    background-color: whitesmoke;
+    background-color: white;
 }
 #packagemainicon2{
     /* border: 2px solid red; */
@@ -920,7 +920,7 @@ width: 3.8rem;
     font-weight: bolder;
     margin-bottom: 0.6rem;
     color: #71cbdb;
-    background-color: rgb(245, 245, 245);
+    background-color: white;
 }
 #packagemainicon3{
     /* border: 2px solid red; */
@@ -982,7 +982,7 @@ width: 3.8rem;
     font-weight: bolder;
     margin-bottom: 0.6rem;
     color: #b624af;
-    background-color: whitesmoke;
+    background-color: white;
 }
 #packagemainicon5{
     /* border: 2px solid red; */
