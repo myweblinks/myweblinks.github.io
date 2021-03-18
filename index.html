@@ -323,7 +323,539 @@
                 </div>
                 <p id="footercopy">Copyright &copy; 2021. All Rights Reserved.</p>
         </footer>
-        <script src="Script/js.js"></script>
+        <script>let side_btn = document.getElementById('side_btn');
+ 
+// console.log(body_childs);
+let right_link5 = document.getElementById('right_link5');
+function switch_theme(el) {
+  let element = document.body;
+  let navigation = document.getElementById('navigation12');
+  let container = document.getElementById('container12');
+  let container1 = document.getElementById('container13');
+  let container14 = document.getElementById('container14');
+  let breaker = document.getElementById('breaker');
+  let firstlink1 = document.getElementById('first1');
+  let firstlink2 = document.getElementById('first2');
+  let firstlink3 = document.getElementById('first3');
+  let firstlink4 = document.getElementById('first4');
+  let firstlink5 = document.getElementById('first5');
+  let firstlink6 = document.getElementById('first6');
+  let firstlink7 = document.getElementById('first7');
+  let firstlink8 = document.getElementById('first8');
+  let firstlink9 = document.getElementById('first9');
+  let firstlink10 = document.getElementById('first10');
+  let firstlink11 = document.getElementById('first11');
+  let firstlink12 = document.getElementById('first12');
+  let firstlink13 = document.getElementById('first13');
+  let firstlink14 = document.getElementById('first14');
+  let firstlink15 = document.getElementById('first15');
+  let firstlink16 = document.getElementById('first16');
+  let all = document.getElementById('all');
+  let hide1 = document.getElementById('hide1');
+  let hide2 = document.getElementById('hide2');
+  let side_btn = document.getElementById('side_btn');
+  let side_btn1 = document.getElementById('side_btn1');
+  let iteminbtn1 = document.getElementById('iteminbtn1');
+  let iteminbtn2 = document.getElementById('iteminbtn2');
+  let iteminbtn3 = document.getElementById('iteminbtn3');
+  let profilemain4 = document.getElementById('profilemain4');
+  let profilemain5 = document.getElementById('profilemain5');
+  let profilemain3 = document.getElementById('profilemain3');
+  let profilemain6 = document.getElementById('profilemain6');
+  let profilemain1 = document.getElementById('profilemain1');
+  let profilemain2 = document.getElementById('profilemain2');
+  let breaker2 = document.getElementById('breaker2');
+  let breaker3 = document.getElementById('breaker3');
+  let breaker4 = document.getElementById('breaker4');
+  let containerparent1 = document.getElementById('containerparent1');
+  let containerparent = document.getElementById('containerparent');
+  let right_link1 = document.getElementById('right_link1');
+  let right_link2 = document.getElementById('right_link2');
+  let right_link3 = document.getElementById('right_link3');
+  let right_link4 = document.getElementById('right_link4');
+  let right_link5 = document.getElementById('right_link5');
+  let right_link6 = document.getElementById('right_link6');
+
+  element.classList.toggle("dark-mode");
+  navigation.classList.toggle("navigation_bg");
+  container.classList.toggle("dark-mode");
+  container1.classList.toggle("navigation_bg");
+  container14.classList.toggle("navigation_bg");
+
+  
+  if (all.style.backgroundColor == 'black') {
+    all.style.backgroundColor = 'white'
+  } else {
+    all.style.backgroundColor = 'black'
+  }
+
+  
+  if (document.getElementById('dark_btn').textContent == "Apply Light Mode") {
+    document.getElementById('dark_btn').textContent = "Apply Dark Mode";
+  } else {
+    document.getElementById('dark_btn').textContent = "Apply Light Mode";
+  }
+  if (side_btn.style.background != "black") {
+    btn_back();
+  }
+  else {
+    side_btn.style.background = "#ffffff";
+  }
+  nav_links()
+  if (containerparent.style.background != "black") {
+    containerparent.style.background = "black";
+  }
+  else {
+    containerparent.style.background = "whitesmoke";
+  }
+
+  if (containerparent1.style.background != "black") {
+    containerparent1.style.background = "black";
+  }
+  else {
+    containerparent1.style.background = "whitesmoke";
+  }
+
+
+  if (containerparent2.style.background != "black") {
+    containerparent2.style.background = "black";
+  }
+  else {
+    containerparent2.style.background = "whitesmoke";
+  }
+
+  if (iteminbtn1.style.background != "white") {
+    iteminbtn1.style.background = "white";
+  }
+  else {
+    iteminbtn1.style.background = "black";
+  }
+
+  if (iteminbtn2.style.background != "white") {
+    iteminbtn2.style.background = "white";
+  }
+  else {
+    iteminbtn2.style.background = "black";
+  }
+
+  if (iteminbtn3.style.background != "white") {
+    iteminbtn3.style.background = "white";
+  }
+  else {
+    iteminbtn3.style.background = "black";
+  }
+
+  if (breaker.style.backgroundColor != "black") {
+    breaker.style.backgroundColor = "black";
+  }
+  else {
+    breaker.style.backgroundColor = "whitesmoke";
+  }
+  if (breaker2.style.backgroundColor != "black") {
+    breaker2.style.backgroundColor = "black";
+  }
+  else {
+    breaker2.style.backgroundColor = "whitesmoke";
+  }
+  if (breaker3.style.backgroundColor != "black") {
+    breaker3.style.backgroundColor = "black";
+  }
+  else {
+    breaker3.style.backgroundColor = "whitesmoke";
+  }
+  if (footerofweb.style.backgroundColor != "grey") {
+    footerofweb.style.backgroundColor = "grey";
+  }
+  else {
+    footerofweb.style.backgroundColor = "rgb(230 226 226)";
+  }
+  if (breaker4.style.backgroundColor != "black") {
+    breaker4.style.backgroundColor = "black";
+  }
+  else {
+    breaker4.style.backgroundColor = "whitesmoke";
+  }
+
+  
+
+  if (right_link1.style.color != "white") {
+    right_link1.style.color = "white";
+  }
+  else {
+    right_link1.style.color = "black";
+  }
+
+  
+
+  if (right_link2.style.color != "white") {
+    right_link2.style.color = "white";
+  }
+  else {
+    right_link2.style.color = "black";
+  }
+
+  
+
+  if (right_link3.style.color != "white") {
+    right_link3.style.color = "white";
+  }
+  else {
+    right_link3.style.color = "black";
+  }
+
+  
+
+  if (right_link4.style.color != "white") {
+    right_link4.style.color = "white";
+  }
+  else {
+    right_link4.style.color = "black";
+  }
+
+  
+
+  if (right_link5.style.color != "white") {
+    right_link5.style.color = "white";
+  }
+  else {
+    right_link5.style.color = "black";
+  }
+
+  
+
+  if (right_link6.style.color != "white") {
+    right_link6.style.color = "white";
+  }
+  else {
+    right_link6.style.color = "black";
+  }
+  if (firstlink1.style.color != "white") {
+    firstlink1.style.color = "white";
+  }
+  else {
+    firstlink1.style.color = "black";
+  }
+
+
+  if (firstlink2.style.color != "white") {
+    firstlink2.style.color = "white";
+  }
+  else {
+    firstlink2.style.color = "black";
+  }
+
+
+  if (firstlink3.style.color != "white") {
+    firstlink3.style.color = "white";
+  }
+  else {
+    firstlink3.style.color = "black";
+  }
+
+
+  if (firstlink4.style.color != "white") {
+    firstlink4.style.color = "white";
+  }
+  else {
+    firstlink4.style.color = "black";
+  }
+
+
+
+  if (firstlink5.style.color != "white") {
+    firstlink5.style.color = "white";
+  }
+  else {
+    firstlink5.style.color = "black";
+  }
+
+  clearTimeout(dark_timeout);
+  if (firstlink6.style.color != "white") {
+    firstlink6.style.color = "white";
+  }
+  else {
+    firstlink6.style.color = "black";
+  }
+
+
+  if (firstlink7.style.color != "white") {
+    firstlink7.style.color = "white";
+  }
+  else {
+    firstlink7.style.color = "black";
+  }
+
+
+  if (firstlink8.style.color != "white") {
+    firstlink8.style.color = "white";
+  }
+  else {
+    firstlink8.style.color = "black";
+  }
+
+
+  if (firstlink9.style.color != "white") {
+    firstlink9.style.color = "white";
+  }
+  else {
+    firstlink9.style.color = "black";
+  }
+
+
+  if (firstlink10.style.color != "white") {
+    firstlink10.style.color = "white";
+  }
+  else {
+    firstlink10.style.color = "black";
+  }
+
+
+  if (firstlink11.style.color != "white") {
+    firstlink11.style.color = "white";
+  }
+  else {
+    firstlink11.style.color = "black";
+  }
+
+
+  if (firstlink12.style.color != "white") {
+    firstlink12.style.color = "white";
+  }
+  else {
+    firstlink12.style.color = "black";
+  }
+
+
+  if (firstlink13.style.color != "white") {
+    firstlink13.style.color = "white";
+  }
+  else {
+    firstlink13.style.color = "black";
+  }
+
+
+  if (firstlink14.style.color != "white") {
+    firstlink14.style.color = "white";
+  }
+  else {
+    firstlink14.style.color = "black";
+  }
+
+
+  if (firstlink15.style.color != "white") {
+    firstlink15.style.color = "white";
+  }
+  else {
+    firstlink15.style.color = "black";
+  }
+
+
+  if (firstlink16.style.color != "white") {
+    firstlink16.style.color = "white";
+  }
+  else {
+    firstlink16.style.color = "black";
+  }
+
+
+  if (hide1.style.color != "white") {
+    hide1.style.color = "white";
+  }
+  else {
+    hide1.style.color = "black";
+  }
+
+
+  if (hide2.style.color != "white") {
+    hide2.style.color = "white";
+  }
+  else {
+    hide2.style.color = "black";
+  }
+  if (downloadstitle.style.backgroundColor != "black") {
+    downloadstitle.style.backgroundColor = "black";
+  }
+  else {
+    downloadstitle.style.backgroundColor = "whitesmoke";
+  }
+
+  
+  if (softwaretitle.style.backgroundColor != "black") {
+    softwaretitle.style.backgroundColor = "black";
+  }
+  else {
+    softwaretitle.style.backgroundColor = "whitesmoke";
+  }
+
+  if (musictitle.style.backgroundColor != "black") {
+    musictitle.style.backgroundColor = "black";
+  }
+  else {
+    musictitle.style.backgroundColor = "whitesmoke";
+  }
+
+  if (shoppingtitle.style.backgroundColor != "black") {
+    shoppingtitle.style.backgroundColor = "black";
+  }
+  else {
+    shoppingtitle.style.backgroundColor = "whitesmoke";
+  }
+
+  if (sportstitle.style.backgroundColor != "black") {
+    sportstitle.style.backgroundColor = "black";
+  }
+  else {
+    sportstitle.style.backgroundColor = "whitesmoke";
+  }
+
+  if (newstitle.style.backgroundColor != "black") {
+    newstitle.style.backgroundColor = "black";
+  }
+  else {
+    newstitle.style.backgroundColor = "whitesmoke";
+  }
+
+  
+}
+downloadslinks.addEventListener( "mouseover" , function over_right_link5() {
+  if (right_link5.style.color!="black") {
+    right_link5.style.color="black";
+  } else {
+    downloadslinks.addEventListener('mouseout', function out_right_link5() {
+      if (right_link5.style.color!="black") {
+        right_link5.style.color="black";
+      } else {
+        right_link5.style.color="white";
+      }
+    });
+  }
+    })
+    
+
+let side_panel = document.getElementById('side_panel')
+
+// Event listener
+// hover.addEventListener('clickon', function run() {
+//   alert("You are over the navigation bar. please click on ok to continue......")
+// })
+
+
+function side() {
+  let side_panel = document.getElementById('side_panel')
+  //   let body_childs = document.body;
+  //   body_childs.addEventListener('click', function body_onclick() {
+  //   // alert("jhjkshjaskdhjashkdahjsda");
+  // })
+  if (side_panel.style.display != 'flex') {
+    side_panel.style.display = 'flex';
+  } else {
+    side_panel.style.display = 'none';
+  }
+
+
+}
+// let side_panel = document.getElementById('side_panel');
+function btn_back() {
+  side_btn.style.background = "black";
+}
+
+function btn_back1() {
+  side_btn.style.background = "black";
+}
+// This function is used to display time into webpage
+
+// function time_display() {
+//   let time = new Date;
+
+//   document.getElementById('side_parent').innerHTML=time;
+//   let str_time = document.getElementById('side_parent').children;
+
+// }
+
+//This function is used to alert the user to sign in to this website 
+
+// function alert_user_signin() {
+//    let alert_var = confirm("Please Sign Into This website to continue....");
+//    console.log(alert_var);
+//    if (alert_var != true) {
+// You can use a function on a function 
+//       false_alert();
+//     }
+//     else{
+//       // location.href = "www.yoursite.com";
+//    }
+// }
+// This is close function to close setted timeout 
+
+// let close_timeout = setTimeout(alert_user_signin, 10000);
+// This is used to give time to display a element to webpage
+
+// setInterval(time_display, 1000);
+
+// function false_alert() {
+//   // location.href = "https://www.google.com/";
+// }
+// function signin_page() {
+// }
+function dark_them_text() {
+  let apply_dark_text = document.getElementById('apply_dark_text');
+  apply_dark_text.classList.add("apply_animation");
+}
+
+dark_them_text();
+let dark_timeout = setTimeout(dark_them_text,11);
+
+
+//Function Of nav links 
+function nav_links() {
+  if (profilemain4.style.color != "white") {
+    profilemain4.style.color = "white";
+  }
+  else {
+    profilemain4.style.color = "black";
+  }
+
+  if (profilemain5.style.color != "white") {
+    profilemain5.style.color = "white";
+  }
+  else {
+    profilemain5.style.color = "black";
+  }
+
+
+  if (profilemain3.style.color != "white") {
+    profilemain3.style.color = "white";
+  }
+  else {
+    profilemain3.style.color = "black";
+  }
+
+
+  if (profilemain2.style.color != "white") {
+    profilemain2.style.color = "white";
+  }
+  else {
+    profilemain2.style.color = "black";
+  }
+
+
+  if (profilemain6.style.color != "white") {
+    profilemain6.style.color = "white";
+  }
+  else {
+    profilemain6.style.color = "black";
+  }
+
+
+
+  if (profilemain1.style.color != "white") {
+    profilemain1.style.color = "white";
+  }
+  else {
+    profilemain1.style.color = "black";
+  }
+
+}</script>
 </body>
 
 </html>
