@@ -12,7 +12,1564 @@
         <link rel="stylesheet" href="Responsive_Maker/style.css">
         <title>Take A Web Tour From Here</title>
 </head>
+<style>body{
+    margin: 0em;
+    background-color: #f5f5f5;
+}  
+/* Popup Section */
+#popup1{
+    border: 2px solid red;
+    width: 20rem;
+    height: 5rem;
+    position: absolute;
+    display: flex;
+    position: fixed;
+    z-index: 100;
+    bottom: 0.4rem;
+    animation-name: pop1;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+}
+@keyframes pop1{
+        from{
+            height: 0rem;
+        }
+        to{
+            height: 5rem;
+        }
+}
+/* Navigation Section  */
+.container{
+    display: flex;
+    align-items: center;
+    /* border: 2px solid red; */
+}
+.navigation{
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    background-color: white;
+}
+/* Custom Profile Section  */
+#profilemain{
+    /* border: 2px solid red; */
+    width: 5.3rem;
+    height: 2.2rem;
+    border-right: rebeccapurple;
+    border-width: 0.4rem;
+    border-style: groove;
+    cursor: default;
+}
+#container_of_three1{
+    display: flex;
+    width: 100%;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    /* border: 2px solid red; */
+}
+#container_of_three2{
+    display: flex;
+    width: 100%;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    /* border: 2px solid red; */
+}
+/* Navigation Links Section  */
+.navlinks{
+display: flex;
+width: 100%;
+/* flex-wrap: wrap; */
+justify-content: space-between;
+/* border: 2px solid red; */
+}
+.navitems{
+    /* border: 2px solid red; */
+    border-radius: 100rem;
+    width: 7.5rem;
+    height: 1.7rem;
+    margin-left: 1rem;
+    text-decoration: none;
+    text-align: center;
+    /* padding: 1rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-color: rgba(243, 243, 243, 0.329);
+    font-size: 1.1rem;
+}
 
+/* Dark theme Section  */
+.container_of_dark_btn{
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 2.75rem;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 1rem;
+}
+#dark_btn{
+    background-color: #ffffff;
+    height: 2rem;
+    font: caption;
+    font-weight: bold;
+    /* border: 2px solid rgb(177, 168, 168); */
+    /* clear: both; */
+}
+#dark_btn:hover{
+background-color: whitesmoke;
+cursor: pointer;
+}
+
+#signin_btn:hover{
+    background-color: rgba(255, 136, 0, 0.801);
+    color: rgb(17, 16, 7);
+    border-radius: 0.2rem;
+    cursor: pointer;
+}
+#signin_btn{
+    border-radius: 0.2rem;
+    /* border: 2px solid red; */
+    border: none;
+    height: 2.2rem;
+    font: caption;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    width: 5rem;
+    background-color: rgb(255, 136, 0);
+    color: rgb(48, 9, 9);
+    position: absolute;
+
+}
+@media only screen and (max-width: 1070px){
+    .navigation{
+   /* flex-wrap: wrap; */
+   height: 6rem;
+   align-items: center;
+   justify-content: center;
+    }
+    
+    #profilemain{
+        margin-bottom: 0.6rem;
+    }
+    .container{ 
+        /* flex-direction: column; */
+        /* border: 2px solid red; */
+        width: 100%;
+    }
+    .navitems{
+        /* display: flex;
+        width: 30rem;
+         */
+         width: 100%;
+        /* border: 2px solid red; */
+        /* background-color: rgb(214, 61, 61); */
+    }
+    .container_of_dark_btn{
+        /* border:  2px solid red; */
+        width: 8rem;
+    }
+    .navlinks{
+        /* border: 2px solid red; */
+        display: flex;
+        margin: 0;
+        flex-direction: column;
+        /* width: 100%; */
+        justify-content: space-between;
+        height: 4rem;
+    }
+}
+.navitems:hover{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 1rem 0.2rem grey;
+}
+/* Nav Links icons Section  */
+#navamazon{
+    /* border: 2px solid red; */
+    width: 1.4rem;
+    margin-right: 0.5rem;
+}
+#navgmail{
+    /* border: 2px solid red; */
+    width: 1.4rem;
+    margin-right: 0.5rem;
+}
+#navspeed{
+    /* border: 2px solid red; */
+    width: 1.3rem;
+    margin-right: 0.5rem;
+}
+#navtranslate{
+    /* border: 2px solid red; */
+    width: 1.5rem;
+    margin-right: 0.5rem;
+}
+#navmicrosoft{
+    /* border: 2px solid red; */
+    width: 1.5rem;
+    margin-right: 0.5rem;
+}
+#navwhatsapp{
+    width: 1.8rem;
+    margin-right: 0.1rem;
+}
+#guest_btn{
+    border-radius: 0.2rem;
+    /* border: 2px solid red; */
+    /* border: none; */
+    height: 2.2rem;
+    font: caption;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    width: 8.8rem;
+    background-color: rgb(160, 59, 0);
+    color: rgb(255, 255, 255);
+}
+/* Google Search Section  */
+#search{
+    /* border: 2px solid red; */
+    width: 100%;
+    margin-top: 1rem;
+}
+#J_searchForm{
+    /* border: 2px solid red; */
+    width: 100%;
+}
+#all{
+    /* border: 2px solid red; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 4rem;
+}
+#googlesearchiconmain{
+    /* border: 2px solid red; */
+    width: 8rem;
+    margin-right: 1rem;
+}
+#textsearch{
+    /* border: 0.001rem solid red; */
+    width: 34rem;
+    height: 2.2rem;
+    /* border-radius: 0em; */
+    padding-left: 0.6rem;
+    font-size: 1.1rem;
+    font-weight: lighter;
+}
+#textsearch::placeholder{
+    color: rgb(0, 0, 0);
+    /* padding-left: .6rem; */
+    font-size: 1rem;
+}
+#J_searchSubmit{
+    /* border: 2px solid red; */
+    width: 7rem;
+    height: 1.76em;
+    background-color: #4285f4;
+    color: white;
+    font-size: 1.5rem;
+    border-bottom-right-radius: 0.3rem;
+    border-top-right-radius: 0.3rem;
+    cursor: pointer;
+}
+#J_searchSubmit:hover{
+    /* border: 2px solid red; */
+ 
+    background-color: #2564ca;
+}
+.linkswithiconcontainer{
+    width: 100%;
+    background-color: white;
+    height: 25rem;
+    /* border: 2px solid red; */
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    /* flex-wrap: wrap; */
+    
+}
+.container1{
+    width: 65rem;
+    background-color: white;
+    height: 25rem;
+    /* border: 2px solid red; */
+    /* margin-top: 1rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-basis: content;
+    
+}
+#breaker{
+    background-color: whitesmoke;
+    width: 0.7rem;
+    height: 25rem;
+
+}
+.container2{
+    width: 15rem;
+    background-color: white;
+    height: 25rem;
+    /* border: 2px solid red; */
+    /* margin-left: 0.7rem; */
+}
+.firstlinks{
+    width: 6rem;
+    height: 5rem;
+    border: 2px solid #e0e0e0;
+    margin: 0rem 2rem;
+    margin-bottom: 0rem;
+    border-radius: 0.3rem;
+    padding: 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 0rem;
+    font-weight: bolder;
+    font :1.2rem arial,sans-serif,tahoma,verdana,Simsun;
+    
+    color: black;
+}
+.firstlinks:hover{
+    background-color: rgb(233, 233, 233);
+
+}
+@media only screen and (max-width: 1113px){
+    #hide1{
+        display: none;
+    }
+    #hide2{
+        display: none;
+    }
+}
+#paytm{
+    /* border: 2px solid red; */
+    margin: 0rem;
+    position: relative;
+    bottom: 0.5rem;
+}
+#firstlink1{width: 3.3rem;
+margin-top: 0.25rem;}
+#firstlink2{width: 3.5rem;}
+#firstlink3{width: 3.6rem;
+margin-bottom: 0.5rem;
+margin-top: 0.3rem;}
+#firstlink4{width: 3.6rem;}
+#firstlink5{width: 3.3rem;}
+#firstlink6{width: 3.5rem;}
+#firstlink7{width: 3rem;
+margin-bottom: 0.3rem;
+margin-top: 0.2rem;}
+#firstlink8{width: 3.1rem;
+margin-bottom: 0.3rem;
+margin-top: 0.3rem;}
+#firstlink9{width: 5rem;
+margin-bottom: 0rem;
+margin-top: 0.1rem;}
+#firstlink10{width: 3.8rem;
+margin-top: 0rem;}
+#firstlink11{width: 3.9rem;}
+#firstlink12{width: 3.3rem;
+margin-top: 0.2rem;
+margin-bottom: 0.7rem;}
+#firstlink13{width: 4.5rem;
+margin-top: 0.2rem;}
+#firstlink14{width: 3.5rem;
+margin-bottom: 0.2rem;}
+#firstlink15{width: 3.2rem;
+margin-bottom: 0.4rem;
+margin-top: 0.2rem;}
+#firstlink16{width: 3.9rem;}
+#firstlink17{width: 4rem;}
+#firstlink18{width: 3.6rem;
+margin-bottom: 0.2rem;
+margin-top: 0.2rem;}
+#email{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0rem;
+    background-color: #0e88e2;
+    color: white;
+    cursor: default;
+    font: caption;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    margin-bottom: 0.5rem;
+}
+#emailsseaction{
+    /* border: 2px solid red; */
+    display: flex;
+}
+.gmailselecthref{
+    border: 2px solid #e0e0e0;
+    width: 6.2rem;
+    height: 6rem;
+    text-decoration: none;
+    font: caption;
+    font-size: 1.2rem;
+    color: black;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 0.3rem;
+}
+.gmailselecthref:hover{
+    background-color: rgb(233, 233, 233);
+}
+#gmailselect{
+    /* border: 2px solid red; */
+    width: 4rem;
+    margin-top: 0.4rem;
+}
+#gmailselect1{
+    /* border: 2px solid red; */
+    width: 4.5rem;
+}
+
+/* Download Section  */
+#downloadbrowser{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 0rem; */
+    cursor: default;
+    background-color: #0e88e2;
+    color: white;
+    font: caption;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    margin: 0rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.downloads{
+/* border: 2px solid red; */
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.downloadslinks{
+    width: 6.2rem;
+    height: 6rem;
+    text-decoration: none;
+    font: caption;
+    font-size: 1.2rem;
+    color: black;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid #e0e0e0;
+    
+    border-radius: 0.3rem;
+}
+.downloadslinks:hover{
+    background-color: rgb(233, 233, 233);
+}
+#chromedownload{
+width: 3.8rem;
+}
+#mozilladownload{
+
+    width: 4.4rem;
+}
+#watchonline{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 0rem; */
+    background-color: #0e88e2;
+    color: white;
+    font: caption;
+    font-size: 1.4rem;
+    font-weight: bolder;
+    margin: 0rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+/* Download Section  */
+#watchonline{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 0rem; */
+    background-color: #0e88e2;
+    color: white;
+    font: caption;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    cursor: default;
+    margin: 0rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.watchonlineweb{
+/* border: 2px solid red; */
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.watchonline_web{
+    width: 6.2rem;
+    height: 5rem;
+    text-decoration: none;
+    font: caption;
+    font-size: 1.2rem;
+    color: black;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid #e0e0e0;
+    
+    border-radius: 0.3rem;
+}
+.watchonline_web:hover{
+    background-color: rgb(233, 233, 233);
+}
+#amazonprime{
+width: 3.8rem;
+}
+#netflix{
+    height: 3.5rem;
+    width: 4.4rem;
+    /* border: 2px solid red; */
+}
+
+/* Links in title  */
+.containerparent{
+    display: flex;
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 12rem;
+    margin-top: 1rem;
+    /* justify-content: space-evenly; */
+    background-color: white;
+    justify-content: center;
+}
+.container3{
+    border: 0.3rem solid grey;
+    width: 38rem;
+    height: 12rem;
+    position: relative;
+    z-index: 12;
+    background-color: rgb(255, 255, 255);
+}
+.container3::before{
+    content: "";
+    background-image: url(/Files/downloadsback.jpg);
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 38rem;
+    height: 12rem;
+    z-index: -1;
+    opacity: 0.4;
+}
+#breaker2{
+    width: 1rem;
+    height: 12rem;
+    background-color: whitesmoke;
+    /* border: 2px solid red; */
+}
+#breaker4{
+    width: 1rem;
+    height: 12rem;
+    background-color: whitesmoke;
+    /* border: 2px solid red; */
+}
+.container4{
+    /* border: 2px solid red; */
+    border: 0.3rem solid grey;
+    /* border-collapse: separate; */
+    width: 38rem;
+    height: 12rem;
+    background-color: rgb(68, 61, 61);
+    position: relative;
+    z-index: 12;
+}
+.container4::before{
+    content: "";
+    background-image: url(/Files/softwareback.jpg);
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 38rem;
+    height: 12rem;
+    z-index: -1;
+    opacity: 0.4;}
+/* Container Parent 1 Section  */
+.containerparent1{
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 12rem;
+    margin-top: 1.5rem;
+    justify-content: center;
+    display: flex;
+    background-color: white;
+}
+.container5{
+    border: 2px solid red;
+    width: 38rem;
+    height: 12rem;
+    background-color: white;
+    border: 0.3rem solid grey;
+    position: relative;
+    z-index: 12;
+}
+.container5::before{
+    
+    content: "";
+    background-image: url(/Files/musicback.jpg);
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 38rem;
+    height: 12rem;
+    z-index: -1;
+    opacity: 0.4;
+}
+.container6{
+    border: 2px solid red;
+    height: 12rem;
+    width: 38rem;
+    background-color: rgb(255, 255, 255);
+    border: 0.3rem solid grey;
+    position: relative;
+    z-index: 12;
+}
+.container6::before{
+    
+    content: "";
+    background-image: url(/Files/shoppingback.jpg);
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 38rem;
+    height: 12rem;
+    z-index: -1;
+    opacity: 0.5;
+}
+.containerparent2{
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 12rem;
+    margin-top: 1.5rem;
+    justify-content: center;
+    display: flex;
+    background-color: white;
+}
+.container7{
+    border: 2px solid red;
+    width: 38rem;
+    height: 12rem;
+    background-color: white;
+    border: 0.3rem solid grey;
+    position: relative;
+    z-index: 12;
+}
+.container7::before{
+    
+    content: "";
+    background-image: url(/Files/sportsback.jpg);
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 38rem;
+    height: 12rem;
+    z-index: -1;
+    opacity: 0.5;
+}
+.container8{
+    border: 2px solid red;
+    height: 12rem;
+    width: 38rem;
+    background-color: rgb(255, 255, 255);
+    border: 0.3rem solid grey;
+    position: relative;
+    z-index: 12;
+}
+.container8::before{
+    
+    content: "";
+    background-image: url(/Files/newsback.jpg);
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 38rem;
+    height: 12rem;
+    z-index: -1;
+    opacity: 0.3;
+}
+@media only screen and (max-width: 500px){
+    .navlinks{
+    width: 100%;
+}
+.container{ 
+    /* flex-direction: column; */
+    /* border: 2px solid red; */
+    width: 100%;
+}
+.navitems{
+    width: 100%;
+}
+#profilemain{
+    margin-bottom: 0.6rem;
+}
+}
+@media only screen and (max-width: 918px){
+    .navigation{
+        width: 58rem;
+    }
+    #search{
+        width: 56.6rem; 
+    }
+    #J_searchForm{
+        width: 58rem;
+    }
+    .linkswithiconcontainer{
+        width: 930px;
+    }
+    #footerofweb{
+        width: 918px;
+    }
+}
+@media only screen and (max-width: 1245px){
+    #downloadstitle{
+        width: 37rem;
+        /* border: 2px solid red; */
+    }
+    .containerparent{width: 910px;
+    display: flex;
+    height: 26rem;
+    margin-top: 1rem;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    }
+    #breaker2{
+        /* display: none; */
+        width: 1rem;
+        height: 1rem;
+    }
+    .container3{
+        width: 38rem;
+        height: 12rem;
+
+    }
+    .container4{
+        width: 38rem;
+        height: 12rem;
+    }
+    .containerparent1{width: 910px;
+    display: flex;
+    height: 26rem;
+    margin-top: 1rem;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    }
+    .containerparent2{width: 910px;
+    display: flex;
+    height: 36rem;
+    margin-top: 1rem;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    }
+    #breaker2{
+        /* display: none; */
+        width: 1rem;
+        height: 1rem;
+    }
+    .container5{
+        width: 38rem;
+        height: 12rem;
+
+    }
+    .container6{
+        width: 38rem;
+        height: 12rem;
+    }
+
+    .containerparent2{
+    width: 910px;
+    display: flex;
+    height: 26rem;
+    margin-top: 1rem;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    }
+    #breaker2{
+        /* display: none; */
+        width: 1rem;
+        height: 1rem;
+    }
+    .container7{
+        width: 38rem;
+        height: 12rem;
+
+    }
+    .container9{
+        width: 38rem;
+        height: 12rem;
+    }
+
+}
+/* Extra Downloads Sections  */
+#downloadstitle{
+    /* border: 2px solid red; */
+    margin: 0rem;
+    /* width: 38rem; */
+    height: 3rem;
+    font-size: 3rem;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    padding-left: 1rem;
+    font: caption;
+    font-size: 2rem;
+    cursor: default;
+    font-weight: bolder;
+    margin-bottom: 0.6rem;
+    color: #1cc403;
+    border-bottom-color: grey;
+    border-bottom-width: 0.3rem;
+    border-bottom-style: solid;
+    background-color: whitesmoke;
+    position: relative;
+    /* z-index: -2; */
+}
+#packagemainicon{
+    /* border: 2px solid red; */
+    width: 3rem;
+    height: 3rem;
+    margin-left: 23rem;
+}
+#webmusic{
+    width: 7.5rem;
+}
+#gaana{
+    width: 5rem;
+}
+.extradownloads{
+    /* border: 2px solid red; */
+    font: caption;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    height: 2rem;
+    width: 6.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid rgb(107, 76, 76);
+}
+.extradownloads:hover{
+    background-color: rgb(233, 233, 233);
+    color: black;
+    border-top: 2px solid rgb(219, 119, 119);
+}
+.containerofextradownloads{
+
+    /* border: 2px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    width: 38rem;
+    height: 6rem;
+}
+#package1main{
+    display: flex;
+    width: 8rem;
+    height: 6rem;
+    /* border: 2px solid red; */
+    position: relative;
+    top: -0.6rem;
+}
+/* Extra Software/Apps Section  */
+#softwaretitle{
+    /* border: 2px solid red; */
+    border-bottom-color: grey;
+    border-bottom-width: 0.3rem;
+    border-bottom-style: solid;
+    margin: 0rem;
+    width: 37rem;
+    height: 3rem;
+    font-size: 3rem;
+    cursor: default;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    padding-left: 1rem;
+    font: caption;
+    font-size: 2rem;
+    font-weight: bolder;
+    margin-bottom: 0.6rem;
+    color: #e925be;
+    background-color: whitesmoke;
+}
+#packagemainicon1{
+    /* border: 2px solid red; */
+    width: 3rem;
+    height: 3rem;
+    margin-left: 18rem;
+}
+.extrasoftware{
+    /* border: 2px solid red; */
+    font: caption;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: rgb(235, 235, 235);
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    height: 1.6rem;
+    width: 6.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid rgb(235, 225, 225);
+}
+.extrasoftware:hover{
+    background-color: rgb(233, 233, 233);
+    color: black;
+    border-top: 2px solid rgb(236, 93, 93);
+}
+#googleplay{
+    width: 6.5rem;
+}
+#cnet{
+    width: 5rem;
+}
+#freeware{
+    width: 7.5rem;
+}
+.containerofextrasoftware{
+
+    /* border: 2px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    width: 38rem;
+    height: 7rem;
+    /* align-items: baseline; */
+}
+
+/* Music Seaction  */
+#musictitle{
+    /* border: 2px solid red; */
+    border-bottom-color: grey;
+    border-bottom-width: 0.3rem;
+    border-bottom-style: solid;
+    margin: 0rem;
+    width: 37rem;
+    height: 3rem;
+    font-size: 3rem;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    padding-left: 1rem;
+    font: caption;
+    font-size: 2rem;
+    font-weight: bolder;
+    cursor: default;
+    margin-bottom: 0.6rem;
+    color: #7871db;
+    background-color: whitesmoke;
+}
+#packagemainicon2{
+    /* border: 2px solid red; */
+    width: 3rem;
+    height: 3rem;
+    margin-left: 27rem;
+}
+#saavan{
+    width: 4.2rem;
+}
+.extramusic{
+    /* border: 2px solid red; */
+    font: caption;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    height: 1.9rem;
+    width: 6.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid rgb(107, 76, 76);
+}
+.extramusic:hover{
+    background-color: rgb(233, 233, 233);
+    border-top: 2px solid rgb(201, 102, 102);
+}
+.containerofextramusic{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    width: 38rem;
+    height: 7rem;
+    /* align-items: baseline; */
+}
+
+/* Music Seaction  */
+#shoppingtitle{
+    /* border: 2px solid red; */
+    border-bottom-color: grey;
+    border-bottom-width: 0.3rem;
+    border-bottom-style: solid;
+    margin: 0rem;
+    width: 37rem;
+    height: 3rem;
+    cursor: default;
+    font-size: 3rem;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    padding-left: 1rem;
+    font: caption;
+    font-size: 2rem;
+    font-weight: bolder;
+    margin-bottom: 0.6rem;
+    color: #71cbdb;
+    background-color: rgb(245, 245, 245);
+}
+#packagemainicon3{
+    /* border: 2px solid red; */
+    width: 3rem;
+    height: 3rem;
+    margin-left: 24rem;
+}
+#smartprice{
+    width: 8rem;
+}
+.extrashopping{
+    /* border: 2px solid red; */
+    font: caption;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    height: 1.9rem;
+    width: 6.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid rgb(107, 76, 76);
+}
+.extrashopping:hover{
+    background-color: rgb(233, 233, 233);
+    border-top: 2px solid rgb(201, 102, 102);
+}
+.containerofextrashopping{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    width: 38rem;
+    height: 7rem;
+    /* align-items: baseline; */
+}
+#homeshop{
+    width: 8rem;
+}
+/* Sports Seaction  */
+#sportstitle{
+    /* border: 2px solid red; */
+    border-bottom-color: grey;
+    border-bottom-width: 0.3rem;
+    border-bottom-style: solid;
+    margin: 0rem;
+    width: 37rem;
+    height: 3rem;
+    font-size: 3rem;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    padding-left: 1rem;
+    cursor: default;
+    font: caption;
+    font-size: 2rem;
+    font-weight: bolder;
+    margin-bottom: 0.6rem;
+    color: #b624af;
+    background-color: whitesmoke;
+}
+#packagemainicon5{
+    /* border: 2px solid red; */
+    width: 8rem;
+    height: 4rem;
+    margin-left: 23rem;
+}
+.extrasports{
+    /* border: 2px solid red; */
+    font: caption;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    height: 1.9rem;
+    width: 6.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid rgb(107, 76, 76);
+}
+.extrasports:hover{
+    background-color: rgb(233, 233, 233);
+    border-top: 2px solid rgb(201, 102, 102);
+}
+.containerofextrasports{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    width: 38rem;
+    height: 7rem;
+    /* align-items: baseline; */
+}
+#sportskeeda{
+    width: 7.5rem;
+}
+#msports{
+    width: 7.4rem;
+}
+#yahoocricket{
+    width: 8rem;
+}
+#bbccricket{
+    width: 8rem;
+}
+
+/* News Section */
+#newstitle{
+    /* border: 2px solid red; */
+    border-bottom-color: grey;
+    border-bottom-width: 0.3rem;
+    border-bottom-style: solid;
+    margin: 0rem;
+    width: 37rem;
+    height: 3rem;
+    font-size: 3rem;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    padding-left: 1rem;
+    font: caption;
+    font-size: 2rem;
+    font-weight: bolder;
+    margin-bottom: 0.6rem;
+    color: #f53b3b;
+    cursor: default;
+}
+#packagemainicon7{
+    /* border: 2px solid red; */
+    width: 3rem;
+    height: 3rem;
+    margin-left: 28rem;
+}
+.extranews{
+    /* border: 2px solid red; */
+    font: caption;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    height: 1.9rem;
+    width: 6.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid rgb(107, 76, 76);
+}
+.extranews:hover{
+    background-color: rgb(233, 233, 233);
+    border-top: 2px solid rgb(201, 102, 102);
+}
+.containerofextranews{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    width: 38rem;
+    height: 7rem;
+    /* align-items: baseline; */
+}
+#express{
+    width: 8rem;
+}
+
+#breaker3{
+    width: 1rem;
+    height: rem;
+    background-color: whitesmoke;
+    /* border: 2px solid red; */}
+#footerofweb{
+    /* border: 2px solid red; */
+    background-color: rgb(230, 226, 226);
+    /* width: 100%; */
+    height: 8rem;
+    color: rgb(0, 0, 0);
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* border: 2px solid red; */
+}
+.footerlinks{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    /* width: 8rem ; */
+    /* border: 2px solid red; */
+    font: caption;
+    font-size: 1rem;
+    margin: 0rem 0.4rem;
+    font-weight: bold;
+}
+.footerlinks:hover{
+    color: rgb(25, 63, 94);
+}
+.footlinks{
+    display: flex;
+    /* border: 2px solid red; */
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font: caption;
+    font: caption;
+    font-size: 1rem;
+    font-weight: bold;
+
+}
+#foot1{
+    width: 6.8rem;
+}
+#footercopy{
+    color: black;
+    font: caption;
+    font-size: 0.9rem;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    margin-top: 0.6rem;
+}
+
+/* side panel section */
+#side_panel{
+    /* border: 2px solid red; */
+    height: 100%;
+    width: 16rem;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    position: absolute;
+    flex-wrap: wrap;
+    z-index: 22;
+    background-color: white;
+    animation-name: side;
+    animation-duration: 0.2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    animation-direction: normal;
+    animation-timing-function: ease-in-out;
+    /* animation-delay: 1s; */
+    overflow-y: scroll;
+} 
+@keyframes side{
+    from{
+        width: 0em;
+        height: 100%;
+    }
+    to{
+        width: 16rem;
+        height: 100%;
+    }
+}
+.parent_side{
+    /* border: 2px solid red; */
+    height: 3rem;
+    width: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#side_btn{
+    /* border: 2px solid rebeccapurple; */
+    background-color: white;
+    border: none;
+    /* border-right: 0.2rem solid whitesmoke; */
+    height: 3rem;
+    width: 3rem;
+    margin: 0em;
+    display: flex;
+    padding: 0em;
+    justify-content: center;
+    align-items: center;
+    /* overflow-y: scroll; */
+    border-radius: 0rem;
+}
+#side_btn1{
+    /* border: 2px solid rebeccapurple; */
+    background-color: white;
+    border: none;
+    /* border-right: 0.2rem solid whitesmoke; */
+    height: 3rem;
+    width: 3rem;
+    margin: 0em;
+    display: flex;
+    padding: 0em;
+    justify-content: center;
+    align-items: center;
+    /* overflow-y: scroll; */
+    border-radius: 0rem;
+}
+.itemsinbtn{
+    height: 0.3rem;
+    width: 2.5rem;
+    background-color: black;
+    margin: 0.15rem 0rem;
+}
+#side_btn_background{
+    height: 3rem;
+    width: 2.75rem;
+    margin: 0em;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+/* Nav of side section  */
+.nav_of_side{
+    /* border: 2px solid red; */
+    width: 14.625rem;
+    height: 3rem;
+    margin: 0em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.side_panel_logo{
+    /* border: 2px solid red; */
+    width: 14.5rem;
+    height: 3rem;
+    margin: 0em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.side_panel_logo:hover{
+    background-color: whitesmoke;
+}
+#side_logo{
+    width: 10rem;
+    height: 3rem;
+}
+#side_parent{
+    /* border: 2px solid red; */
+    width: 11rem;
+    height: 3rem;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+/* Side links section */
+.container_of_side{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    width: 14.5rem;
+    height: 100%;
+    flex-direction: column;
+}
+#breaker_side{
+    border: 2px solid red;
+}
+.side_links{
+    /* border: 2px solid red;  */
+    height: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font: caption;
+    font-size: 1.4rem;
+    margin: 0.2rem 0rem;
+    font-weight: bolder;
+    color: rgb(99, 17, 17);
+}
+.side_links:hover{
+    background-color: whitesmoke;
+    transition-property: background;
+    transition-delay: 0s;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.4s;
+    animation-name: text_up;
+    animation-timing-function: ease-in-out;    
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+}
+@keyframes text_up{
+    from{
+        position: relative;
+        bottom: 0.2rem;
+    }
+    to{
+        position: relative;
+        top: 0em;
+
+    }
+}
+/* #visit_yt_side{ */
+    /* border-bottom: 2px solid red; */
+/* } */
+#side_home{
+    background-color: rgb(247, 233, 233) ;
+}
+/* Dark theme section in javaScript */
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+.navigation_bg{
+    background-color: #303030;
+    color: white;
+}
+.text_color{
+    width: 6rem;
+    height: 5rem;
+    border: 2px solid #e0e0e0;
+    margin: 0rem 2rem;
+    margin-bottom: 0rem;
+    border-radius: 0.3rem;
+    padding: 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 0rem;
+    font-weight: bolder;
+    font :1.2rem arial,sans-serif,tahoma,verdana,Simsun;
+    
+    color: rgb(255, 255, 255);
+}
+.all_bg{
+    background-color: #751818;
+}
+.search_dark{
+    background-color: #303030;
+
+}
+#breaker_theme{
+    /* background-color: whitesmoke; */
+    width: 0.7rem;
+    height: 25rem;
+    background: black;
+}
+.line_back{
+    background-color: black;
+}
+#dark_btn{
+    position: relative;
+}
+/* Sign In Function  */
+#container_of_sign{
+    border:  2px solid red;
+    height: 100%; 
+    width: 100%;
+    display: none;
+    background-color: whitesmoke;
+    /* position: absolute; */
+    /* z-index: 24; */
+}
+#apply_dark_text{
+    margin: 0em;
+    
+}
+.apply_animation{
+    position: relative;
+    animation-name: dark_text;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-delay: 0.2s;
+}
+@keyframes dark_text{
+    0%{
+        bottom: 0rem;
+        /* text-shadow: 0px 0px 0.2rem red; */
+        color: red;
+    }
+    50%{
+        bottom: 0.15rem;
+        /* color: greenyellow; */
+        /* text-shadow: 0px 0px 0.2rem grey; */
+    }
+    100%{
+        color: blue;
+        bottom: 0rem;
+        /* text-shadow: 0px 0px 0.2rem blue; */
+    }
+}
+
+.all_margin_off{
+    margin: 0rem;
+}</style>
 
 <script name="searchInit">
         var searches = { yahoo: ["https://in.search.yahoo.com/search", "p"], bing: ["https://www.bing.com/search", "q"] };
