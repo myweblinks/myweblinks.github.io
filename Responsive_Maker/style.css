@@ -1,7 +1,7 @@
 body{
     margin: 0em;
     background-color: #f5f5f5;
-} 
+}  
 
 /* Navigation Section  */
 .container{
@@ -16,12 +16,6 @@ body{
     display: flex;
     background-color: white;
 }
-@media only screen and (max-width: 1070px){
-    .navigation{
-   flex-wrap: wrap;
-   height: 6rem;
-    }
-}
 /* Custom Profile Section  */
 #profilemain{
     /* border: 2px solid red; */
@@ -32,11 +26,25 @@ body{
     border-style: groove;
     cursor: default;
 }
-
+#container_of_three1{
+    display: flex;
+    width: 100%;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    /* border: 2px solid red; */
+}
+#container_of_three2{
+    display: flex;
+    width: 100%;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    /* border: 2px solid red; */
+}
 /* Navigation Links Section  */
 .navlinks{
 display: flex;
 width: 100%;
+/* flex-wrap: wrap; */
 justify-content: space-between;
 /* border: 2px solid red; */
 }
@@ -55,6 +63,89 @@ justify-content: space-between;
     color: black;
     background-color: rgba(243, 243, 243, 0.329);
     font-size: 1.1rem;
+}
+
+/* Dark theme Section  */
+.container_of_dark_btn{
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 2.75rem;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 1rem;
+}
+#dark_btn{
+    background-color: #ffffff;
+    height: 2rem;
+    font: caption;
+    font-weight: bold;
+    /* border: 2px solid rgb(177, 168, 168); */
+    /* clear: both; */
+}
+#dark_btn:hover{
+background-color: whitesmoke;
+cursor: pointer;
+}
+
+#signin_btn:hover{
+    background-color: rgba(255, 136, 0, 0.801);
+    color: rgb(17, 16, 7);
+    border-radius: 0.2rem;
+    cursor: pointer;
+}
+#signin_btn{
+    border-radius: 0.2rem;
+    /* border: 2px solid red; */
+    border: none;
+    height: 2.2rem;
+    font: caption;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    width: 5rem;
+    background-color: rgb(255, 136, 0);
+    color: rgb(48, 9, 9);
+    position: absolute;
+
+}
+@media only screen and (max-width: 1070px){
+    .navigation{
+   /* flex-wrap: wrap; */
+   height: 6rem;
+   align-items: center;
+   justify-content: center;
+    }
+    
+    #profilemain{
+        margin-bottom: 0.6rem;
+    }
+    .container{ 
+        /* flex-direction: column; */
+        /* border: 2px solid red; */
+        width: 100%;
+    }
+    .navitems{
+        /* display: flex;
+        width: 30rem;
+         */
+         width: 100%;
+        /* border: 2px solid red; */
+        /* background-color: rgb(214, 61, 61); */
+    }
+    .container_of_dark_btn{
+        /* border:  2px solid red; */
+        width: 8rem;
+    }
+    .navlinks{
+        /* border: 2px solid red; */
+        display: flex;
+        margin: 0;
+        flex-direction: column;
+        /* width: 100%; */
+        justify-content: space-between;
+        height: 4rem;
+    }
 }
 .navitems:hover{
     background-color: rgb(255, 255, 255);
@@ -90,36 +181,7 @@ justify-content: space-between;
     width: 1.8rem;
     margin-right: 0.1rem;
 }
-/* Dark theme Section  */
-.container_of_dark_btn{
-    /* border: 2px solid red; */
-    width: 100%;
-    height: 2.75rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-content: space-evenly;
-}
-#dark_btn{
-    background-color: #ffffff;
-    height: 2rem;
-    font: caption;
-    font-weight: bold;
-    /* border: 2px solid rgb(177, 168, 168); */
-    /* clear: both; */
-}
-#dark_btn:hover{
-background-color: whitesmoke;
-cursor: pointer;
-}
-
-#signin_btn:hover{
-    background-color: rgb(224, 13, 13);
-    color: white;
-    border-radius: 0.2rem;
-    cursor: pointer;
-}
-#signin_btn{
+#guest_btn{
     border-radius: 0.2rem;
     /* border: 2px solid red; */
     /* border: none; */
@@ -127,9 +189,9 @@ cursor: pointer;
     font: caption;
     font-weight: bolder;
     font-size: 1.2rem;
-    width: 5rem;
-    background-color: rgb(255, 0, 0);
-    color: white;
+    width: 8.8rem;
+    background-color: rgb(160, 59, 0);
+    color: rgb(255, 255, 255);
 }
 /* Google Search Section  */
 #search{
@@ -284,7 +346,7 @@ margin-top: 0rem;}
 #firstlink11{width: 3.9rem;}
 #firstlink12{width: 3.3rem;
 margin-top: 0.2rem;
-margin-bottom: 0.rem;}
+margin-bottom: 0.7rem;}
 #firstlink13{width: 4.5rem;
 margin-top: 0.2rem;}
 #firstlink14{width: 3.5rem;
@@ -634,7 +696,6 @@ width: 3.8rem;
 }
 @media only screen and (max-width: 500px){
     .navlinks{
-  
     width: 100%;
 }
 .container{ 
@@ -651,16 +712,16 @@ width: 3.8rem;
 }
 @media only screen and (max-width: 918px){
     .navigation{
-        width: 57rem;
+        width: 58rem;
     }
     #search{
         width: 56.6rem; 
     }
     #J_searchForm{
-        width: 57rem;
+        width: 58rem;
     }
     .linkswithiconcontainer{
-        width: 918px;
+        width: 930px;
     }
     #footerofweb{
         width: 918px;
@@ -727,7 +788,8 @@ width: 3.8rem;
         height: 12rem;
     }
 
-    .containerparent2{width: 910px;
+    .containerparent2{
+    width: 910px;
     display: flex;
     height: 26rem;
     margin-top: 1rem;
