@@ -198,6 +198,171 @@
     justify-content: space-between;
     /* border: 2px solid red; */
 }
+#container_of_three3{
+    display: flex;
+    width: 100%;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    /* border: 2px solid red; */
+}
+#container_of_three4{
+    display: flex;
+    width: 100%;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    /* border: 2px solid red; */
+}
+/* Animation  */
+#side1{
+    transition-property: background-color;
+    transition-delay: 0s;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    background-color: rgba(243, 243, 243, 0.329);
+    animation-name: side1;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.2s;
+    animation-fill-mode: both;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-duration: 0.5s;
+}
+@keyframes side1{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 10;
+    }
+}
+#side1:hover{
+    background-color: rgba(255, 196, 0, 0.178);
+}
+#side2{
+    transition-property: background-color;
+    transition-delay: 0s;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    background-color: rgba(243, 243, 243, 0.329);
+    animation-name: side2;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.3s;
+    animation-fill-mode: both;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-duration: 0.5s;
+}
+@keyframes side2{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 10;
+    }
+}
+#side2:hover{
+    background-color: rgba(255, 0, 191, 0.247);
+}
+#side3{
+    transition-property: background-color;
+    transition-delay: 0s;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    background-color: rgba(243, 243, 243, 0.329);
+    animation-name: side3;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.4s;
+    animation-fill-mode: both;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-duration: 0.5s;
+}
+@keyframes side3{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 10;
+    }
+}
+#side3:hover{
+    background-color: rgba(0, 81, 255, 0.233);
+}
+#side4{
+    transition-property: background-color;
+    transition-delay: 0s;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    background-color: rgba(243, 243, 243, 0.329);
+    animation-name: side4;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-duration: 0.5s;
+}
+@keyframes side4{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 10;
+    }
+}
+#side4:hover{
+    background-color: rgba(0, 255, 213, 0.281);
+}
+#side5{
+    transition-property: background-color;
+    transition-delay: 0s;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    background-color: rgba(243, 243, 243, 0.329);
+    animation-name: side5;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.6s;
+    animation-fill-mode: both;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-duration: 0.5s;
+}
+@keyframes side5{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 10;
+    }
+}
+#side5:hover{
+    background-color: rgba(60, 255, 0, 0.253);
+}
+#side6{
+    transition-property: background-color;
+    transition-delay: 0s;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    background-color: rgba(243, 243, 243, 0.329);
+    animation-name: side6;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.7s;
+    animation-fill-mode: both;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-duration: 0.5s;
+}
+@keyframes side6{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 10;
+    }
+}
+#side6:hover{
+    background-color: rgba(255, 0, 119, 0.322);
+}
 /* Navigation Links Section  */
 .navlinks{
 display: flex;
@@ -206,7 +371,40 @@ width: 100%;
 justify-content: space-between;
 /* border: 2px solid red; */
 }
+#side_links{
+display: none;
+width: 100%;
+/* flex-wrap: wrap; */
+flex-direction: row;
+/* border: 2px solid red; */
+}
+#navi_links_2_contains{
+    /* border: 2px solid red; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 6rem;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
 .navitems{
+    /* border: 2px solid red; */
+    border-radius: 100rem;
+    width: 7.5rem;
+    height: 1.7rem;
+    margin-left: 1rem;
+    text-decoration: none;
+    text-align: center;
+    /* padding: 1rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-color: rgba(243, 243, 243, 0.329);
+    font-size: 1.1rem;
+}
+.side_items{
     /* border: 2px solid red; */
     border-radius: 100rem;
     width: 7.5rem;
@@ -288,7 +486,32 @@ cursor: pointer;
         /* border: 2px solid red; */
         /* background-color: rgb(214, 61, 61); */
     }
+    .side_items{
+        /* display: flex;
+        width: 30rem;
+         */
+         width: 100%;
+        /* border: 2px solid red; */
+        /* background-color: rgb(214, 61, 61); */
+    }
+    #navi_links_2_contains{
+        /* border:  2px solid red; */
+        height: 8rem;
+    }
+    #top_container_of_parent_side{
+        /* border: 2px solid red; */
+        height: 6rem;
+        width: 4.3rem;
+    }
+    #side_links{
+        display: none;
+        flex-direction: column;
+        height: 4rem;
+        justify-content: space-evenly;
+        align-items: center;
+    }
     .container_of_dark_btn{
+        /* border:  2px solid red; */
         display: flex;
         height: 5rem;
         width: 8rem;
@@ -299,11 +522,15 @@ cursor: pointer;
         margin: 0;
         flex-direction: column;
         /* width: 100%; */
-        justify-content: space-between;
+        justify-content: space-evenly;
         height: 4rem;
     }
 }
 .navitems:hover{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 1rem 0.2rem grey;
+}
+.side_items:hover{
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 0px 1rem 0.2rem grey;
 }
@@ -860,6 +1087,9 @@ width: 3.8rem;
     width: 100%;
 }
 .navitems{
+    width: 100%;
+}
+.side_items{
     width: 100%;
 }
 #profilemain{
@@ -1425,7 +1655,7 @@ width: 3.8rem;
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    position: absolute;
+    /* position: absolute; */
     flex-wrap: wrap;
     z-index: 22;
     background-color: white;
@@ -1438,6 +1668,26 @@ width: 3.8rem;
     /* animation-delay: 1s; */
     overflow-y: scroll;
 } 
+
+/* side panel section Without Any Problems */
+/* #side_panel{
+    height: 100%;
+    width: 16rem;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    z-index: 22;
+    background-color: white;
+    animation-name: side;
+    animation-duration: 0.2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    animation-direction: normal;
+    animation-timing-function: ease-in-out;
+    overflow-y: scroll;
+}  */
 @keyframes side{
     from{
         width: 0em;
@@ -1552,8 +1802,7 @@ width: 3.8rem;
 #breaker_side{
     border: 2px solid red;
 }
-.side_links{
-    /* border: 2px solid red;  */
+/* .side_links{
     height: 3rem;
     width: 100%;
     display: flex;
@@ -1565,8 +1814,8 @@ width: 3.8rem;
     margin: 0.2rem 0rem;
     font-weight: bolder;
     color: rgb(99, 17, 17);
-}
-.side_links:hover{
+} */
+/* .side_links:hover{
     background-color: whitesmoke;
     transition-property: background;
     transition-delay: 0s;
@@ -1588,7 +1837,7 @@ width: 3.8rem;
         top: 0em;
 
     }
-}
+} */
 /* #visit_yt_side{ */
     /* border-bottom: 2px solid red; */
 /* } */
@@ -1688,20 +1937,6 @@ width: 3.8rem;
 .all_margin_off{
     margin: 0rem;
 }</style>
-<script name="searchInit">
-        var searches = { yahoo: ["https://in.search.yahoo.com/search", "p"], bing: ["https://www.bing.com/search", "q"] };
-        if (ls = window.localStorage) {
-                var customSearch = ls.selectedSearch;
-                if (customSearch && customSearch !== "google") { 
-                        var data = searches[customSearch]; 
-                        if (data) { var banner = document.getElementById("J_searchBanner");
-                        banner.className = "mod search-banner " + customSearch + "-search-banner"; banner.setAttribute("s-en", customSearch); 
-                        document.getElementById("J_searchSwitch").children[0].children[0].className = "search-logo search-logo-" + customSearch; 
-                        document.getElementById("J_searchForm").setAttribute("action", data[0]); document.getElementById("J_searchKeyword").setAttribute("name", data[1]) 
-                        } 
-                        }
-        };</script>
-
 
 <script name="searchInit">
         var searches = { yahoo: ["https://in.search.yahoo.com/search", "p"], bing: ["https://www.bing.com/search", "q"] };
@@ -1719,12 +1954,11 @@ width: 3.8rem;
 
 <body>
 
-
-        <!-- Navigation Section  -->
+ <!-- Navigation Section  --> 
         <div id="container_of_pop">
-                <div id="popup1"> <button id="btn_of_cut1" ><img id="cut_image" src="Files/cut_image.png" alt="Can't load"></button>  <p id="pop_text1">Visit My YouTube Channel ----&nbsp; <a id="pop_link1" target="_blank" href="https://www.youtube.com/elderknowledge1"> Elder Knowledge.</a> </p> </div></div>
+                <div id="popup1"> <button id="btn_of_cut1" ><img id="cut_image" src="Files/cut_image.png" alt="Can't load"></button>  <p id="pop_text1">Visit My YouTube Channel ----&nbsp; <a id="pop_link1" href="#"> Elder Knowledge.</a> </p> </div></div>
         <div id="container_of_pop1">
-                <div id="popup2"> <button id="btn_of_cut2" ><img id="cut_image" src="Files/cut_image.png" alt="Can't load"></button>  <p id="pop_text2">Follow Me On Instagram ----&nbsp; <a id="pop_link2" target="_blank" href="https://www.instagram.com/elder_knowledge1/"> Elder Knowledge.</a> </p> </div></div>
+                <div id="popup2"> <button id="btn_of_cut2" ><img id="cut_image" src="Files/cut_image.png" alt="Can't load"></button>  <p id="pop_text2">Follow Me On Instagram ----&nbsp; <a id="pop_link2" target="_blank" href="#"> Elder Knowledge.</a> </p> </div></div>
         <nav id="navigation12" class="navigation">
                         <div id="side_panel">
 
@@ -1739,32 +1973,41 @@ width: 3.8rem;
                                                         <div id="side_parent">
                                 </div>
                                 </div>
-                                <div class="container_of_side">
-                                        <a href="" id="side_home" class="side_links">Home</a>
-                                        <a href="" target="_blank" class="side_links">About Me</a>
-                                        <a href="https://www.youtube.com/c/ElderKnowledge1?sub_confirmation=1" target="_blank" id="visit_yt_side" class="side_links">Visit My YT Channel</a>
-                                        <div id="breaker_side"></div>
-                                        
-                                        <a href="" target="_blank" class="side_links"></a>
-                                        <a href="" target="_blank" class="side_links"></a>
-                                        <a href="" target="_blank" class="side_links"></a>
-                                        <a href="" target="_blank" class="side_links"></a>
-                                        <a href="" target="_blank" class="side_links"></a>
-                                        <a href="" target="_blank" class="side_links"></a>
-                                        <a href="" target="_blank" class="side_links"></a>
-                                        <a href="" target="_blank" class="side_links"></a>
-                                        <a href="" target="_blank" class="side_links"></a>
-                                </div>
+                              
                         </div>
                 <div class="container">
-                        <div class="parent_side">
+                        <div id="top_container_of_parent_side"><div class="parent_side">
                                 <button onclick="side()" id="side_btn"><div id="side_btn_background">
                                         <div id="iteminbtn1" class="itemsinbtn"></div>
                                         <div id="iteminbtn2" class="itemsinbtn"></div>
                                         <div id="iteminbtn3" class="itemsinbtn"></div>
                                 </div></button>
+                        </div></div>
+                        
+                        <!-- Side Panel Links In navigation section  -->
+                        <div id="navi_links_2_contains">
+                                <div id="side_links">
+                                <div id="container_of_three3">
+                                <a href="" id="side1"  class="side_items" >
+                                        <img src="Files/home_icon.png" id="navamazon" alt="">
+                                        Home</a>
+                                <a href="https://www.youtube.com/elderknowledge1" id="side2" class="side_items" target="_blank"
+                                        ><img src="Files/youtube.png" id="navgmail" alt="">
+                                        Channel</a>
+                                <a href="https://www.instagram.com/elder_knowledge1/" id="side3" class="side_items" target="_blank" >
+                                        <img src="Files/instagramicon.png" id="navmicrosoft" alt=""> Instagram</a></div>
+                                        <div id="container_of_three4">
+                                <a href="#" id="side4" class="side_items" target="_blank" >
+                                        <img src="Files/about_me.png" id="navspeed" alt="">
+                                        About Me</a>
+                                <a href="#" id="side5" class="side_items" target="_blank"
+                                     > <img src="Files/contactus.png" id="navtranslate" alt="">
+                                        Contact</a>
+                                <a href="#" id="side6" class="side_items" target="_blank" >
+                                        <img src="Files/feedback.png" id="navwhatsapp" alt=""> Feedback</a>
+                                </div>
                         </div>
-                        <!-- <img id="profilemain" src="Files/profilemain.png" alt=""> -->
+                <!-- Nav Links Main  -->
                         <div class="navlinks">
                                 <div id="container_of_three1">
                                 <a href="https://www.amazon.in/" target="_blank" class="navitems" id="profilemain4">
@@ -1785,7 +2028,8 @@ width: 3.8rem;
                                 <a href="https://web.whatsapp.com/" class="navitems" target="_blank" id="profilemain2">
                                         <img src="Files/navwhatsapp.png" id="navwhatsapp" alt=""> WhatsApp</a>
                                 </div>
-                        </div>
+                        </div></div>
+                        
                 </div>
                 <div class="container_of_dark_btn">
                         
@@ -2432,21 +2676,68 @@ let side_panel = document.getElementById('side_panel')
 //   alert("You are over the navigation bar. please click on ok to continue......")
 // })
 
-
 function side() {
-  let side_panel = document.getElementById('side_panel')
-  //   let body_childs = document.body;
-  //   body_childs.addEventListener('click', function body_onclick() {
-  //   // alert("jhjkshjaskdhjashkdahjsda");
-  // })
-  if (side_panel.style.display != 'flex') {
-    side_panel.style.display = 'flex';
+  let navigation12 = document.getElementById("navigation12");
+  let top_container_of_parent_side = document.getElementById("top_container_of_parent_side");
+  let side_links = document.getElementById("side_links");
+
+  if (side_links.style.display!="flex") {
+    side_links.style.display="flex"
   } else {
-    side_panel.style.display = 'none';
+    side_links.style.display="none"
   }
-
-
+  // let a = screen.width;
+  // console.log(a);
+  if (screen.width<=1070) {
+    if (navigation12.style.height!="10rem") {
+      navigation12.style.height="10rem"
+    } else {
+      navigation12.style.height="6rem"
+    }
+  
+    if (top_container_of_parent_side.style.height!="10rem") {
+      top_container_of_parent_side.style.height="10rem"
+    } else {
+      top_container_of_parent_side.style.height="6rem"
+    }
+   
+  } else {
+    if (navigation12.style.height!="6rem") {
+      navigation12.style.height="6rem"
+    } else {
+      navigation12.style.height="3rem"
+    }
+  
+    if (top_container_of_parent_side.style.height!="6rem") {
+      top_container_of_parent_side.style.height="6rem"
+    } else {
+      top_container_of_parent_side.style.height="3rem"
+    }
+  }
+  
 }
+
+//Side Panel Function Of without any problems ]
+// function side() {
+//   let side_btn = document.getElementById("side_btn");
+//   let side_panel = document.getElementById('side_panel')
+//   //   let body_childs = document.body;
+//   //   body_childs.addEventListener('click', function body_onclick() {
+//   //   // alert("jhjkshjaskdhjashkdahjsda");
+//   // })
+//   if (side_btn.style.border!="none") {
+//     side_btn.style.border="none"
+//   } else {
+//     side_btn.style.border!="none"
+//   }
+//   if (side_panel.style.display != 'flex') {
+//     side_panel.style.display = 'flex';
+//   } else {
+//     side_panel.style.display = 'none';
+//   }
+
+
+// }
 // let side_panel = document.getElementById('side_panel');
 function btn_back() {
   side_btn.style.background = "black";
@@ -2588,6 +2879,7 @@ btn_of_cut2.addEventListener("click",function btn_of_cut2() {
 
 
 // 2nd section 
+
 
 </script>
 </body>
