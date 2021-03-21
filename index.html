@@ -9,13 +9,219 @@
         <meta name="description"
                 content="My-Web-Links is a website dictionary to help users navigate through popular sites and services.">
         <link rel="shortcut icon" href="Files/My Web Links1.png">
-        <title>Take A Web Tour From Here</title>
+        <title>My-Web-Links</title>
 </head>
 
 <style>body{
     margin: 0em;
     background-color: #f5f5f5;
+    
 }  
+#user_in_web{
+    font: caption;
+    /* border: 2px solid red; */
+    font-size: 1.35rem;
+    font-weight: bolder;
+    font-style: italic;
+    margin: 0pc;
+    position: relative;
+    right: 1rem;
+}
+
+/* Sign In Section */
+#first_parent{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.61);
+    position: absolute;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#sign_main_contains{
+    display: flex;
+    width: 40rem;
+    height: 20rem;
+    background-color: whitesmoke;
+    border-radius: 1rem;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+#user_mail{
+    /* border: 2px solid red; */
+    background-color: white;
+    display: flex;
+    width: 30rem;
+    height: 2rem;
+    box-shadow: 0px 0px 1rem grey inset;
+    border-radius: 2rem;
+    border: none;
+     color: black;
+    font: caption;
+    font-weight: bolder;
+    font-size: 1.4rem;
+    font-family: 'Syne Mono', monospace;
+    position: relative;
+    font-variant: small-caps;
+    font-feature-settings: "zero";
+    font-weight: 900;
+    font-style: italic;
+    padding-left: 2%;
+}
+#user_mail::placeholder{
+    color: black;
+    font: caption;
+    font-weight: bolder;
+    font-size: 1.4rem;
+    font-family: 'Syne Mono', monospace;
+    position: relative;
+    font-variant: small-caps;
+    font-feature-settings: "zero";
+    font-weight: 900;
+    font-style: italic;
+}
+#user_pass{
+    /* border: 2px solid red; */
+    background-color: white;
+    display: flex;
+    width: 26rem;
+    height: 2rem;
+    box-shadow: 0px 0px 1rem grey inset;
+    border-radius: 2rem;
+    border: none;
+    color: black;
+    font: caption;
+    font-weight: bolder;
+    font-size: 1.4rem;
+    font-family: 'Syne Mono', monospace;
+    position: relative;
+    font-variant: small-caps;
+    font-feature-settings: "zero";
+    font-weight: 900;
+    font-style: italic;
+    padding-left: 2%;
+}
+#user_pass::placeholder{
+    color: black;
+    font: caption;
+    font-weight: bolder;
+    font-size: 1.4rem;
+    font-family: 'Syne Mono', monospace;
+    position: relative;
+    font-variant: small-caps;
+    font-feature-settings: "zero";
+    font-weight: 900;
+    font-style: italic;
+}
+#sign_In_complete{
+    /* border: 2px solid red; */
+    width: 7rem;
+    height: 3rem;
+    margin: 0px;
+    font: caption;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    border: none;
+    background-color: #bda2ab;
+    border-radius: 0.45rem;
+    cursor: pointer;
+    color: black;
+    font-style: italic;
+}
+#create_an_account_link{
+    /* border: 2px solid red; */
+    display: flex;
+    width: 100%;
+    height: 1rem;
+    font: caption;
+    justify-content: center;
+    align-items: center;
+}
+#name_sign{
+    display: flex;
+    color: blue;
+    font: caption;
+    font-size: 1.6rem;
+    font-style: initial;
+    margin: 0pc;
+    /* font-weight: bold; */
+    font-family: 'Ranchers', cursive;
+    /* position: relative; */
+    left: 6.5rem;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    /* border:  2px solid red; */
+}
+#or{
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    /* border: 2px solid red; */
+    align-items: center;
+    font: caption;
+    font-style: italic;
+    color: black;
+    font-weight: 600;
+}
+#pair_of_pass{
+    display: flex;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    width: 30.7rem;
+    height: 2rem;
+    /* background-color: red; */
+
+}
+#space{
+    width: 4rem;
+    height: 2rem;
+}
+#back_btn_from_sign{
+    width: 2rem;
+    height: 2rem;
+}
+#back_from_sign{
+    /* border: 2px solid red; */
+    display: flex;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 10rem;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    /* background-color: white; */
+    border: none;
+    font: caption;
+    font-weight: bolder;
+    font-style: italic;
+    flex-direction: column;
+    cursor: pointer;
+
+}
+#pair_of_name{
+    display: flex;
+    align-items: center;
+    width: 36rem;
+    height: 2rem;
+    /* border:  2px solid red; */
+}
+#show_btn{
+    border: none;
+    width: 3rem;
+    height: 1.6rem;
+    margin: auto;
+    background-color: #e6b967;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+
+
 /* Popup Section */
 #container_of_pop{
     /* border: 2px solid red; */
@@ -459,10 +665,30 @@ cursor: pointer;
     font: caption;
     font-weight: bolder;
     font-size: 1.2rem;
-    width: 5rem;
+    width: 6rem;
     background-color: rgb(255, 136, 0);
     color: rgb(48, 9, 9);
-    position: absolute;
+    /* position: absolute; */
+
+}
+#sign_out_btn:hover{
+    background-color: rgba(255, 136, 0, 0.801);
+    color: rgb(17, 16, 7);
+    border-radius: 0.2rem;
+    cursor: pointer;
+}
+#sign_out_btn{
+    border-radius: 0.2rem;
+    /* border: 2px solid red; */
+    border: none;
+    height: 2.2rem;
+    font: caption;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    width: 6rem;
+    background-color: rgb(255, 136, 0);
+    color: rgb(48, 9, 9);
+    /* position: absolute; */
 
 }
 @media only screen and (max-width: 1070px){
@@ -472,7 +698,9 @@ cursor: pointer;
    /* align-items: center; */
    /* justify-content: center; */
     }
-    
+    .container_of_dark_btn{
+        flex-direction: column;
+    }
     .container{ 
         /* flex-direction: column; */
         /* border: 2px solid red; */
@@ -1954,89 +2182,135 @@ width: 3.8rem;
 
 <body>
 
- <!-- Navigation Section  --> 
+        <!-- Navigation Section  -->
         <div id="container_of_pop">
-                <div id="popup1"> <button id="btn_of_cut1" ><img id="cut_image" src="Files/cut_image.png" alt="Can't load"></button>  <p id="pop_text1">Visit My YouTube Channel ----&nbsp; <a id="pop_link1" href="#"> Elder Knowledge.</a> </p> </div></div>
+                <div id="popup1"> <button id="btn_of_cut1"><img id="cut_image" src="Files/cut_image.png"
+                                        alt="Can't load"></button>
+                        <p id="pop_text1">Visit My YouTube Channel ----&nbsp; <a id="pop_link1" href="#"> Elder
+                                        Knowledge.</a> </p>
+                </div>
+        </div>
         <div id="container_of_pop1">
-                <div id="popup2"> <button id="btn_of_cut2" ><img id="cut_image" src="Files/cut_image.png" alt="Can't load"></button>  <p id="pop_text2">Follow Me On Instagram ----&nbsp; <a id="pop_link2" target="_blank" href="#"> Elder Knowledge.</a> </p> </div></div>
+                <div id="popup2"> <button id="btn_of_cut2"><img id="cut_image" src="Files/cut_image.png"
+                                        alt="Can't load"></button>
+                        <p id="pop_text2">Follow Me On Instagram ----&nbsp; <a id="pop_link2" target="_blank" href="#">
+                                        Elder Knowledge.</a> </p>
+                </div>
+        </div>
         <nav id="navigation12" class="navigation">
-                        <div id="side_panel">
+                <div id="side_panel">
 
-                                <!-- Content in side panel -->
-                                <div class="nav_of_side">
-                                        <button onclick="side()" id="side_btn1"><img src="" alt="">
-                                                <div id="side_btn_background">
-                                                        <div class="itemsinbtn"></div>
-                                                        <div class="itemsinbtn"></div>
-                                                        <div class="itemsinbtn"></div>
-                                                </div></button>
-                                                        <div id="side_parent">
+                        <!-- Content in side panel -->
+                        <div class="nav_of_side">
+                                <button onclick="side()" id="side_btn1"><img src="" alt="">
+                                        <div id="side_btn_background">
+                                                <div class="itemsinbtn"></div>
+                                                <div class="itemsinbtn"></div>
+                                                <div class="itemsinbtn"></div>
+                                        </div>
+                                </button>
+                                <div id="side_parent">
                                 </div>
-                                </div>
-                              
                         </div>
+
+                </div>
                 <div class="container">
-                        <div id="top_container_of_parent_side"><div class="parent_side">
-                                <button onclick="side()" id="side_btn"><div id="side_btn_background">
-                                        <div id="iteminbtn1" class="itemsinbtn"></div>
-                                        <div id="iteminbtn2" class="itemsinbtn"></div>
-                                        <div id="iteminbtn3" class="itemsinbtn"></div>
-                                </div></button>
-                        </div></div>
-                        
+                        <div id="top_container_of_parent_side">
+                                <div class="parent_side">
+                                        <button onclick="side()" id="side_btn">
+                                                <div id="side_btn_background">
+                                                        <div id="iteminbtn1" class="itemsinbtn"></div>
+                                                        <div id="iteminbtn2" class="itemsinbtn"></div>
+                                                        <div id="iteminbtn3" class="itemsinbtn"></div>
+                                                </div>
+                                        </button>
+                                </div>
+                        </div>
+
                         <!-- Side Panel Links In navigation section  -->
                         <div id="navi_links_2_contains">
                                 <div id="side_links">
-                                <div id="container_of_three3">
-                                <a href="" id="side1"  class="side_items" >
-                                        <img src="Files/home_icon.png" id="navamazon" alt="">
-                                        Home</a>
-                                <a href="https://www.youtube.com/elderknowledge1" id="side2" class="side_items" target="_blank"
-                                        ><img src="Files/youtube.png" id="navgmail" alt="">
-                                        Channel</a>
-                                <a href="https://www.instagram.com/elder_knowledge1/" id="side3" class="side_items" target="_blank" >
-                                        <img src="Files/instagramicon.png" id="navmicrosoft" alt=""> Instagram</a></div>
+                                        <div id="container_of_three3">
+                                                <a href="" id="side1" class="side_items">
+                                                        <img src="Files/home_icon.png" id="navamazon" alt="">
+                                                        Home</a>
+                                                <a href="https://mail.google.com" id="side2" class="side_items"
+                                                        target="_blank"><img src="Files/youtube.png" id="navgmail"
+                                                                alt="">
+                                                        Channel</a>
+                                                <a href="https://www.microsoft.com" id="side3" class="side_items"
+                                                        target="_blank">
+                                                        <img src="Files/instagramicon.png" id="navmicrosoft" alt="">
+                                                        Instagram</a>
+                                        </div>
                                         <div id="container_of_three4">
-                                <a href="#" id="side4" class="side_items" target="_blank" >
-                                        <img src="Files/about_me.png" id="navspeed" alt="">
-                                        About Me</a>
-                                <a href="#" id="side5" class="side_items" target="_blank"
-                                     > <img src="Files/contactus.png" id="navtranslate" alt="">
-                                        Contact</a>
-                                <a href="#" id="side6" class="side_items" target="_blank" >
-                                        <img src="Files/feedback.png" id="navwhatsapp" alt=""> Feedback</a>
+                                                <a href="http://www.speedtest.net/" id="side4" class="side_items"
+                                                        target="_blank">
+                                                        <img src="Files/about_me.png" id="navspeed" alt="">
+                                                        About Me</a>
+                                                <a href="https://translate.google.com/" id="side5" class="side_items"
+                                                        target="_blank"> <img src="Files/contactus.png"
+                                                                id="navtranslate" alt="">
+                                                        Contact</a>
+                                                <a href="https://web.whatsapp.com/" id="side6" class="side_items"
+                                                        target="_blank">
+                                                        <img src="Files/feedback.png" id="navwhatsapp" alt="">
+                                                        Feedback</a>
+                                        </div>
+                                </div>
+                                <!-- Nav Links Main  -->
+                                <div class="navlinks">
+                                        <div id="container_of_three1">
+                                                <a href="https://www.amazon.in/" target="_blank" class="navitems"
+                                                        id="profilemain4">
+                                                        <img src="Files/navamazon.png" id="navamazon" alt="">
+                                                        Amazon</a>
+                                                <a href="https://mail.google.com" class="navitems" target="_blank"
+                                                        id="profilemain5"><img src="Files/navgmail.png" id="navgmail"
+                                                                alt="">
+                                                        Gmail</a>
+                                                <a href="https://www.microsoft.com" class="navitems" target="_blank"
+                                                        id="profilemain3">
+                                                        <img src="Files/navmicrosoft.png" id="navmicrosoft" alt="">
+                                                        Microsoft</a>
+                                        </div>
+                                        <div id="container_of_three2">
+                                                <a href="http://www.speedtest.net/" class="navitems" target="_blank"
+                                                        id="profilemain6">
+                                                        <img src="Files/navspeed.png" id="navspeed" alt="">
+                                                        Speed Test</a>
+                                                <a href="https://translate.google.com/" class="navitems" target="_blank"
+                                                        id="profilemain1"> <img src="Files/navtranslate.png"
+                                                                id="navtranslate" alt="">
+                                                        Translate</a>
+                                                <a href="https://web.whatsapp.com/" class="navitems" target="_blank"
+                                                        id="profilemain2">
+                                                        <img src="Files/navwhatsapp.png" id="navwhatsapp" alt="">
+                                                        WhatsApp</a>
+                                        </div>
                                 </div>
                         </div>
-                <!-- Nav Links Main  -->
-                        <div class="navlinks">
-                                <div id="container_of_three1">
-                                <a href="https://www.amazon.in/" target="_blank" class="navitems" id="profilemain4">
-                                        <img src="Files/navamazon.png" id="navamazon" alt="">
-                                        Amazon</a>
-                                <a href="https://mail.google.com" class="navitems" target="_blank"
-                                        id="profilemain5"><img src="Files/navgmail.png" id="navgmail" alt="">
-                                        Gmail</a>
-                                <a href="https://www.microsoft.com" class="navitems" target="_blank" id="profilemain3">
-                                        <img src="Files/navmicrosoft.png" id="navmicrosoft" alt=""> Microsoft</a></div>
-                                        <div id="container_of_three2">
-                                <a href="http://www.speedtest.net/" class="navitems" target="_blank" id="profilemain6">
-                                        <img src="Files/navspeed.png" id="navspeed" alt="">
-                                        Speed Test</a>
-                                <a href="https://translate.google.com/" class="navitems" target="_blank"
-                                        id="profilemain1"> <img src="Files/navtranslate.png" id="navtranslate" alt="">
-                                        Translate</a>
-                                <a href="https://web.whatsapp.com/" class="navitems" target="_blank" id="profilemain2">
-                                        <img src="Files/navwhatsapp.png" id="navwhatsapp" alt=""> WhatsApp</a>
-                                </div>
-                        </div></div>
-                        
+
                 </div>
+                <!-- <div id="first_parent">
+                        <div id="sign_main_contains">
+                                <div id="pair_of_name">
+                               <button id="back_from_sign" > <img id="back_btn_from_sign" src="Files/Previous_btn.png" alt=""> </button> <p id="name_sign">My Web Links.com</p>
+                               <div id="space"></div>
+                        </div>
+                        <input type="email" placeholder="Enter Username" id="user_mail">
+                        <div id="pair_of_pass"> <input type="password" placeholder="Enter Password"  id="user_pass"> <button id="show_btn">Show</button></div>
+                       
+                        <button id="sign_In_complete">Sign In</button>
+                        <p id="or" >or</p>
+                        <a id="create_an_account_link" href="#">Create an account</a>
+                        </div>
+                </div> -->
                 <div class="container_of_dark_btn">
-                        
-                        <!-- <button id="dark_btn" onclick="switch_theme()" > <p id="apply_dark_text">Apply Dark Mode</p> </button> -->
-                        <!-- <button id="guest_btn"  onclick="sign_in()">Use as Guest</button> -->
-                                <button id="signin_btn"  onclick="sign_in()">Sign In</button>
-                        
+
+                       
+                        <button id="signin_btn">Sign In</button>
+
                 </div>
         </nav>
         <!-- Google Search Section  -->
@@ -2077,8 +2351,8 @@ width: 3.8rem;
                                         src="Files/youtubestudio.png" id="firstlink10" alt=""> YT Studio </a>
                         <a target="_blank" id="first11" class="firstlinks" href="https://web.telegram.org/"> <img
                                         src="Files/telegram.png" id="firstlink11" alt=""> Telegram </a>
-                        <a target="_blank" id="first12" class="firstlinks" href="https://www.skillclash.com/en-in/"> <img
-                                        src="Files/skill_clash.png" id="firstlink12" alt=""> SkillClash </a>
+                        <a target="_blank" id="first12" class="firstlinks" href="https://www.skillclash.com/en-in/">
+                                <img src="Files/skill_clash.png" id="firstlink12" alt=""> SkillClash </a>
                         <a target="_blank" id="first13" class="firstlinks" href="https://paytm.com/"> <img
                                         src="Files/paytm.png" id="firstlink13" alt="">
                                 <p id="paytm">Paytm</p>
@@ -2100,17 +2374,25 @@ width: 3.8rem;
                         <!-- <iframe width="240" id="whatsappimagesforlook" height="150" src="/Files/navwhatsapp.png" frameborder="0" allow="accelerometer; no; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
                         <div id="emailsseaction">
                                 <a class="gmailselecthref" href="https://mail.google.com/" target="_blank"> <img
-                                                id="gmailselect" src="Files/navgmail.png" alt=""> <p class="all_margin_off" id="right_link1">Gmail</p>  </a>
+                                                id="gmailselect" src="Files/navgmail.png" alt="">
+                                        <p class="all_margin_off" id="right_link1">Gmail</p>
+                                </a>
                                 <a class="gmailselecthref" href="https://www.outlook.com/" target="_blank"> <img
-                                                id="gmailselect1" src="Files/navoutlook.png" alt="">  <p class="all_margin_off"  id="right_link2">Outlook</p> </a>
+                                                id="gmailselect1" src="Files/navoutlook.png" alt="">
+                                        <p class="all_margin_off" id="right_link2">Outlook</p>
+                                </a>
                         </div>
 
                         <h3 id="watchonline">Watch Online</h3>
                         <div class="watchonlineweb">
                                 <a target="_blank" class="watchonline_web" href="https://www.primevideo.com/"> <img
-                                                src="Files/prime.png" id="amazonprime" alt=""><p class="all_margin_off"  id="right_link3">Prime </p></a>
+                                                src="Files/prime.png" id="amazonprime" alt="">
+                                        <p class="all_margin_off" id="right_link3">Prime </p>
+                                </a>
                                 <a target="_blank" class="watchonline_web" href="https://www.netflix.com/"> <img
-                                                src="Files/netflix.png" id="netflix" alt=""><p class="all_margin_off"  id="right_link4">Netflix </p></a>
+                                                src="Files/netflix.png" id="netflix" alt="">
+                                        <p class="all_margin_off" id="right_link4">Netflix </p>
+                                </a>
                         </div>
 
 
@@ -2120,10 +2402,14 @@ width: 3.8rem;
 
                                 <a target="_blank" id="downloadslinks" class="downloadslinks"
                                         href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwiypJWZhYzuAhUXMSsKHUNjC7AYABABGgJzZg&ohost=www.google.co.in&cid=CAESQeD2QTWjm80wacngUlQLh-NbCVYkw6oGufhZ1jxLs-RzOUV7w08CbBaxCgoy3uC7sBbnLNX_huBw-HCHCr-eP-tH&sig=AOD64_3aG9r1_WO_IjGAe53BZO1UHqK3zw&q=&ved=2ahUKEwj5wIyZhYzuAhUhjuYKHXBcAIsQqyQoAHoECAUQEw&adurl=">
-                                        <img src="Files/chrome.png" id="chromedownload" alt=""> <p class="all_margin_off" id="right_link5">Chrome</p>  </a>
+                                        <img src="Files/chrome.png" id="chromedownload" alt="">
+                                        <p class="all_margin_off" id="right_link5">Chrome</p>
+                                </a>
                                 <a target="_blank" class="downloadslinks"
                                         href="https://www.mozilla.org/en-US/firefox/new/"> <img src="Files/mozilla.png"
-                                                id="mozilladownload" alt="">  <p class="all_margin_off" id="right_link6">Mozilla</p>  </a>
+                                                id="mozilladownload" alt="">
+                                        <p class="all_margin_off" id="right_link6">Mozilla</p>
+                                </a>
                         </div>
                 </div>
         </div>
@@ -2260,8 +2546,816 @@ width: 3.8rem;
                 </div>
                 <p id="footercopy">Copyright &copy; 2021. All Rights Reserved.</p>
         </footer>
-        <script>let side_btn = document.getElementById('side_btn');
- 
+        <script>
+let side_btn = document.getElementById('side_btn');
+
+// Sign BTN Section 
+let signin_btn = document.getElementById("signin_btn");
+let body = document.body;
+signin_btn.addEventListener("click", function signin_btn_fcn() {
+  body.style.overflow = "hidden";
+  body.innerHTML = `<div id="first_parent">
+                        <div id="sign_main_contains">
+                                <div id="pair_of_name">
+                               <button id="back_from_sign" > <img id="back_btn_from_sign" src="Files/Previous_btn.png" alt=""> </button> <p id="name_sign">My Web Links.com</p>
+                               <div id="space"></div>
+                        </div>
+                        <input type="email" placeholder="Enter Username" id="user_mail">
+                        <div id="pair_of_pass"> <input type="password" placeholder="Enter Password"  id="user_pass"> <button id="show_btn">Show</button></div>
+                       
+                        <button id="sign_In_complete">Sign In</button>
+                        <p id="or" >or</p>
+                        <a id="create_an_account_link" href="#">Create an account</a>
+                        </div>
+                </div>`;
+
+// Sign In Complete 
+let sign_In_complete = document.getElementById("sign_In_complete");
+sign_In_complete.addEventListener("click", function sign_In_complete_fnc() {
+ body.style.overflow="auto";
+ let a = document.getElementById("user_mail").value;
+ let warn_enter = document.getElementById("user_mail");
+ if (a!="") {
+  body.innerHTML=`   <!-- Navigation Section  -->
+  <div id="container_of_pop">
+          <div id="popup1"> <button id="btn_of_cut1"><img id="cut_image" src="Files/cut_image.png"
+                                  alt="Can't load"></button>
+                  <p id="pop_text1">Visit My YouTube Channel ----&nbsp; <a id="pop_link1" href="#"> Elder
+                                  Knowledge.</a> </p>
+          </div>
+  </div>
+  <div id="container_of_pop1">
+          <div id="popup2"> <button id="btn_of_cut2"><img id="cut_image" src="Files/cut_image.png"
+                                  alt="Can't load"></button>
+                  <p id="pop_text2">Follow Me On Instagram ----&nbsp; <a id="pop_link2" target="_blank" href="#">
+                                  Elder Knowledge.</a> </p>
+          </div>
+  </div>
+  <nav id="navigation12" class="navigation">
+          <div id="side_panel">
+
+                  <!-- Content in side panel -->
+                  <div class="nav_of_side">
+                          <button onclick="side()" id="side_btn1"><img src="" alt="">
+                                  <div id="side_btn_background">
+                                          <div class="itemsinbtn"></div>
+                                          <div class="itemsinbtn"></div>
+                                          <div class="itemsinbtn"></div>
+                                  </div>
+                          </button>
+                          <div id="side_parent">
+                          </div>
+                  </div>
+
+          </div>
+          <div class="container">
+                  <div id="top_container_of_parent_side">
+                          <div class="parent_side">
+                                  <button onclick="side()" id="side_btn">
+                                          <div id="side_btn_background">
+                                                  <div id="iteminbtn1" class="itemsinbtn"></div>
+                                                  <div id="iteminbtn2" class="itemsinbtn"></div>
+                                                  <div id="iteminbtn3" class="itemsinbtn"></div>
+                                          </div>
+                                  </button>
+                          </div>
+                  </div>
+
+                  <!-- Side Panel Links In navigation section  -->
+                  <div id="navi_links_2_contains">
+                          <div id="side_links">
+                                  <div id="container_of_three3">
+                                          <a href="" id="side1" class="side_items">
+                                                  <img src="Files/home_icon.png" id="navamazon" alt="">
+                                                  Home</a>
+                                          <a href="https://mail.google.com" id="side2" class="side_items"
+                                                  target="_blank"><img src="Files/youtube.png" id="navgmail"
+                                                          alt="">
+                                                  Channel</a>
+                                          <a href="https://www.microsoft.com" id="side3" class="side_items"
+                                                  target="_blank">
+                                                  <img src="Files/instagramicon.png" id="navmicrosoft" alt="">
+                                                  Instagram</a>
+                                  </div>
+                                  <div id="container_of_three4">
+                                          <a href="http://www.speedtest.net/" id="side4" class="side_items"
+                                                  target="_blank">
+                                                  <img src="Files/about_me.png" id="navspeed" alt="">
+                                                  About Me</a>
+                                          <a href="https://translate.google.com/" id="side5" class="side_items"
+                                                  target="_blank"> <img src="Files/contactus.png"
+                                                          id="navtranslate" alt="">
+                                                  Contact</a>
+                                          <a href="https://web.whatsapp.com/" id="side6" class="side_items"
+                                                  target="_blank">
+                                                  <img src="Files/feedback.png" id="navwhatsapp" alt="">
+                                                  Feedback</a>
+                                  </div>
+                          </div>
+                          <!-- Nav Links Main  -->
+                          <div class="navlinks">
+                                  <div id="container_of_three1">
+                                          <a href="https://www.amazon.in/" target="_blank" class="navitems"
+                                                  id="profilemain4">
+                                                  <img src="Files/navamazon.png" id="navamazon" alt="">
+                                                  Amazon</a>
+                                          <a href="https://mail.google.com" class="navitems" target="_blank"
+                                                  id="profilemain5"><img src="Files/navgmail.png" id="navgmail"
+                                                          alt="">
+                                                  Gmail</a>
+                                          <a href="https://www.microsoft.com" class="navitems" target="_blank"
+                                                  id="profilemain3">
+                                                  <img src="Files/navmicrosoft.png" id="navmicrosoft" alt="">
+                                                  Microsoft</a>
+                                  </div>
+                                  <div id="container_of_three2">
+                                          <a href="http://www.speedtest.net/" class="navitems" target="_blank"
+                                                  id="profilemain6">
+                                                  <img src="Files/navspeed.png" id="navspeed" alt="">
+                                                  Speed Test</a>
+                                          <a href="https://translate.google.com/" class="navitems" target="_blank"
+                                                  id="profilemain1"> <img src="Files/navtranslate.png"
+                                                          id="navtranslate" alt="">
+                                                  Translate</a>
+                                          <a href="https://web.whatsapp.com/" class="navitems" target="_blank"
+                                                  id="profilemain2">
+                                                  <img src="Files/navwhatsapp.png" id="navwhatsapp" alt="">
+                                                  WhatsApp</a>
+                                  </div>
+                          </div>
+                  </div>
+
+          </div>
+          <!-- <div id="first_parent">
+                  <div id="sign_main_contains">
+                          <div id="pair_of_name">
+                         <button id="back_from_sign" > <img id="back_btn_from_sign" src="Files/Previous_btn.png" alt=""> </button> <p id="name_sign">My Web Links.com</p>
+                         <div id="space"></div>
+                  </div>
+                  <input type="email" placeholder="Enter Username" id="user_mail">
+                  <div id="pair_of_pass"> <input type="password" placeholder="Enter Password"  id="user_pass"> <button id="show_btn">Show</button></div>
+                 
+                  <button id="sign_In_complete">Sign In</button>
+                  <p id="or" >or</p>
+                  <a id="create_an_account_link" href="#">Create an account</a>
+                  </div>
+          </div> -->
+          <div class="container_of_dark_btn">
+          <p id="user_in_web"></p>
+                  <button id="sign_out_btn">Sign Out</button>
+
+          </div>
+  </nav>
+  <!-- Google Search Section  -->
+  <div id="search">
+          <form id="J_searchForm" class="search-form" target="_blank"
+                  action="https://www.google.co.in/search?hl=en-IN" method="get" autocomplete="off">
+                  <div id="all"> <img id="googlesearchiconmain" class="googlesearchitems"
+                                  src="Files/googlesearchicon.png" alt=""> <input class="googlesearchitems"
+                                  id="textsearch" class="search-input" name="q" type="text" autocomplete="off"
+                                  value="" />
+                          <input class="googlesearchitems" class="search-btn" id="J_searchSubmit" type="submit"
+                                  value="Search" />
+                  </div>
+  </div>
+
+  <!-- Links With Icons Section  -->
+  <div id="container12" class="linkswithiconcontainer">
+          <div id="container13" class="container1">
+                  <a target="_blank" id="first1" class="firstlinks" href="https://www.google.com/"> <img
+                                  src="Files/goglesearch.png" id="firstlink1" alt=""> Google </a>
+                  <a target="_blank" id="first2" class="firstlinks" href="https://www.facebook.com/"> <img
+                                  src="Files/facebookicon.png" id="firstlink2" alt=""> Facebook</a>
+                  <a target="_blank" id="first3" class="firstlinks" href="https://www.youtube.com/"> <img
+                                  src="Files/youtube.png" id="firstlink3" alt=""> YouTube </a>
+                  <a target="_blank" id="first4" class="firstlinks" href="https://web.whatsapp.com/"> <img
+                                  src="Files/whatsapp.png" id="firstlink4" alt=""> WhatsApp </a>
+                  <a target="_blank" id="first5" class="firstlinks" href="https://www.instagram.com/"> <img
+                                  src="Files/instagramicon.png" id="firstlink5" alt=""> Instagram </a>
+                  <a target="_blank" id="first6" class="firstlinks" href="https://twitter.com/"> <img
+                                  src="Files/twitter.png" id="firstlink6" alt=""> Twitter </a>
+                  <a target="_blank" id="first7" class="firstlinks" href="https://www.flipkart.com/"> <img
+                                  src="Files/flipkart.png" id="firstlink7" alt="">Flipkart </a>
+                  <a target="_blank" id="first8" class="firstlinks" href="https://www.snapdeal.com/"> <img
+                                  src="Files/snapdeal.jpg" id="firstlink8" alt=""> Snapdeal </a>
+                  <a target="_blank" id="first9" class="firstlinks" href="https://www.olx.com/"> <img
+                                  src="Files/olx.png" id="firstlink9" alt=""> Olx </a>
+                  <a target="_blank" id="first10" class="firstlinks" href="https://studio.youtube.com/"> <img
+                                  src="Files/youtubestudio.png" id="firstlink10" alt=""> YT Studio </a>
+                  <a target="_blank" id="first11" class="firstlinks" href="https://web.telegram.org/"> <img
+                                  src="Files/telegram.png" id="firstlink11" alt=""> Telegram </a>
+                  <a target="_blank" id="first12" class="firstlinks" href="https://www.skillclash.com/en-in/">
+                          <img src="Files/skill_clash.png" id="firstlink12" alt=""> SkillClash </a>
+                  <a target="_blank" id="first13" class="firstlinks" href="https://paytm.com/"> <img
+                                  src="Files/paytm.png" id="firstlink13" alt="">
+                          <p id="paytm">Paytm</p>
+                  </a>
+                  <a target="_blank" id="first14" class="firstlinks" href="https://www.utorrent.com/"> <img
+                                  src="Files/utorrent.png" id="firstlink14" alt=""> uTorrent </a>
+                  <a target="_blank" id="first15" class="firstlinks" href="https://www.smartprix.com/"> <img
+                                  src="Files/smartprix.jpg" id="firstlink15" alt=""> Smartprix </a>
+                  <a target="_blank" id="first16" class="firstlinks" href="https://www.amazon.in/"> <img
+                                  src="Files/amazon.png" id="firstlink16" alt=""> Amazon </a>
+                  <a target="_blank" id="hide1" class="firstlinks" href="http://www.hotstar.com/"> <img
+                                  src="Files/hotstar.png" id="firstlink17" alt=""> Hotstar</a>
+                  <a target="_blank" id="hide2" class="firstlinks" href="http://www.9apps.com/"> <img
+                                  src="Files/apps.png" id="firstlink18" alt="">9Apps</a>
+          </div>
+          <div id="breaker"></div>
+          <div id="container14" class="container2">
+                  <h3 id="email">Emails</h3>
+                  <!-- <iframe width="240" id="whatsappimagesforlook" height="150" src="/Files/navwhatsapp.png" frameborder="0" allow="accelerometer; no; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                  <div id="emailsseaction">
+                          <a class="gmailselecthref" href="https://mail.google.com/" target="_blank"> <img
+                                          id="gmailselect" src="Files/navgmail.png" alt="">
+                                  <p class="all_margin_off" id="right_link1">Gmail</p>
+                          </a>
+                          <a class="gmailselecthref" href="https://www.outlook.com/" target="_blank"> <img
+                                          id="gmailselect1" src="Files/navoutlook.png" alt="">
+                                  <p class="all_margin_off" id="right_link2">Outlook</p>
+                          </a>
+                  </div>
+
+                  <h3 id="watchonline">Watch Online</h3>
+                  <div class="watchonlineweb">
+                          <a target="_blank" class="watchonline_web" href="https://www.primevideo.com/"> <img
+                                          src="Files/prime.png" id="amazonprime" alt="">
+                                  <p class="all_margin_off" id="right_link3">Prime </p>
+                          </a>
+                          <a target="_blank" class="watchonline_web" href="https://www.netflix.com/"> <img
+                                          src="Files/netflix.png" id="netflix" alt="">
+                                  <p class="all_margin_off" id="right_link4">Netflix </p>
+                          </a>
+                  </div>
+
+
+                  <!-- Downloads section  -->
+                  <h3 id="downloadbrowser">Download Browser</h3>
+                  <div class="downloads">
+
+                          <a target="_blank" id="downloadslinks" class="downloadslinks"
+                                  href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwiypJWZhYzuAhUXMSsKHUNjC7AYABABGgJzZg&ohost=www.google.co.in&cid=CAESQeD2QTWjm80wacngUlQLh-NbCVYkw6oGufhZ1jxLs-RzOUV7w08CbBaxCgoy3uC7sBbnLNX_huBw-HCHCr-eP-tH&sig=AOD64_3aG9r1_WO_IjGAe53BZO1UHqK3zw&q=&ved=2ahUKEwj5wIyZhYzuAhUhjuYKHXBcAIsQqyQoAHoECAUQEw&adurl=">
+                                  <img src="Files/chrome.png" id="chromedownload" alt="">
+                                  <p class="all_margin_off" id="right_link5">Chrome</p>
+                          </a>
+                          <a target="_blank" class="downloadslinks"
+                                  href="https://www.mozilla.org/en-US/firefox/new/"> <img src="Files/mozilla.png"
+                                          id="mozilladownload" alt="">
+                                  <p class="all_margin_off" id="right_link6">Mozilla</p>
+                          </a>
+                  </div>
+          </div>
+  </div>
+  <!-- More Liks in titles  -->
+  <div id="containerparent" class="containerparent">
+          <div class="container3">
+                  <p id="downloadstitle">Download <img src="Files/package.png" id="packagemainicon" alt=""> </p>
+                  <div class="containerofextradownloads">
+                          <a target="_blank" class="extradownloads" href="http://pagalworld.me/">Pagalworld</a>
+                          <a target="_blank" class="extradownloads" href="http://www.vidmate.com/">VidMate</a>
+                          <a target="_blank" class="extradownloads" href="http://filmywap.com/">Filmywap</a>
+                          <a target="_blank" class="extradownloads" href="http://waploft.in/">Waploft</a>
+                          <a target="_blank" class="extradownloads" id="webmusic" href="">Webmusic.in</a>
+                          <a target="_blank" class="extradownloads" href="http://royaljatt.com/">RoyalJatt</a>
+                          <a target="_blank" class="extradownloads" href="http://mirchifun.com/">MirchiFun</a>
+                          <!-- <img id="package1main" src="Files/package1.png" alt=""> -->
+                  </div>
+          </div>
+          <div id="breaker2"></div>
+          <div class="container4">
+                  <p id="softwaretitle">Softwares/Apps
+                          <img src="Files/package.png" id="packagemainicon1" alt="">
+                  </p>
+                  <div class="containerofextrasoftware">
+
+                          <a target="_blank" class="extrasoftware" href="http://www.filehippo.com/">Filehippo</a>
+                          <a target="_blank" class="extrasoftware" href="http://www.filehorse.com/">Filehorse</a>
+                          <a target="_blank" class="extrasoftware" id="googleplay"
+                                  href="http://play.google.com/">Google play</a>
+                          <a target="_blank" class="extrasoftware" href="http://en.softonic.com/">Softonic</a>
+                          <a target="_blank" class="extrasoftware" id="cnet"
+                                  href="http://download.cnet.com/">CNET</a>
+                          <a target="_blank" class="extrasoftware"
+                                  href="http://www.brothersoft.com/">Brothersoft</a>
+                          <a target="_blank" class="extrasoftware"
+                                  href="http://www.mobogenie.com/apps">Mobogenie</a>
+                          <a target="_blank" class="extrasoftware" href="http://www.9apps.com/?app=9998">9apps</a>
+                          <a target="_blank" class="extrasoftware" href="http://getintopc.com/">Getintopc</a>
+                          <a target="_blank" class="extrasoftware" href="http://www.ucweb.com/">UCBrowser</a>
+                          <a target="_blank" class="extrasoftware" id="freeware" href="">Freewarefiles</a>
+                          <a target="_blank" class="extrasoftware" href="http://www.soft32.com/">Soft32</a>
+                  </div>
+          </div>
+  </div>
+  <div id="containerparent1" class="containerparent1">
+          <div class="container5">
+                  <p id="musictitle">Music
+                          <img src="Files/music.png" id="packagemainicon2" alt="">
+                  </p>
+                  <div class="containerofextramusic">
+                          <a target="_blank" class="extramusic"
+                                  href="http://www.vidmate.com/featured-search/Hindi%20Song">Hindi song</a>
+                          <a target="_blank" class="extramusic" href="http://royaljatt.com/">RoyalJatt</a>
+                          <a target="_blank" class="extramusic" href="http://mr-jatt.com/">MR-JATT</a>
+                          <a target="_blank" class="extramusic" href="http://vipkhan.com/">Vipkhan</a>
+                          <a target="_blank" class="extramusic" href="http://www.hungama.com/">Hugama</a>
+                          <a target="_blank" class="extramusic" id="saavan" href="http://www.saavn.com/">Saavn</a>
+                          <a target="_blank" class="extramusic" href="http://mastimaza.in/">MastiMaza</a>
+                          <a target="_blank" class="extradownloads" id="gaana" href="http://gaana.com/">Gaana</a>
+                  </div>
+          </div>
+          <div id="breaker3"></div>
+          <div class="container6">
+                  <p id="shoppingtitle">Shopping
+                          <img src="Files/shopping.png" id="packagemainicon3" alt="">
+                  </p>
+                  <div class="containerofextrashopping">
+                          <a target="_blank" class="extrashopping" href="http://www.jabong.com/">Jabong</a>
+                          <a target="_blank" class="extrashopping" href="https://paytm.com/">Paytm</a>
+                          <a target="_blank" class="extrashopping" href="http://www.myntra.com/">Myntra</a>
+                          <a target="_blank" class="extrashopping" id="homeshop"
+                                  href="http://www.homeshop18.com/">Homeshop18</a>
+                          <a target="_blank" class="extrashopping" href="http://www.naaptol.com/">Naaptol</a>
+                          <a target="_blank" class="extrashopping" id="smartprice"
+                                  href="http://www.mysmartprice.com/">Mysmartprice</a>
+                          <a target="_blank" class="extrashopping" href="http://www.ebay.in/">Ebay</a>
+                  </div>
+          </div>
+  </div>
+
+  <!-- Second Section  -->
+
+  <div id="containerparent2" class="containerparent2">
+          <div class="container7">
+                  <p id="sportstitle">Sports
+                          <img src="Files/sports.png" id="packagemainicon5" alt="">
+                  </p>
+                  <div class="containerofextrasports">
+                          <a target="_blank" class="extrasports" href="http://www.cricbuzz.com/">Cricbuzz</a>
+                          <a target="_blank" class="extrasports" href="http://www.starsports.com/">Starsports</a>
+                          <a target="_blank" class="extrasports"
+                                  href="http://www.espncricinfo.com/">Espncricinfo</a>
+                          <a target="_blank" class="extrasports" id="sportskeeda"
+                                  href="http://www.sportskeeda.com/">Sportskeeda</a>
+                          <a target="_blank" class="extrasports" id="msports"
+                                  href="http://www.msn.com/en-in/sports">MSN Sports</a>
+                          <a target="_blank" class="extrasports" href="http://sports.ndtv.com/">Ndtvsports</a>
+                          <a target="_blank" class="extrasports" id="yahoocricket"
+                                  href="https://cricket.yahoo.com/">YahooCricket</a>
+                          <a target="_blank" class="extrasports" href="http://www.espn.in/">ESPN</a>
+                          <a target="_blank" class="extrasports" id="bbccricket"
+                                  href="http://www.bbc.com/sport/cricket">BBC Cricket</a>
+                          <a target="_blank" class="extrasports"
+                                  href="http://timesofindia.indiatimes.com/sports">TOI Sports</a>
+                  </div>
+          </div>
+          <div id="breaker4"></div>
+          <div class="container8">
+                  <p id="newstitle">News
+                          <img src="Files/news.png" id="packagemainicon7" alt="">
+                  </p>
+                  <div class="containerofextranews">
+                          <a target="_blank" class="extranews" href="http://www.indiatimes.com/">Indiatimes</a>
+                          <a target="_blank" class="extranews" href="http://www.ndtv.com/">Ndtv</a>
+                          <a target="_blank" class="extranews" href="http://www.jagran.com/">Jagran</a>
+                          <a target="_blank" class="extranews" href="http://www.bhaskar.com/">Bhaskar</a>
+                          <a target="_blank" class="extranews" href="http://www.firstpost.com/">Firstpost</a>
+                          <a target="_blank" class="extranews" href="http://www.oneindia.com/">Oneindia</a>
+                          <a target="_blank" class="extranews" id="express"
+                                  href="http://indianexpress.com/">Indianexpress</a>
+                  </div>
+          </div>
+
+  </div>
+  <footer id="footerofweb">
+          <div class="footlinks">
+                  <a class="footerlinks" id="foot1" href="">My-Web-Links</a>|
+                  <a class="footerlinks" id="foot2" href="">YouTube</a>|
+                  <a class="footerlinks" id="foot3" href="">Instagram</a>|
+                  <a class="footerlinks" id="foot4" href="">Help</a>|
+                  <a class="footerlinks" id="foot7" href="">Privacy </a>|
+                  <a class="footerlinks" id="foot5" href="">About Us</a>|
+                  <a class="footerlinks" id="foot6" href="">Contact Us</a>
+                  </div>
+                  <p id="footercopy">Copyright &copy; 2021. All Rights Reserved.</p>
+                  </footer>`;
+                  let user_in_web = document.getElementById("user_in_web");
+                  user_in_web.innerText=a;
+                  console.log(a);
+ } else {
+  warn_enter.style.boxShadow="0px 0px 1rem red inset";
+ }
+  
+                 
+
+
+  //Sign Out Section
+let sign_out_btn = document.getElementById("sign_out_btn");
+sign_out_btn.addEventListener("click", function sign_out_btn_fnc() {
+  body.innerHTML=`
+  <!-- Navigation Section  -->
+  <div id="container_of_pop">
+          <div id="popup1"> <button id="btn_of_cut1"><img id="cut_image" src="Files/cut_image.png"
+                                  alt="Can't load"></button>
+                  <p id="pop_text1">Visit My YouTube Channel ----&nbsp; <a id="pop_link1" href="#"> Elder
+                                  Knowledge.</a> </p>
+          </div>
+  </div>
+  <div id="container_of_pop1">
+          <div id="popup2"> <button id="btn_of_cut2"><img id="cut_image" src="Files/cut_image.png"
+                                  alt="Can't load"></button>
+                  <p id="pop_text2">Follow Me On Instagram ----&nbsp; <a id="pop_link2" target="_blank" href="#">
+                                  Elder Knowledge.</a> </p>
+          </div>
+  </div>
+  <nav id="navigation12" class="navigation">
+          <div id="side_panel">
+
+                  <!-- Content in side panel -->
+                  <div class="nav_of_side">
+                          <button onclick="side()" id="side_btn1"><img src="" alt="">
+                                  <div id="side_btn_background">
+                                          <div class="itemsinbtn"></div>
+                                          <div class="itemsinbtn"></div>
+                                          <div class="itemsinbtn"></div>
+                                  </div>
+                          </button>
+                          <div id="side_parent">
+                          </div>
+                  </div>
+
+          </div>
+          <div class="container">
+                  <div id="top_container_of_parent_side">
+                          <div class="parent_side">
+                                  <button onclick="side()" id="side_btn">
+                                          <div id="side_btn_background">
+                                                  <div id="iteminbtn1" class="itemsinbtn"></div>
+                                                  <div id="iteminbtn2" class="itemsinbtn"></div>
+                                                  <div id="iteminbtn3" class="itemsinbtn"></div>
+                                          </div>
+                                  </button>
+                          </div>
+                  </div>
+
+                  <!-- Side Panel Links In navigation section  -->
+                  <div id="navi_links_2_contains">
+                          <div id="side_links">
+                                  <div id="container_of_three3">
+                                          <a href="" id="side1" class="side_items">
+                                                  <img src="Files/home_icon.png" id="navamazon" alt="">
+                                                  Home</a>
+                                          <a href="https://mail.google.com" id="side2" class="side_items"
+                                                  target="_blank"><img src="Files/youtube.png" id="navgmail"
+                                                          alt="">
+                                                  Channel</a>
+                                          <a href="https://www.microsoft.com" id="side3" class="side_items"
+                                                  target="_blank">
+                                                  <img src="Files/instagramicon.png" id="navmicrosoft" alt="">
+                                                  Instagram</a>
+                                  </div>
+                                  <div id="container_of_three4">
+                                          <a href="http://www.speedtest.net/" id="side4" class="side_items"
+                                                  target="_blank">
+                                                  <img src="Files/about_me.png" id="navspeed" alt="">
+                                                  About Me</a>
+                                          <a href="https://translate.google.com/" id="side5" class="side_items"
+                                                  target="_blank"> <img src="Files/contactus.png"
+                                                          id="navtranslate" alt="">
+                                                  Contact</a>
+                                          <a href="https://web.whatsapp.com/" id="side6" class="side_items"
+                                                  target="_blank">
+                                                  <img src="Files/feedback.png" id="navwhatsapp" alt="">
+                                                  Feedback</a>
+                                  </div>
+                          </div>
+                          <!-- Nav Links Main  -->
+                          <div class="navlinks">
+                                  <div id="container_of_three1">
+                                          <a href="https://www.amazon.in/" target="_blank" class="navitems"
+                                                  id="profilemain4">
+                                                  <img src="Files/navamazon.png" id="navamazon" alt="">
+                                                  Amazon</a>
+                                          <a href="https://mail.google.com" class="navitems" target="_blank"
+                                                  id="profilemain5"><img src="Files/navgmail.png" id="navgmail"
+                                                          alt="">
+                                                  Gmail</a>
+                                          <a href="https://www.microsoft.com" class="navitems" target="_blank"
+                                                  id="profilemain3">
+                                                  <img src="Files/navmicrosoft.png" id="navmicrosoft" alt="">
+                                                  Microsoft</a>
+                                  </div>
+                                  <div id="container_of_three2">
+                                          <a href="http://www.speedtest.net/" class="navitems" target="_blank"
+                                                  id="profilemain6">
+                                                  <img src="Files/navspeed.png" id="navspeed" alt="">
+                                                  Speed Test</a>
+                                          <a href="https://translate.google.com/" class="navitems" target="_blank"
+                                                  id="profilemain1"> <img src="Files/navtranslate.png"
+                                                          id="navtranslate" alt="">
+                                                  Translate</a>
+                                          <a href="https://web.whatsapp.com/" class="navitems" target="_blank"
+                                                  id="profilemain2">
+                                                  <img src="Files/navwhatsapp.png" id="navwhatsapp" alt="">
+                                                  WhatsApp</a>
+                                  </div>
+                          </div>
+                  </div>
+
+          </div>
+          <!-- <div id="first_parent">
+                  <div id="sign_main_contains">
+                          <div id="pair_of_name">
+                         <button id="back_from_sign" > <img id="back_btn_from_sign" src="Files/Previous_btn.png" alt=""> </button> <p id="name_sign">My Web Links.com</p>
+                         <div id="space"></div>
+                  </div>
+                  <input type="email" placeholder="Enter Username" id="user_mail">
+                  <div id="pair_of_pass"> <input type="password" placeholder="Enter Password"  id="user_pass"> <button id="show_btn">Show</button></div>
+                 
+                  <button id="sign_In_complete">Sign In</button>
+                  <p id="or" >or</p>
+                  <a id="create_an_account_link" href="#">Create an account</a>
+                  </div>
+          </div> -->
+          <div class="container_of_dark_btn">
+
+                 
+                  <button id="signin_btn">Sign In</button>
+
+          </div>
+  </nav>
+  <!-- Google Search Section  -->
+  <div id="search">
+          <form id="J_searchForm" class="search-form" target="_blank"
+                  action="https://www.google.co.in/search?hl=en-IN" method="get" autocomplete="off">
+                  <div id="all"> <img id="googlesearchiconmain" class="googlesearchitems"
+                                  src="Files/googlesearchicon.png" alt=""> <input class="googlesearchitems"
+                                  id="textsearch" class="search-input" name="q" type="text" autocomplete="off"
+                                  value="" />
+                          <input class="googlesearchitems" class="search-btn" id="J_searchSubmit" type="submit"
+                                  value="Search" />
+                  </div>
+  </div>
+
+  <!-- Links With Icons Section  -->
+  <div id="container12" class="linkswithiconcontainer">
+          <div id="container13" class="container1">
+                  <a target="_blank" id="first1" class="firstlinks" href="https://www.google.com/"> <img
+                                  src="Files/goglesearch.png" id="firstlink1" alt=""> Google </a>
+                  <a target="_blank" id="first2" class="firstlinks" href="https://www.facebook.com/"> <img
+                                  src="Files/facebookicon.png" id="firstlink2" alt=""> Facebook</a>
+                  <a target="_blank" id="first3" class="firstlinks" href="https://www.youtube.com/"> <img
+                                  src="Files/youtube.png" id="firstlink3" alt=""> YouTube </a>
+                  <a target="_blank" id="first4" class="firstlinks" href="https://web.whatsapp.com/"> <img
+                                  src="Files/whatsapp.png" id="firstlink4" alt=""> WhatsApp </a>
+                  <a target="_blank" id="first5" class="firstlinks" href="https://www.instagram.com/"> <img
+                                  src="Files/instagramicon.png" id="firstlink5" alt=""> Instagram </a>
+                  <a target="_blank" id="first6" class="firstlinks" href="https://twitter.com/"> <img
+                                  src="Files/twitter.png" id="firstlink6" alt=""> Twitter </a>
+                  <a target="_blank" id="first7" class="firstlinks" href="https://www.flipkart.com/"> <img
+                                  src="Files/flipkart.png" id="firstlink7" alt="">Flipkart </a>
+                  <a target="_blank" id="first8" class="firstlinks" href="https://www.snapdeal.com/"> <img
+                                  src="Files/snapdeal.jpg" id="firstlink8" alt=""> Snapdeal </a>
+                  <a target="_blank" id="first9" class="firstlinks" href="https://www.olx.com/"> <img
+                                  src="Files/olx.png" id="firstlink9" alt=""> Olx </a>
+                  <a target="_blank" id="first10" class="firstlinks" href="https://studio.youtube.com/"> <img
+                                  src="Files/youtubestudio.png" id="firstlink10" alt=""> YT Studio </a>
+                  <a target="_blank" id="first11" class="firstlinks" href="https://web.telegram.org/"> <img
+                                  src="Files/telegram.png" id="firstlink11" alt=""> Telegram </a>
+                  <a target="_blank" id="first12" class="firstlinks" href="https://www.skillclash.com/en-in/">
+                          <img src="Files/skill_clash.png" id="firstlink12" alt=""> SkillClash </a>
+                  <a target="_blank" id="first13" class="firstlinks" href="https://paytm.com/"> <img
+                                  src="Files/paytm.png" id="firstlink13" alt="">
+                          <p id="paytm">Paytm</p>
+                  </a>
+                  <a target="_blank" id="first14" class="firstlinks" href="https://www.utorrent.com/"> <img
+                                  src="Files/utorrent.png" id="firstlink14" alt=""> uTorrent </a>
+                  <a target="_blank" id="first15" class="firstlinks" href="https://www.smartprix.com/"> <img
+                                  src="Files/smartprix.jpg" id="firstlink15" alt=""> Smartprix </a>
+                  <a target="_blank" id="first16" class="firstlinks" href="https://www.amazon.in/"> <img
+                                  src="Files/amazon.png" id="firstlink16" alt=""> Amazon </a>
+                  <a target="_blank" id="hide1" class="firstlinks" href="http://www.hotstar.com/"> <img
+                                  src="Files/hotstar.png" id="firstlink17" alt=""> Hotstar</a>
+                  <a target="_blank" id="hide2" class="firstlinks" href="http://www.9apps.com/"> <img
+                                  src="Files/apps.png" id="firstlink18" alt="">9Apps</a>
+          </div>
+          <div id="breaker"></div>
+          <div id="container14" class="container2">
+                  <h3 id="email">Emails</h3>
+                  <!-- <iframe width="240" id="whatsappimagesforlook" height="150" src="/Files/navwhatsapp.png" frameborder="0" allow="accelerometer; no; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                  <div id="emailsseaction">
+                          <a class="gmailselecthref" href="https://mail.google.com/" target="_blank"> <img
+                                          id="gmailselect" src="Files/navgmail.png" alt="">
+                                  <p class="all_margin_off" id="right_link1">Gmail</p>
+                          </a>
+                          <a class="gmailselecthref" href="https://www.outlook.com/" target="_blank"> <img
+                                          id="gmailselect1" src="Files/navoutlook.png" alt="">
+                                  <p class="all_margin_off" id="right_link2">Outlook</p>
+                          </a>
+                  </div>
+
+                  <h3 id="watchonline">Watch Online</h3>
+                  <div class="watchonlineweb">
+                          <a target="_blank" class="watchonline_web" href="https://www.primevideo.com/"> <img
+                                          src="Files/prime.png" id="amazonprime" alt="">
+                                  <p class="all_margin_off" id="right_link3">Prime </p>
+                          </a>
+                          <a target="_blank" class="watchonline_web" href="https://www.netflix.com/"> <img
+                                          src="Files/netflix.png" id="netflix" alt="">
+                                  <p class="all_margin_off" id="right_link4">Netflix </p>
+                          </a>
+                  </div>
+
+
+                  <!-- Downloads section  -->
+                  <h3 id="downloadbrowser">Download Browser</h3>
+                  <div class="downloads">
+
+                          <a target="_blank" id="downloadslinks" class="downloadslinks"
+                                  href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwiypJWZhYzuAhUXMSsKHUNjC7AYABABGgJzZg&ohost=www.google.co.in&cid=CAESQeD2QTWjm80wacngUlQLh-NbCVYkw6oGufhZ1jxLs-RzOUV7w08CbBaxCgoy3uC7sBbnLNX_huBw-HCHCr-eP-tH&sig=AOD64_3aG9r1_WO_IjGAe53BZO1UHqK3zw&q=&ved=2ahUKEwj5wIyZhYzuAhUhjuYKHXBcAIsQqyQoAHoECAUQEw&adurl=">
+                                  <img src="Files/chrome.png" id="chromedownload" alt="">
+                                  <p class="all_margin_off" id="right_link5">Chrome</p>
+                          </a>
+                          <a target="_blank" class="downloadslinks"
+                                  href="https://www.mozilla.org/en-US/firefox/new/"> <img src="Files/mozilla.png"
+                                          id="mozilladownload" alt="">
+                                  <p class="all_margin_off" id="right_link6">Mozilla</p>
+                          </a>
+                  </div>
+          </div>
+  </div>
+  <!-- More Liks in titles  -->
+  <div id="containerparent" class="containerparent">
+          <div class="container3">
+                  <p id="downloadstitle">Download <img src="Files/package.png" id="packagemainicon" alt=""> </p>
+                  <div class="containerofextradownloads">
+                          <a target="_blank" class="extradownloads" href="http://pagalworld.me/">Pagalworld</a>
+                          <a target="_blank" class="extradownloads" href="http://www.vidmate.com/">VidMate</a>
+                          <a target="_blank" class="extradownloads" href="http://filmywap.com/">Filmywap</a>
+                          <a target="_blank" class="extradownloads" href="http://waploft.in/">Waploft</a>
+                          <a target="_blank" class="extradownloads" id="webmusic" href="">Webmusic.in</a>
+                          <a target="_blank" class="extradownloads" href="http://royaljatt.com/">RoyalJatt</a>
+                          <a target="_blank" class="extradownloads" href="http://mirchifun.com/">MirchiFun</a>
+                          <!-- <img id="package1main" src="Files/package1.png" alt=""> -->
+                  </div>
+          </div>
+          <div id="breaker2"></div>
+          <div class="container4">
+                  <p id="softwaretitle">Softwares/Apps
+                          <img src="Files/package.png" id="packagemainicon1" alt="">
+                  </p>
+                  <div class="containerofextrasoftware">
+
+                          <a target="_blank" class="extrasoftware" href="http://www.filehippo.com/">Filehippo</a>
+                          <a target="_blank" class="extrasoftware" href="http://www.filehorse.com/">Filehorse</a>
+                          <a target="_blank" class="extrasoftware" id="googleplay"
+                                  href="http://play.google.com/">Google play</a>
+                          <a target="_blank" class="extrasoftware" href="http://en.softonic.com/">Softonic</a>
+                          <a target="_blank" class="extrasoftware" id="cnet"
+                                  href="http://download.cnet.com/">CNET</a>
+                          <a target="_blank" class="extrasoftware"
+                                  href="http://www.brothersoft.com/">Brothersoft</a>
+                          <a target="_blank" class="extrasoftware"
+                                  href="http://www.mobogenie.com/apps">Mobogenie</a>
+                          <a target="_blank" class="extrasoftware" href="http://www.9apps.com/?app=9998">9apps</a>
+                          <a target="_blank" class="extrasoftware" href="http://getintopc.com/">Getintopc</a>
+                          <a target="_blank" class="extrasoftware" href="http://www.ucweb.com/">UCBrowser</a>
+                          <a target="_blank" class="extrasoftware" id="freeware" href="">Freewarefiles</a>
+                          <a target="_blank" class="extrasoftware" href="http://www.soft32.com/">Soft32</a>
+                  </div>
+          </div>
+  </div>
+  <div id="containerparent1" class="containerparent1">
+          <div class="container5">
+                  <p id="musictitle">Music
+                          <img src="Files/music.png" id="packagemainicon2" alt="">
+                  </p>
+                  <div class="containerofextramusic">
+                          <a target="_blank" class="extramusic"
+                                  href="http://www.vidmate.com/featured-search/Hindi%20Song">Hindi song</a>
+                          <a target="_blank" class="extramusic" href="http://royaljatt.com/">RoyalJatt</a>
+                          <a target="_blank" class="extramusic" href="http://mr-jatt.com/">MR-JATT</a>
+                          <a target="_blank" class="extramusic" href="http://vipkhan.com/">Vipkhan</a>
+                          <a target="_blank" class="extramusic" href="http://www.hungama.com/">Hugama</a>
+                          <a target="_blank" class="extramusic" id="saavan" href="http://www.saavn.com/">Saavn</a>
+                          <a target="_blank" class="extramusic" href="http://mastimaza.in/">MastiMaza</a>
+                          <a target="_blank" class="extradownloads" id="gaana" href="http://gaana.com/">Gaana</a>
+                  </div>
+          </div>
+          <div id="breaker3"></div>
+          <div class="container6">
+                  <p id="shoppingtitle">Shopping
+                          <img src="Files/shopping.png" id="packagemainicon3" alt="">
+                  </p>
+                  <div class="containerofextrashopping">
+                          <a target="_blank" class="extrashopping" href="http://www.jabong.com/">Jabong</a>
+                          <a target="_blank" class="extrashopping" href="https://paytm.com/">Paytm</a>
+                          <a target="_blank" class="extrashopping" href="http://www.myntra.com/">Myntra</a>
+                          <a target="_blank" class="extrashopping" id="homeshop"
+                                  href="http://www.homeshop18.com/">Homeshop18</a>
+                          <a target="_blank" class="extrashopping" href="http://www.naaptol.com/">Naaptol</a>
+                          <a target="_blank" class="extrashopping" id="smartprice"
+                                  href="http://www.mysmartprice.com/">Mysmartprice</a>
+                          <a target="_blank" class="extrashopping" href="http://www.ebay.in/">Ebay</a>
+                  </div>
+          </div>
+  </div>
+
+  <!-- Second Section  -->
+
+  <div id="containerparent2" class="containerparent2">
+          <div class="container7">
+                  <p id="sportstitle">Sports
+                          <img src="Files/sports.png" id="packagemainicon5" alt="">
+                  </p>
+                  <div class="containerofextrasports">
+                          <a target="_blank" class="extrasports" href="http://www.cricbuzz.com/">Cricbuzz</a>
+                          <a target="_blank" class="extrasports" href="http://www.starsports.com/">Starsports</a>
+                          <a target="_blank" class="extrasports"
+                                  href="http://www.espncricinfo.com/">Espncricinfo</a>
+                          <a target="_blank" class="extrasports" id="sportskeeda"
+                                  href="http://www.sportskeeda.com/">Sportskeeda</a>
+                          <a target="_blank" class="extrasports" id="msports"
+                                  href="http://www.msn.com/en-in/sports">MSN Sports</a>
+                          <a target="_blank" class="extrasports" href="http://sports.ndtv.com/">Ndtvsports</a>
+                          <a target="_blank" class="extrasports" id="yahoocricket"
+                                  href="https://cricket.yahoo.com/">YahooCricket</a>
+                          <a target="_blank" class="extrasports" href="http://www.espn.in/">ESPN</a>
+                          <a target="_blank" class="extrasports" id="bbccricket"
+                                  href="http://www.bbc.com/sport/cricket">BBC Cricket</a>
+                          <a target="_blank" class="extrasports"
+                                  href="http://timesofindia.indiatimes.com/sports">TOI Sports</a>
+                  </div>
+          </div>
+          <div id="breaker4"></div>
+          <div class="container8">
+                  <p id="newstitle">News
+                          <img src="Files/news.png" id="packagemainicon7" alt="">
+                  </p>
+                  <div class="containerofextranews">
+                          <a target="_blank" class="extranews" href="http://www.indiatimes.com/">Indiatimes</a>
+                          <a target="_blank" class="extranews" href="http://www.ndtv.com/">Ndtv</a>
+                          <a target="_blank" class="extranews" href="http://www.jagran.com/">Jagran</a>
+                          <a target="_blank" class="extranews" href="http://www.bhaskar.com/">Bhaskar</a>
+                          <a target="_blank" class="extranews" href="http://www.firstpost.com/">Firstpost</a>
+                          <a target="_blank" class="extranews" href="http://www.oneindia.com/">Oneindia</a>
+                          <a target="_blank" class="extranews" id="express"
+                                  href="http://indianexpress.com/">Indianexpress</a>
+                  </div>
+          </div>
+
+  </div>
+  <footer id="footerofweb">
+          <div class="footlinks">
+                  <a class="footerlinks" id="foot1" href="">My-Web-Links</a>|
+                  <a class="footerlinks" id="foot2" href="">YouTube</a>|
+                  <a class="footerlinks" id="foot3" href="">Instagram</a>|
+                  <a class="footerlinks" id="foot4" href="">Help</a>|
+                  <a class="footerlinks" id="foot7" href="">Privacy </a>|
+                  <a class="footerlinks" id="foot5" href="">About Us</a>|
+                  <a class="footerlinks" id="foot6" href="">Contact Us</a>
+          </div>
+          <p id="footercopy">Copyright &copy; 2021. All Rights Reserved.</p>
+  </footer>`;
+})
+})
+
+
+
+  //Back From Sign Function 
+  let back_from_sign = document.getElementById("back_from_sign");
+  back_from_sign.addEventListener("click", function back_from_sign_fnc() {
+    window.location.href="https://myweblinks.github.io/";
+  })
+
+  //Show Hide Function 
+  let show_btn = document.getElementById("show_btn");
+  show_btn.addEventListener("click", function show_btn_fcn() {
+    //Password Show/Hide 
+    let user_pass = document.getElementById("user_pass");
+    if (user_pass.type != "text") {
+      user_pass.type = "text";
+    } else {
+      user_pass.type = "password";
+    }
+
+
+    //Toggle The Text
+    if (show_btn.textContent != "Hide") {
+      show_btn.textContent = "Hide";
+    } else {
+      show_btn.textContent = "Show";
+    }
+  })
+})
+
+
+
+
+
+
+
+
 // console.log(body_childs);
 let right_link5 = document.getElementById('right_link5');
 function switch_theme(el) {
@@ -2319,14 +3413,14 @@ function switch_theme(el) {
   container1.classList.toggle("navigation_bg");
   container14.classList.toggle("navigation_bg");
 
-  
+
   if (all.style.backgroundColor == 'black') {
     all.style.backgroundColor = 'white'
   } else {
     all.style.backgroundColor = 'black'
   }
 
-  
+
   if (document.getElementById('dark_btn').textContent == "Apply Light Mode") {
     document.getElementById('dark_btn').textContent = "Apply Dark Mode";
   } else {
@@ -2413,7 +3507,7 @@ function switch_theme(el) {
     breaker4.style.backgroundColor = "whitesmoke";
   }
 
-  
+
 
   if (right_link1.style.color != "white") {
     right_link1.style.color = "white";
@@ -2422,7 +3516,7 @@ function switch_theme(el) {
     right_link1.style.color = "black";
   }
 
-  
+
 
   if (right_link2.style.color != "white") {
     right_link2.style.color = "white";
@@ -2431,7 +3525,7 @@ function switch_theme(el) {
     right_link2.style.color = "black";
   }
 
-  
+
 
   if (right_link3.style.color != "white") {
     right_link3.style.color = "white";
@@ -2440,7 +3534,7 @@ function switch_theme(el) {
     right_link3.style.color = "black";
   }
 
-  
+
 
   if (right_link4.style.color != "white") {
     right_link4.style.color = "white";
@@ -2449,7 +3543,7 @@ function switch_theme(el) {
     right_link4.style.color = "black";
   }
 
-  
+
 
   if (right_link5.style.color != "white") {
     right_link5.style.color = "white";
@@ -2458,7 +3552,7 @@ function switch_theme(el) {
     right_link5.style.color = "black";
   }
 
-  
+
 
   if (right_link6.style.color != "white") {
     right_link6.style.color = "white";
@@ -2616,7 +3710,7 @@ function switch_theme(el) {
     downloadstitle.style.backgroundColor = "whitesmoke";
   }
 
-  
+
   if (softwaretitle.style.backgroundColor != "black") {
     softwaretitle.style.backgroundColor = "black";
   }
@@ -2652,22 +3746,22 @@ function switch_theme(el) {
     newstitle.style.backgroundColor = "whitesmoke";
   }
 
-  
+
 }
-downloadslinks.addEventListener( "mouseover" , function over_right_link5() {
-  if (right_link5.style.color!="black") {
-    right_link5.style.color="black";
+downloadslinks.addEventListener("mouseover", function over_right_link5() {
+  if (right_link5.style.color != "black") {
+    right_link5.style.color = "black";
   } else {
     downloadslinks.addEventListener('mouseout', function out_right_link5() {
-      if (right_link5.style.color!="black") {
-        right_link5.style.color="black";
+      if (right_link5.style.color != "black") {
+        right_link5.style.color = "black";
       } else {
-        right_link5.style.color="white";
+        right_link5.style.color = "white";
       }
     });
   }
-    })
-    
+})
+
 
 let side_panel = document.getElementById('side_panel')
 
@@ -2681,40 +3775,40 @@ function side() {
   let top_container_of_parent_side = document.getElementById("top_container_of_parent_side");
   let side_links = document.getElementById("side_links");
 
-  if (side_links.style.display!="flex") {
-    side_links.style.display="flex"
+  if (side_links.style.display != "flex") {
+    side_links.style.display = "flex"
   } else {
-    side_links.style.display="none"
+    side_links.style.display = "none"
   }
   // let a = screen.width;
   // console.log(a);
-  if (screen.width<=1070) {
-    if (navigation12.style.height!="10rem") {
-      navigation12.style.height="10rem"
+  if (screen.width <= 1070) {
+    if (navigation12.style.height != "10rem") {
+      navigation12.style.height = "10rem"
     } else {
-      navigation12.style.height="6rem"
+      navigation12.style.height = "6rem"
     }
-  
-    if (top_container_of_parent_side.style.height!="10rem") {
-      top_container_of_parent_side.style.height="10rem"
+
+    if (top_container_of_parent_side.style.height != "10rem") {
+      top_container_of_parent_side.style.height = "10rem"
     } else {
-      top_container_of_parent_side.style.height="6rem"
+      top_container_of_parent_side.style.height = "6rem"
     }
-   
+
   } else {
-    if (navigation12.style.height!="6rem") {
-      navigation12.style.height="6rem"
+    if (navigation12.style.height != "6rem") {
+      navigation12.style.height = "6rem"
     } else {
-      navigation12.style.height="3rem"
+      navigation12.style.height = "3rem"
     }
-  
-    if (top_container_of_parent_side.style.height!="6rem") {
-      top_container_of_parent_side.style.height="6rem"
+
+    if (top_container_of_parent_side.style.height != "6rem") {
+      top_container_of_parent_side.style.height = "6rem"
     } else {
-      top_container_of_parent_side.style.height="3rem"
+      top_container_of_parent_side.style.height = "3rem"
     }
   }
-  
+
 }
 
 //Side Panel Function Of without any problems ]
@@ -2838,42 +3932,42 @@ function nav_links() {
 let popup1 = document.getElementById("popup1");
 let container_of_pop = document.getElementById("container_of_pop");
 function pop_display() {
-  popup1.style.display="flex";
-  popup1.style.height="5rem";
-  container_of_pop.style.height="5rem";
+  popup1.style.display = "flex";
+  popup1.style.height = "5rem";
+  container_of_pop.style.height = "5rem";
 }
-setTimeout(pop_display, 4000 );
+setTimeout(pop_display, 4000);
 
 // BTN OF POPUP To close it section 
 let btn_of_cut1 = document.getElementById("btn_of_cut1");
 
-btn_of_cut1.addEventListener("click",function btn_of_cut1() {
-  popup1.style.height="0rem";
-  container_of_pop.style.height="0rem";
-  popup1.style.display="none";
-  if (popup1.style.display=!"none") {
-    popup1.style.display="none"
+btn_of_cut1.addEventListener("click", function btn_of_cut1() {
+  popup1.style.height = "0rem";
+  container_of_pop.style.height = "0rem";
+  popup1.style.display = "none";
+  if (popup1.style.display = !"none") {
+    popup1.style.display = "none"
   } else {
     let popup2 = document.getElementById("popup2");
-let container_of_pop1 = document.getElementById("container_of_pop1");
-function pop_display2() {
-  popup2.style.display="flex";
-  popup2.style.height="5rem";
-  container_of_pop1.style.height="5rem";
-}
-setTimeout(pop_display2, 3000 );
+    let container_of_pop1 = document.getElementById("container_of_pop1");
+    function pop_display2() {
+      popup2.style.display = "flex";
+      popup2.style.height = "5rem";
+      container_of_pop1.style.height = "5rem";
+    }
+    setTimeout(pop_display2, 3000);
 
-// BTN OF POPUP To close it section 
-let btn_of_cut2 = document.getElementById("btn_of_cut2");
+    // BTN OF POPUP To close it section 
+    let btn_of_cut2 = document.getElementById("btn_of_cut2");
 
-btn_of_cut2.addEventListener("click",function btn_of_cut2() {
-  popup2.style.height="0rem";
-  container_of_pop1.style.height="0rem";
-  popup2.style.display="none";
-  
-});
+    btn_of_cut2.addEventListener("click", function btn_of_cut2() {
+      popup2.style.height = "0rem";
+      container_of_pop1.style.height = "0rem";
+      popup2.style.display = "none";
+
+    });
   }
-  
+
 });
 
 
