@@ -1,0 +1,308 @@
+body{
+    margin: 0em;
+    background-color: #f5f5f5;
+} 
+
+/* Navigation Animation Section  */
+@keyframes navianimation{
+    
+}
+/* Navigation Section  */
+.container{
+    display: flex;
+    align-items: center;
+}
+.navigation{
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    background-color: white;
+}
+
+/* Custom Profile Section  */
+#profilemain{
+    /* border: 2px solid red; */
+    width: 5.3rem;
+    height: 2.2rem;
+    border-right: rebeccapurple;
+    border-width: 0.4rem;
+    border-style: groove;
+    cursor: default;
+}
+
+/* Navigation Links Section  */
+.navlinks{
+display: flex;
+width: 100%;
+justify-content: space-between;
+}
+.navitems{
+    /* border: 2px solid red; */
+    border-radius: 100rem;
+    width: 7.5rem;
+    height: 1.7rem;
+    margin-left: 1rem;
+    text-decoration: none;
+    text-align: center;
+    /* padding: 1rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-color: rgba(243, 243, 243, 0.329);
+    font-size: 1.1rem;
+    animation-name: navitems;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1s;
+    animation-delay: 0.2s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    opacity: 0;
+}
+@keyframes navitems{
+    from{
+        transform: scale(10deg);
+        opacity: 0;
+        transform: rotateY(180deg);
+    }
+    to{
+        transform: scale(8deg);
+        opacity: 1;
+        transform: rotateY(0deg);
+    }
+}
+.navitems:hover{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 1rem 0.2rem grey;
+}
+/* Nav Links icons Section  */
+#navamazon{
+    /* border: 2px solid red; */
+    width: 1.4rem;
+    margin-right: 0.5rem;
+}
+#navgmail{
+    /* border: 2px solid red; */
+    width: 1.4rem;
+    margin-right: 0.5rem;
+}
+#navspeed{
+    /* border: 2px solid red; */
+    width: 1.3rem;
+    margin-right: 0.5rem;
+}
+#navtranslate{
+    /* border: 2px solid red; */
+    width: 1.5rem;
+    margin-right:  0.5rem;
+}
+#navmicrosoft{
+    /* border: 2px solid red; */
+    width: 1.5rem;
+    margin-right: 0.5rem;
+}
+#navwhatsapp{
+    width: 1.8rem;
+    margin-right: 0.1rem;
+}
+#profilemain5{
+    width: 9rem;
+    animation-name: main5;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1s;
+    animation-delay: 0.3s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    opacity: 0;
+}
+#profilemain3{
+    width: 8.5rem;
+    animation-name: main5;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    opacity: 0;
+}
+#profilemain6{
+    width: 8.5rem;
+    animation-name: main5;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1s;
+    animation-delay: 0.7s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    opacity: 0;
+}
+#profilemain1{
+    width: 6rem;
+    animation-name: main5;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1s;
+    animation-delay: 0.9s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    opacity: 0;
+}
+#profilemain4{
+    width: 6rem;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation-name: main5;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    opacity: 0;
+}
+@keyframes main5{
+     from{
+        opacity: 0;
+     }
+     to{
+         opacity: 1;
+     }
+}
+/* Contact Me Section  */
+.container1{
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 30rem;
+    background-color: rgb(255, 255, 255);
+    margin-top: 1rem;
+    padding: 0rem;
+    /* margin: 0rem; */
+    flex-wrap: wrap;
+    animation-name: loadbio;
+    animation-duration: 1s;
+    animation-delay: 0.2s;
+    animation-fill-mode: both;
+
+}
+#titlehead{
+    /* border: 2px solid red;   */
+    margin: 0rem;
+    height: 3rem;
+    /* text-align: center; */
+    cursor: default;
+    width: 100%;
+    padding: 0rem;
+    font: caption;
+    /* padding-right: 70%; */
+    font-size: 2.5rem;
+    display: flex;
+    padding-left: 2rem;
+    margin-top: 0.5rem;
+    color: rgb(255 242 242);
+    text-shadow: 0px 0px 0.3rem #04029c;
+    background-color: #ff00000d;
+    /* margin: 0rem; */
+}
+
+/* Bio Section  */
+.bio{
+    border: 2px solid red;
+    width: 35rem;
+    height: 8rem;
+    /* margin: 0rem; */
+    display: flex;
+    margin: 0rem;
+}
+#biomain{
+    /* border: 2px solid red; */
+    margin: 0rem;
+    font: caption;
+    font-size: 1.6rem;
+    width: 58rem;
+    height: 1.8rem;
+    /* text-align: center; */
+    /* opacity: 0; */
+    /* background-color: red; */
+    animation-name: typing;
+    animation-duration: 5s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-delay: 2s;
+    overflow: hidden;
+    white-space: nowrap; 
+    position: relative;
+    top: -11rem;
+    left: 1rem;
+    color: royalblue;
+    font-weight: bolder;
+}
+#biomain {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 10s steps(80, end), 
+      blink-caret .85s step-end 10s infinite;
+      /* animation-fill-mode: both;
+      animation-iteration-count: 1;
+      animation-direction: normal;
+      animation-delay: 2s; */
+      
+    margin-top: 5rem;
+  }
+
+
+
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+@keyframes typing{
+    from{
+        width: 0rem;
+    }
+    to{
+        width: 58rem;
+    }
+}
+@keyframes loadbio{
+    from{
+        opacity: 0;
+        transform: rotatex(-10deg);
+    }
+    to{
+        opacity: 12;
+        transform: rotateX(0);
+    }
+}
+/* Media Queries Section  */
+
+@media only screen and (max-width: 785px){
+    #profilep{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* border: 2px solid red; */
+    }
+    .container{
+        
+    flex-wrap: wrap;
+    }
+    .navigation{
+        
+        height: 6.5rem;
+    }
+}
+@media only screen and (max-width: 690px){
+    .navigation{
+        width: 690px;
+    }
+    .container1{
+        width: 690px;
+    }
+}
