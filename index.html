@@ -1934,6 +1934,41 @@ width: 3.8rem;
     justify-content: center;
     align-items: center;
 }
+#text_of_btn{
+    display: flex;
+    margin: 0px;
+    justify-content: center;
+    align-items: center;
+    font: caption;
+    font-weight: bold;
+    font-size: 1.2rem;
+    font-style: italic;
+}
+#btn_of_aud_icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: coral;
+    font: caption;
+    font-size: 1.1rem;
+    border: none;
+    cursor: pointer;
+}
+#contains_btn_with_text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid coral;
+    position: relative;
+    left: 1rem;
+}
+.search-form{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 #side_btn{
     /* border: 2px solid rebeccapurple; */
     background-color: white;
@@ -1948,6 +1983,7 @@ width: 3.8rem;
     align-items: center;
     /* overflow-y: scroll; */
     border-radius: 0rem;
+    cursor: pointer;
 }
 #side_btn1{
     /* border: 2px solid rebeccapurple; */
@@ -2165,7 +2201,8 @@ width: 3.8rem;
 .all_margin_off{
     margin: 0rem;
 }
-        
+
+
 
 @media only screen and (max-width: 640px){
     #first_parent{
@@ -2174,8 +2211,7 @@ width: 3.8rem;
     #sign_main_contains{
         width: 640px;
     }
-}
-        </style>
+} </style>
 
 <script name="searchInit">
         var searches = { yahoo: ["https://in.search.yahoo.com/search", "p"], bing: ["https://www.bing.com/search", "q"] };
@@ -2319,7 +2355,7 @@ width: 3.8rem;
                 </div> -->
                 <div class="container_of_dark_btn">
 
-                       
+
                         <button id="signin_btn">Sign In</button>
 
                 </div>
@@ -2334,10 +2370,37 @@ width: 3.8rem;
                                         value="" />
                                 <input class="googlesearchitems" class="search-btn" id="J_searchSubmit" type="submit"
                                         value="Search" />
+                                        <div id="contains_btn_with_text">
+                                                <p id="text_of_btn">Audio</p>
+                                                <input type="button" id="btn_of_aud_icons" onclick="btn_of_aud_icons_fnc()" value="Turn on">
+                                       
+                                </div>
                         </div>
         </div>
 
         <!-- Links With Icons Section  -->
+
+
+        <audio id="myAudio1"><source src="Files/Audio Files/Google.mp3" type="audio/mpeg"><!-- Your browser does not support the audio element. --></audio>
+        <audio id="myAudio2"><source src="Files/Audio Files/facebook_aud.mp3" type="audio/mpeg"><!-- Your browser does not support the audio element. --></audio>
+        <audio id="myAudio3"><source src="Files/Audio Files/Youtube.mp3" type="audio/mpeg"><!-- Your browser does not support the audio element. --></audio>
+        <audio id="myAudio4"><source src="Files/Audio Files/Whatsapp.mp3" type="audio/mpeg"><!-- Your browser does not support the audio element. --></audio>
+        <audio id="myAudio5"><source src="Files/Audio Files/Instagram.mp3" type="audio/mpeg"><!-- Your browser does not support the audio element. --></audio>
+        <audio id="myAudio6"><source src="Files/Audio Files/Twitter.mp3" type="audio/mpeg"><!-- Your browser does not support the audio element. --></audio>
+        <audio id="myAudio7"><source src="Files/Audio Files/Flipkart.mp3" type="audio/mpeg"></audio>
+        <audio id="myAudio8"><source src="Files/Audio Files/Snapdeal.mp3" type="audio/mpeg"></audio>
+        <audio id="myAudio9"><source src="Files/Audio Files/OLX.mp3" type="audio/mpeg"></audio>
+        <audio id="myAudio10"><source src="Files/Audio Files/YT_Studio.mp3" type="audio/mpeg"></audio>
+        <audio id="myAudio11"><source src="Files/Audio Files/telegram.mp3" type="audio/mpeg"></audio>
+        <audio id="myAudio12"><source src="Files/Audio Files/Skill_Clash.mp3" type="audio/mpeg"></audio>
+        <audio id="myAudio13"><source src="Files/Audio Files/Paytm.mp3" type="audio/mpeg"></audio>
+        <audio id="myAudio14"><source src="Files/Audio Files/Utorrent.mp3" type="audio/mpeg"></audio>
+        <audio id="myAudio15"><source src="Files/Audio Files/Smartprix.mp3" type="audio/mpeg"></audio>
+        <audio id="myAudio16"><source src="Files/Audio Files/Amazon.mp3" type="audio/mpeg"></audio>
+        <audio id="myAudio17"><source src="Files/Audio Files/Hotstart.mp3" type="audio/mpeg"></audio>
+        <audio id="myAudio18"><source src="Files/Audio Files/9Apps.mp3" type="audio/mpeg"></audio>
+
+
         <div id="container12" class="linkswithiconcontainer">
                 <div id="container13" class="container1">
                         <a target="_blank" id="first1" class="firstlinks" href="https://www.google.com/"> <img
@@ -2552,13 +2615,12 @@ width: 3.8rem;
                         <a class="footerlinks" id="foot3" href="">Instagram</a>|
                         <a class="footerlinks" id="foot4" href="">Help</a>|
                         <a class="footerlinks" id="foot7" href="">Privacy </a>|
-                        <a class="footerlinks" id="foot5" href="Files/About_Us_Section/loadanimation.html">About Us</a>|
+                        <a class="footerlinks" id="foot5" href="Files/About Us Section/loadanimation.html">About Us</a>|
                         <a class="footerlinks" id="foot6" href="">Contact Us</a>
                 </div>
                 <p id="footercopy">Copyright &copy; 2021. All Rights Reserved.</p>
         </footer>
-        <script>
-let side_btn = document.getElementById('side_btn');
+        <script>let side_btn = document.getElementById('side_btn');
 
 // Sign BTN Section 
 let signin_btn = document.getElementById("signin_btn");
@@ -3780,24 +3842,42 @@ let side_panel = document.getElementById('side_panel')
 // hover.addEventListener('clickon', function run() {
 //   alert("You are over the navigation bar. please click on ok to continue......")
 // })
+function  loading_items_fnc(){
+        let beep = new Audio();
+        beep.src="Files/Audio Files/loading_items.mp3";
+        beep.play();
+}
+
+
+
+
+
 
 function side() {
+      
   let navigation12 = document.getElementById("navigation12");
   let top_container_of_parent_side = document.getElementById("top_container_of_parent_side");
   let side_links = document.getElementById("side_links");
-
-  if (side_links.style.display != "flex") {
-    side_links.style.display = "flex"
+  
+  
+  let beep = new Audio();
+  beep.src="Files/Audio Files/beep.mp3";
+  beep.play();
+  if (side_links.style.display!="flex") {
+    side_links.style.display="flex";
+    
+    loading_items_fnc();
   } else {
-    side_links.style.display = "none"
+    side_links.style.display="none";
   }
   // let a = screen.width;
   // console.log(a);
   if (screen.width <= 1070) {
     if (navigation12.style.height != "10rem") {
-      navigation12.style.height = "10rem"
+      navigation12.style.height="10rem";
+      
     } else {
-      navigation12.style.height = "6rem"
+      navigation12.style.height="6rem";
     }
 
     if (top_container_of_parent_side.style.height != "10rem") {
@@ -3981,9 +4061,311 @@ btn_of_cut1.addEventListener("click", function btn_of_cut1() {
 
 });
 
+function Audio_controller() {
+        
+// Google Audio Controller
+let first1 = document.getElementById("first1");
+first1.addEventListener("mouseover", function google_aud_fnc() {
+        let myAudio1 = document.getElementById("myAudio1");
+        myAudio1.play();
+}); 
+function time_of_aud1() {
+        let myAudio1 = document.getElementById("myAudio1");
+        myAudio1.pause();
+        
+}
+first1.addEventListener("mouseout", function google_aud_fnc2() {
+        time_of_aud1();
+});
+
+// Facebook Audio Controller
+let first2 = document.getElementById("first2");
+first2.addEventListener("mouseover", function facebook_aud_fnc() {
+        let myAudio2 = document.getElementById("myAudio2");
+        myAudio2.play();
+}); 
+function time_of_aud2() {
+        let myAudio2 = document.getElementById("myAudio2");
+        myAudio2.pause();
+        
+}
+first2.addEventListener("mouseout", function facebook_aud_fnc2() {
+        time_of_aud2();
+});
 
 
-// 2nd section 
+// YouTube Audio Controller
+let first3 = document.getElementById("first3");
+first3.addEventListener("mouseover", function Youtube_aud_fnc() {
+        let myAudio1 = document.getElementById("myAudio3");
+        myAudio1.play();
+}); 
+function time_of_aud3() {
+        let myAudio1 = document.getElementById("myAudio3");
+        myAudio1.pause();
+        
+}
+first3.addEventListener("mouseout", function Youtube_aud_fnc() {
+        time_of_aud3();
+});
+// first2.addEventListener("mouseout", function facebook_aud_fnc() {
+        
+// let clean = setTimeout(time_of_aud, 1000);
+// clearTimeout(clean);
+// });
+
+
+// Whatsapp Audio Controller
+let first4 = document.getElementById("first4");
+first4.addEventListener("mouseover", function Whatsapp_aud_fnc() {
+        let myAudio1 = document.getElementById("myAudio4");
+        myAudio1.play();
+}); 
+function time_of_aud4() {
+        let myAudio1 = document.getElementById("myAudio4");
+        myAudio1.pause();
+        
+}
+first4.addEventListener("mouseout", function Whatsapp_aud_fnc2() {
+        time_of_aud4();
+});
+
+
+// Instagram Audio Controller
+let first5 = document.getElementById("first5");
+first5.addEventListener("mouseover", function Instagram_aud_fnc() {
+        let myAudio1 = document.getElementById("myAudio5");
+        myAudio1.play();
+}); 
+function time_of_aud5() {
+        let myAudio1 = document.getElementById("myAudio5");
+        myAudio1.pause();
+        
+}
+first5.addEventListener("mouseout", function Instagram_aud_fnc2() {
+        time_of_aud5();
+});
+
+
+// twitter Audio Controller
+let first6 = document.getElementById("first6");
+first6.addEventListener("mouseover", function Twitter_aud_fnc() {
+        let myAudio1 = document.getElementById("myAudio6");
+        myAudio1.play();
+}); 
+function time_of_aud6() {
+        let myAudio1 = document.getElementById("myAudio6");
+        myAudio1.pause();
+        
+}
+first6.addEventListener("mouseout", function Twitter_aud_fnc2() {
+        time_of_aud6();
+});
+
+
+// Flipkart Audio Controller
+let first7 = document.getElementById("first7");
+first7.addEventListener("mouseover", function Flipkart_aud_fnc() {
+        let myAudio1 = document.getElementById("myAudio7");
+        myAudio1.play();
+}); 
+function time_of_aud7() {
+        let myAudio1 = document.getElementById("myAudio7");
+        myAudio1.pause();
+        
+}
+first7.addEventListener("mouseout", function Flipkart_aud_fnc2() {
+        
+        time_of_aud7();
+});
+
+// Snapdeal Audio Controller
+let first8 = document.getElementById("first8");
+first8.addEventListener("mouseover", function snapdeal_aud_fnc() {
+        let myAudio1 = document.getElementById("myAudio8");
+        myAudio1.play();
+}); 
+function time_of_aud8() {
+        let myAudio1 = document.getElementById("myAudio8");
+        myAudio1.pause();
+        
+}
+first8.addEventListener("mouseout", function snapdeal_aud_fnc2() {
+        
+        time_of_aud8();
+});
+
+// OLX Audio Controller
+let first9 = document.getElementById("first9");
+first9.addEventListener("mouseover", function olx_aud_fnc() {
+        let myAudio1 = document.getElementById("myAudio9");
+        myAudio1.play();
+}); 
+function time_of_aud9() {
+        let myAudio1 = document.getElementById("myAudio9");
+        myAudio1.pause();
+        
+}
+first9.addEventListener("mouseout", function olx_aud_fnc2() {
+        
+        time_of_aud9();
+});
+
+// YT Studio Audio Controller
+let first10 = document.getElementById("first10");
+first10.addEventListener("mouseover", function studio_aud_fnc() {
+        let myAudio1 = document.getElementById("myAudio10");
+        myAudio1.play();
+}); 
+function time_of_aud10() {
+        let myAudio1 = document.getElementById("myAudio10");
+        myAudio1.pause();
+        
+}
+first10.addEventListener("mouseout", function studio_aud_fnc2() {
+        
+        time_of_aud10();
+});
+
+// Telegram Audio Controller
+let first11 = document.getElementById("first11");
+first11.addEventListener("mouseover", function telegram_aud_fnc() {
+        let myAudio1 = document.getElementById("myAudio11");
+        myAudio1.play();
+}); 
+function time_of_aud11() {
+        let myAudio1 = document.getElementById("myAudio11");
+        myAudio1.pause();
+        
+}
+first11.addEventListener("mouseout", function telegram_aud_fnc2() {
+        
+        time_of_aud11();
+});
+
+// SkillClash Audio Controller
+let first12 = document.getElementById("first12");
+first12.addEventListener("mouseover", function clash_aud_fnc() {
+        let myAudio1 = document.getElementById("myAudio12");
+        myAudio1.play();
+}); 
+function time_of_aud12() {
+        let myAudio1 = document.getElementById("myAudio12");
+        myAudio1.pause();
+        
+}
+first12.addEventListener("mouseout", function clash_aud_fnc2() {
+        
+        time_of_aud12();
+});
+
+// Paytm Audio Controller
+let first13 = document.getElementById("first13");
+first13.addEventListener("mouseover", function Paytm_aud_fnc() {
+        let myAudio1 = document.getElementById("myAudio13");
+        myAudio1.play();
+}); 
+function time_of_aud13() {
+        let myAudio1 = document.getElementById("myAudio13");
+        myAudio1.pause();
+        
+}
+first13.addEventListener("mouseout", function Paytm_aud_fnc2() {
+        
+        time_of_aud13();
+});
+
+// Utorrent Audio Controller
+let first14 = document.getElementById("first14");
+first14.addEventListener("mouseover", function torrent_aud_fnc() {
+        let myAudio1 = document.getElementById("myAudio14");
+        myAudio1.play();
+}); 
+function time_of_aud14() {
+        let myAudio1 = document.getElementById("myAudio14");
+        myAudio1.pause();
+        
+}
+first14.addEventListener("mouseout", function torrent_aud_fnc2() {
+        
+        time_of_aud14();
+});
+
+// smartprix Audio Controller
+let first15 = document.getElementById("first15");
+first15.addEventListener("mouseover", function smartprix_aud_fnc() {
+        let myAudio1 = document.getElementById("myAudio15");
+        myAudio1.play();
+}); 
+function time_of_aud15() {
+        let myAudio1 = document.getElementById("myAudio15");
+        myAudio1.pause();
+        
+}
+first15.addEventListener("mouseout", function smartprix_aud_fnc2() {
+        
+        time_of_aud15();
+});
+
+// Amazon Audio Controller
+let first16 = document.getElementById("first16");
+first16.addEventListener("mouseover", function Amazon_aud_fnc() {
+        let myAudio1 = document.getElementById("myAudio16");
+        myAudio1.play();
+}); 
+function time_of_aud16() {
+        let myAudio1 = document.getElementById("myAudio16");
+        myAudio1.pause();
+        
+}
+first16.addEventListener("mouseout", function Amazon_aud_fnc2() {
+        
+        time_of_aud16();
+});
+
+// Hotstar Audio Controller
+let hide1 = document.getElementById("hide1");
+hide1.addEventListener("mouseover", function Hotstar_aud_fnc() {
+        let myAudio1 = document.getElementById("myAudio17");
+        myAudio1.play();
+}); 
+function time_of_aud17() {
+        let myAudio1 = document.getElementById("myAudio17");
+        myAudio1.pause();
+        
+}
+hide1.addEventListener("mouseout", function Hotstar_aud_fnc2() {
+        
+        time_of_aud17();
+});
+
+// 9apps Audio Controller
+let hide2 = document.getElementById("hide2");
+hide2.addEventListener("mouseover", function apps_aud_fnc() {
+        let myAudio1 = document.getElementById("myAudio18");
+        myAudio1.play();
+}); 
+function time_of_aud18() {
+        let myAudio1 = document.getElementById("myAudio18");
+        myAudio1.pause();
+        
+}
+hide2.addEventListener("mouseout", function apps_aud_fnc2() {
+        
+        time_of_aud18();
+});
+}
+
+// Audio Turn on or off section 
+function btn_of_aud_icons_fnc() {
+        if (btn_of_aud_icons.value!="Turn off") {
+                btn_of_aud_icons.value="Turn off";
+              let aud =  Audio_controller();
+        } else {
+                btn_of_aud_icons.value="Turn off";
+                  }
+}
+
 
 
 </script>
