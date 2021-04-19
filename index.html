@@ -15,7 +15,7 @@
 <style>body{
     margin: 0em;
     background-color: #f5f5f5;
-    
+     
 }  
 #user_in_web{
     font: caption;
@@ -26,8 +26,7 @@
     margin: 0pc;
     position: relative;
     right: 1rem;
-}
-
+} 
 /* Sign In Section */
 #first_parent{
     width: 100%;
@@ -668,7 +667,13 @@ cursor: pointer;
     width: 6rem;
     background-color: rgb(255, 136, 0);
     color: rgb(48, 9, 9);
-    /* position: absolute; */
+/* outline: none; */
+}
+button{
+    outline: none;
+}
+input[type="button"]{
+    outline: none;
 
 }
 #sign_out_btn:hover{
@@ -823,10 +828,47 @@ cursor: pointer;
     background-color: white;
     height: 4rem;
 }
+#btn_to_swith_g_yt{
+    /* border: 2px solid red; */
+    border-radius: 0.4rem;
+    /* border: none; */
+    width: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    /* background-color: #6b9af10e; */
+    outline: none;
+    cursor: pointer;
+    height: 3rem;
+    margin-right: 1rem;
+    border: 1px solid #4285f4;
+
+}
+#btn_to_swith_ty_yt{
+    /* border: 2px solid red; */
+    border-radius: 0.4rem;
+    border: 1px solid rgb(192, 1, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    /* background-color: #0303031c; */
+    outline: none;
+    /* border: none; */
+    cursor: pointer;
+    margin-right: 1rem;
+    height: 3rem;
+    width: 8rem;
+
+}
 #googlesearchiconmain{
+    width: 6.5rem;
+    /* border: 2px solid red; */
+}
+#youtubesearchiconmain{
     /* border: 2px solid red; */
     width: 8rem;
-    margin-right: 1rem;
 }
 #textsearch{
     /* border: 0.001rem solid red; */
@@ -836,6 +878,7 @@ cursor: pointer;
     padding-left: 0.6rem;
     font-size: 1.1rem;
     font-weight: lighter;
+    outline: none;
 }
 #textsearch::placeholder{
     color: rgb(0, 0, 0);
@@ -871,6 +914,45 @@ cursor: pointer;
     
 }
 .container1{
+    width: 65rem;
+    background-color: white;
+    height: 25rem;
+    /* border: 2px solid red; */
+    /* margin-top: 1rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-basis: content;
+    
+}
+#slide1{
+    width: 65rem;
+    background-color: white;
+    height: 25rem;
+    /* border: 2px solid red; */
+    /* margin-top: 1rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-basis: content;
+    
+}
+#slide2{
+    width: 65rem;
+    background-color: white;
+    height: 25rem;
+    /* border: 2px solid red; */
+    /* margin-top: 1rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-basis: content;
+    
+}
+#slide3{
     width: 65rem;
     background-color: white;
     height: 25rem;
@@ -1972,7 +2054,6 @@ width: 3.8rem;
 #side_btn{
     /* border: 2px solid rebeccapurple; */
     background-color: white;
-    border: none;
     /* border-right: 0.2rem solid whitesmoke; */
     height: 3rem;
     width: 3rem;
@@ -1984,6 +2065,8 @@ width: 3.8rem;
     /* overflow-y: scroll; */
     border-radius: 0rem;
     cursor: pointer;
+    border: none;
+    outline: none;
 }
 #side_btn1{
     /* border: 2px solid rebeccapurple; */
@@ -2015,8 +2098,30 @@ width: 3.8rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
+::-webkit-scrollbar{
+    background-color: whitesmoke   ;
+    width: 0.6rem;
+}
+::-webkit-scrollbar-button{
+    display: none;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(170, 170, 170);
+    border-radius: 2rem;
+}
+#iteminbtn4{
+    transform-origin: 36%;
+}
+
+
+#iteminbtn6{
+    /* transform: rotate(-45deg); */
+    transform-origin: 36%;
+}
+/* #iteminbtn6{
+    
+} */
 /* Nav of side section  */
 .nav_of_side{
     /* border: 2px solid red; */
@@ -2211,23 +2316,133 @@ width: 3.8rem;
     #sign_main_contains{
         width: 640px;
     }
+}
+
+#container13{
+    /* border: 2px solid red; */
+    overflow: hidden;
+    display: flex;
+    /* flex-direction: column; */
+}
+
+#slide1{
+    /* border-top: 2px solid rgb(115, 255, 1); */
+    width: 300rem;
+    height: 25rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#slide2{
+    /* border-top: 2px solid rgb(115, 255, 1); */
+    width: 300rem;
+    height: 25rem;
+    position: relative;
+}
+#slide3{
+    /* border-top: 2px solid rgb(115, 255, 1); */
+    /* width: 300rem; */
+    height: 25rem;
+    position: relative;
+}
+#btn_pages{
+    /* border-top: 2px solid rgb(109, 117, 141); */
+    width: 100%;
+    height: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0.1rem;
+}
+#btn_of_page1{
+    border: 2px solid red;
+    width: 2.5rem;
+    height: 0.5rem;
+    border: none;
+    cursor: pointer;
+    border: 2px dotted rgb(10, 238, 10);
+    border-style: inset;
+}
+#btn_of_page2{
+    border: 2px solid red;
+    width: 2.5rem;
+    height: 0.5rem;
+    border: none;
+    cursor: pointer;
+    border: 2px dotted rgb(10, 238, 10);
+    border-style: inset;
+    margin-left: 0.5rem;
+}
+#btn_of_page3{
+    border: 2px solid red;
+    width: 2.5rem;
+    height: 0.5rem;
+    border: none;
+    cursor: pointer;
+    border: 2px dotted rgb(10, 238, 10);
+    border-style: inset;
+    margin-left: 0.5rem;
+}
+#btn_of_page3:hover{
+    animation-name: btn_of_page3;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.3s;
+    animation-delay: 0.005s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    height: 0.8rem;
+}
+@keyframes btn_of_page3{
+    from{
+        height: 0.5rem;
+    }
+    to{
+        height: 0.8rem;
+    }
+}
+#btn_of_page1:hover{
+    animation-name: btn_of_page1;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.3s;
+    animation-delay: 0.005s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    height: 0.8rem;
+}
+@keyframes btn_of_page1{
+    from{
+        height: 0.5rem;
+    }
+    to{
+        height: 0.8rem;
+    }
+}
+#btn_of_page2:hover{
+    animation-name: btn_of_page2;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.3s;
+    animation-delay: 0.005s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    height: 0.8rem;
+}
+@keyframes btn_of_page2{
+    from{
+        height: 0.5rem;
+    }
+    to{
+        height: 0.8rem;
+    }
 } </style>
 
-<script name="searchInit">
-        var searches = { yahoo: ["https://in.search.yahoo.com/search", "p"], bing: ["https://www.bing.com/search", "q"] };
-        if (ls = window.localStorage) {
-                var customSearch = ls.selectedSearch;
-                if (customSearch && customSearch !== "google") { 
-                        var data = searches[customSearch]; 
-                        if (data) { var banner = document.getElementById("J_searchBanner");
-                        banner.className = "mod search-banner " + customSearch + "-search-banner"; banner.setAttribute("s-en", customSearch); 
-                        document.getElementById("J_searchSwitch").children[0].children[0].className = "search-logo search-logo-" + customSearch; 
-                        document.getElementById("J_searchForm").setAttribute("action", data[0]); document.getElementById("J_searchKeyword").setAttribute("name", data[1]) 
-                        } 
-                        }
-        };</script>
 
 <body>
+
 
         <!-- Navigation Section  -->
         <div id="container_of_pop">
@@ -2248,17 +2463,15 @@ width: 3.8rem;
                 <div id="side_panel">
 
                         <!-- Content in side panel -->
-                        <div class="nav_of_side">
+                        <!-- <div class="nav_of_side">
                                 <button onclick="side()" id="side_btn1"><img src="" alt="">
                                         <div id="side_btn_background">
-                                                <div class="itemsinbtn"></div>
-                                                <div class="itemsinbtn"></div>
-                                                <div class="itemsinbtn"></div>
+                                                <div id="items_in_btn1" class="itemsinbtn"></div>
+                                                <div id="items_in_btn2" class="itemsinbtn"></div>
+                                                <div id="items_in_btn3" class="itemsinbtn"></div>
                                         </div>
                                 </button>
-                                <div id="side_parent">
-                                </div>
-                        </div>
+                        </div> -->
 
                 </div>
                 <div class="container">
@@ -2266,9 +2479,9 @@ width: 3.8rem;
                                 <div class="parent_side">
                                         <button onclick="side()" id="side_btn">
                                                 <div id="side_btn_background">
-                                                        <div id="iteminbtn1" class="itemsinbtn"></div>
-                                                        <div id="iteminbtn2" class="itemsinbtn"></div>
-                                                        <div id="iteminbtn3" class="itemsinbtn"></div>
+                                                        <div id="iteminbtn4" class="itemsinbtn"></div>
+                                                        <div id="iteminbtn5" class="itemsinbtn"></div>
+                                                        <div id="iteminbtn6" class="itemsinbtn"></div>
                                                 </div>
                                         </button>
                                 </div>
@@ -2362,22 +2575,25 @@ width: 3.8rem;
         </nav>
         <!-- Google Search Section  -->
         <div id="search">
-                <form id="J_searchForm" class="search-form" target="_blank"
-                        action="https://www.google.co.in/search?hl=en-IN" method="get" autocomplete="off">
-                        <div id="all"> <img id="googlesearchiconmain" class="googlesearchitems"
-                                        src="Files/googlesearchicon.png" alt=""> <input class="googlesearchitems"
-                                        id="textsearch" class="search-input" name="q" type="text" autocomplete="off"
-                                        value="" />
-                                <input class="googlesearchitems" class="search-btn" id="J_searchSubmit" type="submit"
-                                        value="Search" />
+               
+                        <div id="all">
+                                <button id="btn_to_swith_g_yt"><img id="googlesearchiconmain" class="googlesearchitems"
+                                src="Files/googlesearchicon.png" alt=""></button> 
+
+                                <button id="btn_to_swith_ty_yt"><img id="youtubesearchiconmain" class="youtubeearchitems"
+                                src="Files/youtube_search_images.png" alt=""></button> 
+                                 <input class="youtubesearchitems"
+                                        id="textsearch" class="search-input"  type="text" 
+                                       />
+                                        <button class="googlesearchitems" class="search-btn" id="J_searchSubmit" >Search</button>
                                         <div id="contains_btn_with_text">
                                                 <p id="text_of_btn">Audio</p>
                                                 <input type="button" id="btn_of_aud_icons" onclick="btn_of_aud_icons_fnc()" value="Turn on">
                                        
                                 </div>
+                                       
                         </div>
         </div>
-
         <!-- Links With Icons Section  -->
 
 
@@ -2403,6 +2619,7 @@ width: 3.8rem;
 
         <div id="container12" class="linkswithiconcontainer">
                 <div id="container13" class="container1">
+                        <div id="slide1">
                         <a target="_blank" id="first1" class="firstlinks" href="https://www.google.com/"> <img
                                         src="Files/goglesearch.png" id="firstlink1" alt=""> Google </a>
                         <a target="_blank" id="first2" class="firstlinks" href="https://www.facebook.com/"> <img
@@ -2441,7 +2658,10 @@ width: 3.8rem;
                                         src="Files/hotstar.png" id="firstlink17" alt=""> Hotstar</a>
                         <a target="_blank" id="hide2" class="firstlinks" href="http://www.9apps.com/"> <img
                                         src="Files/apps.png" id="firstlink18" alt="">9Apps</a>
+                                      
                 </div>
+                       
+        </div>
                 <div id="breaker"></div>
                 <div id="container14" class="container2">
                         <h3 id="email">Emails</h3>
@@ -2626,8 +2846,8 @@ width: 3.8rem;
 let signin_btn = document.getElementById("signin_btn");
 let body = document.body;
 signin_btn.addEventListener("click", function signin_btn_fcn() {
-  body.style.overflow = "hidden";
-  body.innerHTML = `<div id="first_parent">
+        body.style.overflow = "hidden";
+        body.innerHTML = `<div id="first_parent">
                         <div id="sign_main_contains">
                                 <div id="pair_of_name">
                                <button id="back_from_sign" > <img id="back_btn_from_sign" src="Files/Previous_btn.png" alt=""> </button> <p id="name_sign">My Web Links.com</p>
@@ -2642,14 +2862,14 @@ signin_btn.addEventListener("click", function signin_btn_fcn() {
                         </div>
                 </div>`;
 
-// Sign In Complete 
-let sign_In_complete = document.getElementById("sign_In_complete");
-sign_In_complete.addEventListener("click", function sign_In_complete_fnc() {
- body.style.overflow="auto";
- let a = document.getElementById("user_mail").value;
- let warn_enter = document.getElementById("user_mail");
- if (a!="") {
-  body.innerHTML=`   <!-- Navigation Section  -->
+        // Sign In Complete 
+        let sign_In_complete = document.getElementById("sign_In_complete");
+        sign_In_complete.addEventListener("click", function sign_In_complete_fnc() {
+                body.style.overflow = "auto";
+                let a = document.getElementById("user_mail").value;
+                let warn_enter = document.getElementById("user_mail");
+                if (a != "") {
+                        body.innerHTML = `   <!-- Navigation Section  -->
   <div id="container_of_pop">
           <div id="popup1"> <button id="btn_of_cut1"><img id="cut_image" src="Files/cut_image.png"
                                   alt="Can't load"></button>
@@ -3012,20 +3232,20 @@ sign_In_complete.addEventListener("click", function sign_In_complete_fnc() {
                   </div>
                   <p id="footercopy">Copyright &copy; 2021. All Rights Reserved.</p>
                   </footer>`;
-                  let user_in_web = document.getElementById("user_in_web");
-                  user_in_web.innerText=a;
-                  console.log(a);
- } else {
-  warn_enter.style.boxShadow="0px 0px 1rem red inset";
- }
-  
-                 
+                        let user_in_web = document.getElementById("user_in_web");
+                        user_in_web.innerText = a;
+                        console.log(a);
+                } else {
+                        warn_enter.style.boxShadow = "0px 0px 1rem red inset";
+                }
 
 
-  //Sign Out Section
-let sign_out_btn = document.getElementById("sign_out_btn");
-sign_out_btn.addEventListener("click", function sign_out_btn_fnc() {
-  body.innerHTML=`
+
+
+                //Sign Out Section
+                let sign_out_btn = document.getElementById("sign_out_btn");
+                sign_out_btn.addEventListener("click", function sign_out_btn_fnc() {
+                        body.innerHTML = `
   <!-- Navigation Section  -->
   <div id="container_of_pop">
           <div id="popup1"> <button id="btn_of_cut1"><img id="cut_image" src="Files/cut_image.png"
@@ -3390,36 +3610,36 @@ sign_out_btn.addEventListener("click", function sign_out_btn_fnc() {
           </div>
           <p id="footercopy">Copyright &copy; 2021. All Rights Reserved.</p>
   </footer>`;
-})
-})
+                })
+        })
 
 
 
-  //Back From Sign Function 
-  let back_from_sign = document.getElementById("back_from_sign");
-  back_from_sign.addEventListener("click", function back_from_sign_fnc() {
-    window.location.href="https://myweblinks.github.io/";
-  })
+        //Back From Sign Function 
+        let back_from_sign = document.getElementById("back_from_sign");
+        back_from_sign.addEventListener("click", function back_from_sign_fnc() {
+                window.location.href = "https://myweblinks.github.io/";
+        })
 
-  //Show Hide Function 
-  let show_btn = document.getElementById("show_btn");
-  show_btn.addEventListener("click", function show_btn_fcn() {
-    //Password Show/Hide 
-    let user_pass = document.getElementById("user_pass");
-    if (user_pass.type != "text") {
-      user_pass.type = "text";
-    } else {
-      user_pass.type = "password";
-    }
+        //Show Hide Function 
+        let show_btn = document.getElementById("show_btn");
+        show_btn.addEventListener("click", function show_btn_fcn() {
+                //Password Show/Hide 
+                let user_pass = document.getElementById("user_pass");
+                if (user_pass.type != "text") {
+                        user_pass.type = "text";
+                } else {
+                        user_pass.type = "password";
+                }
 
 
-    //Toggle The Text
-    if (show_btn.textContent != "Hide") {
-      show_btn.textContent = "Hide";
-    } else {
-      show_btn.textContent = "Show";
-    }
-  })
+                //Toggle The Text
+                if (show_btn.textContent != "Hide") {
+                        show_btn.textContent = "Hide";
+                } else {
+                        show_btn.textContent = "Show";
+                }
+        })
 })
 
 
@@ -3432,407 +3652,407 @@ sign_out_btn.addEventListener("click", function sign_out_btn_fnc() {
 // console.log(body_childs);
 let right_link5 = document.getElementById('right_link5');
 function switch_theme(el) {
-  let element = document.body;
-  let navigation = document.getElementById('navigation12');
-  let container = document.getElementById('container12');
-  let container1 = document.getElementById('container13');
-  let container14 = document.getElementById('container14');
-  let breaker = document.getElementById('breaker');
-  let firstlink1 = document.getElementById('first1');
-  let firstlink2 = document.getElementById('first2');
-  let firstlink3 = document.getElementById('first3');
-  let firstlink4 = document.getElementById('first4');
-  let firstlink5 = document.getElementById('first5');
-  let firstlink6 = document.getElementById('first6');
-  let firstlink7 = document.getElementById('first7');
-  let firstlink8 = document.getElementById('first8');
-  let firstlink9 = document.getElementById('first9');
-  let firstlink10 = document.getElementById('first10');
-  let firstlink11 = document.getElementById('first11');
-  let firstlink12 = document.getElementById('first12');
-  let firstlink13 = document.getElementById('first13');
-  let firstlink14 = document.getElementById('first14');
-  let firstlink15 = document.getElementById('first15');
-  let firstlink16 = document.getElementById('first16');
-  let all = document.getElementById('all');
-  let hide1 = document.getElementById('hide1');
-  let hide2 = document.getElementById('hide2');
-  let side_btn = document.getElementById('side_btn');
-  let side_btn1 = document.getElementById('side_btn1');
-  let iteminbtn1 = document.getElementById('iteminbtn1');
-  let iteminbtn2 = document.getElementById('iteminbtn2');
-  let iteminbtn3 = document.getElementById('iteminbtn3');
-  let profilemain4 = document.getElementById('profilemain4');
-  let profilemain5 = document.getElementById('profilemain5');
-  let profilemain3 = document.getElementById('profilemain3');
-  let profilemain6 = document.getElementById('profilemain6');
-  let profilemain1 = document.getElementById('profilemain1');
-  let profilemain2 = document.getElementById('profilemain2');
-  let breaker2 = document.getElementById('breaker2');
-  let breaker3 = document.getElementById('breaker3');
-  let breaker4 = document.getElementById('breaker4');
-  let containerparent1 = document.getElementById('containerparent1');
-  let containerparent = document.getElementById('containerparent');
-  let right_link1 = document.getElementById('right_link1');
-  let right_link2 = document.getElementById('right_link2');
-  let right_link3 = document.getElementById('right_link3');
-  let right_link4 = document.getElementById('right_link4');
-  let right_link5 = document.getElementById('right_link5');
-  let right_link6 = document.getElementById('right_link6');
-
-  element.classList.toggle("dark-mode");
-  navigation.classList.toggle("navigation_bg");
-  container.classList.toggle("dark-mode");
-  container1.classList.toggle("navigation_bg");
-  container14.classList.toggle("navigation_bg");
-
-
-  if (all.style.backgroundColor == 'black') {
-    all.style.backgroundColor = 'white'
-  } else {
-    all.style.backgroundColor = 'black'
-  }
-
-
-  if (document.getElementById('dark_btn').textContent == "Apply Light Mode") {
-    document.getElementById('dark_btn').textContent = "Apply Dark Mode";
-  } else {
-    document.getElementById('dark_btn').textContent = "Apply Light Mode";
-  }
-  if (side_btn.style.background != "black") {
-    btn_back();
-  }
-  else {
-    side_btn.style.background = "#ffffff";
-  }
-  nav_links()
-  if (containerparent.style.background != "black") {
-    containerparent.style.background = "black";
-  }
-  else {
-    containerparent.style.background = "whitesmoke";
-  }
-
-  if (containerparent1.style.background != "black") {
-    containerparent1.style.background = "black";
-  }
-  else {
-    containerparent1.style.background = "whitesmoke";
-  }
-
-
-  if (containerparent2.style.background != "black") {
-    containerparent2.style.background = "black";
-  }
-  else {
-    containerparent2.style.background = "whitesmoke";
-  }
-
-  if (iteminbtn1.style.background != "white") {
-    iteminbtn1.style.background = "white";
-  }
-  else {
-    iteminbtn1.style.background = "black";
-  }
-
-  if (iteminbtn2.style.background != "white") {
-    iteminbtn2.style.background = "white";
-  }
-  else {
-    iteminbtn2.style.background = "black";
-  }
-
-  if (iteminbtn3.style.background != "white") {
-    iteminbtn3.style.background = "white";
-  }
-  else {
-    iteminbtn3.style.background = "black";
-  }
-
-  if (breaker.style.backgroundColor != "black") {
-    breaker.style.backgroundColor = "black";
-  }
-  else {
-    breaker.style.backgroundColor = "whitesmoke";
-  }
-  if (breaker2.style.backgroundColor != "black") {
-    breaker2.style.backgroundColor = "black";
-  }
-  else {
-    breaker2.style.backgroundColor = "whitesmoke";
-  }
-  if (breaker3.style.backgroundColor != "black") {
-    breaker3.style.backgroundColor = "black";
-  }
-  else {
-    breaker3.style.backgroundColor = "whitesmoke";
-  }
-  if (footerofweb.style.backgroundColor != "grey") {
-    footerofweb.style.backgroundColor = "grey";
-  }
-  else {
-    footerofweb.style.backgroundColor = "rgb(230 226 226)";
-  }
-  if (breaker4.style.backgroundColor != "black") {
-    breaker4.style.backgroundColor = "black";
-  }
-  else {
-    breaker4.style.backgroundColor = "whitesmoke";
-  }
-
-
-
-  if (right_link1.style.color != "white") {
-    right_link1.style.color = "white";
-  }
-  else {
-    right_link1.style.color = "black";
-  }
-
-
-
-  if (right_link2.style.color != "white") {
-    right_link2.style.color = "white";
-  }
-  else {
-    right_link2.style.color = "black";
-  }
-
-
-
-  if (right_link3.style.color != "white") {
-    right_link3.style.color = "white";
-  }
-  else {
-    right_link3.style.color = "black";
-  }
-
-
-
-  if (right_link4.style.color != "white") {
-    right_link4.style.color = "white";
-  }
-  else {
-    right_link4.style.color = "black";
-  }
-
-
-
-  if (right_link5.style.color != "white") {
-    right_link5.style.color = "white";
-  }
-  else {
-    right_link5.style.color = "black";
-  }
-
-
-
-  if (right_link6.style.color != "white") {
-    right_link6.style.color = "white";
-  }
-  else {
-    right_link6.style.color = "black";
-  }
-  if (firstlink1.style.color != "white") {
-    firstlink1.style.color = "white";
-  }
-  else {
-    firstlink1.style.color = "black";
-  }
-
-
-  if (firstlink2.style.color != "white") {
-    firstlink2.style.color = "white";
-  }
-  else {
-    firstlink2.style.color = "black";
-  }
-
-
-  if (firstlink3.style.color != "white") {
-    firstlink3.style.color = "white";
-  }
-  else {
-    firstlink3.style.color = "black";
-  }
-
-
-  if (firstlink4.style.color != "white") {
-    firstlink4.style.color = "white";
-  }
-  else {
-    firstlink4.style.color = "black";
-  }
-
-
-
-  if (firstlink5.style.color != "white") {
-    firstlink5.style.color = "white";
-  }
-  else {
-    firstlink5.style.color = "black";
-  }
-
-  clearTimeout(dark_timeout);
-  if (firstlink6.style.color != "white") {
-    firstlink6.style.color = "white";
-  }
-  else {
-    firstlink6.style.color = "black";
-  }
-
-
-  if (firstlink7.style.color != "white") {
-    firstlink7.style.color = "white";
-  }
-  else {
-    firstlink7.style.color = "black";
-  }
-
-
-  if (firstlink8.style.color != "white") {
-    firstlink8.style.color = "white";
-  }
-  else {
-    firstlink8.style.color = "black";
-  }
-
-
-  if (firstlink9.style.color != "white") {
-    firstlink9.style.color = "white";
-  }
-  else {
-    firstlink9.style.color = "black";
-  }
-
-
-  if (firstlink10.style.color != "white") {
-    firstlink10.style.color = "white";
-  }
-  else {
-    firstlink10.style.color = "black";
-  }
-
-
-  if (firstlink11.style.color != "white") {
-    firstlink11.style.color = "white";
-  }
-  else {
-    firstlink11.style.color = "black";
-  }
-
-
-  if (firstlink12.style.color != "white") {
-    firstlink12.style.color = "white";
-  }
-  else {
-    firstlink12.style.color = "black";
-  }
-
-
-  if (firstlink13.style.color != "white") {
-    firstlink13.style.color = "white";
-  }
-  else {
-    firstlink13.style.color = "black";
-  }
-
-
-  if (firstlink14.style.color != "white") {
-    firstlink14.style.color = "white";
-  }
-  else {
-    firstlink14.style.color = "black";
-  }
-
-
-  if (firstlink15.style.color != "white") {
-    firstlink15.style.color = "white";
-  }
-  else {
-    firstlink15.style.color = "black";
-  }
-
-
-  if (firstlink16.style.color != "white") {
-    firstlink16.style.color = "white";
-  }
-  else {
-    firstlink16.style.color = "black";
-  }
-
-
-  if (hide1.style.color != "white") {
-    hide1.style.color = "white";
-  }
-  else {
-    hide1.style.color = "black";
-  }
-
-
-  if (hide2.style.color != "white") {
-    hide2.style.color = "white";
-  }
-  else {
-    hide2.style.color = "black";
-  }
-  if (downloadstitle.style.backgroundColor != "black") {
-    downloadstitle.style.backgroundColor = "black";
-  }
-  else {
-    downloadstitle.style.backgroundColor = "whitesmoke";
-  }
-
-
-  if (softwaretitle.style.backgroundColor != "black") {
-    softwaretitle.style.backgroundColor = "black";
-  }
-  else {
-    softwaretitle.style.backgroundColor = "whitesmoke";
-  }
-
-  if (musictitle.style.backgroundColor != "black") {
-    musictitle.style.backgroundColor = "black";
-  }
-  else {
-    musictitle.style.backgroundColor = "whitesmoke";
-  }
-
-  if (shoppingtitle.style.backgroundColor != "black") {
-    shoppingtitle.style.backgroundColor = "black";
-  }
-  else {
-    shoppingtitle.style.backgroundColor = "whitesmoke";
-  }
-
-  if (sportstitle.style.backgroundColor != "black") {
-    sportstitle.style.backgroundColor = "black";
-  }
-  else {
-    sportstitle.style.backgroundColor = "whitesmoke";
-  }
-
-  if (newstitle.style.backgroundColor != "black") {
-    newstitle.style.backgroundColor = "black";
-  }
-  else {
-    newstitle.style.backgroundColor = "whitesmoke";
-  }
+        let element = document.body;
+        let navigation = document.getElementById('navigation12');
+        let container = document.getElementById('container12');
+        let container1 = document.getElementById('container13');
+        let container14 = document.getElementById('container14');
+        let breaker = document.getElementById('breaker');
+        let firstlink1 = document.getElementById('first1');
+        let firstlink2 = document.getElementById('first2');
+        let firstlink3 = document.getElementById('first3');
+        let firstlink4 = document.getElementById('first4');
+        let firstlink5 = document.getElementById('first5');
+        let firstlink6 = document.getElementById('first6');
+        let firstlink7 = document.getElementById('first7');
+        let firstlink8 = document.getElementById('first8');
+        let firstlink9 = document.getElementById('first9');
+        let firstlink10 = document.getElementById('first10');
+        let firstlink11 = document.getElementById('first11');
+        let firstlink12 = document.getElementById('first12');
+        let firstlink13 = document.getElementById('first13');
+        let firstlink14 = document.getElementById('first14');
+        let firstlink15 = document.getElementById('first15');
+        let firstlink16 = document.getElementById('first16');
+        let all = document.getElementById('all');
+        let hide1 = document.getElementById('hide1');
+        let hide2 = document.getElementById('hide2');
+        let side_btn = document.getElementById('side_btn');
+        let side_btn1 = document.getElementById('side_btn1');
+        let iteminbtn1 = document.getElementById('iteminbtn1');
+        let iteminbtn2 = document.getElementById('iteminbtn2');
+        let iteminbtn3 = document.getElementById('iteminbtn3');
+        let profilemain4 = document.getElementById('profilemain4');
+        let profilemain5 = document.getElementById('profilemain5');
+        let profilemain3 = document.getElementById('profilemain3');
+        let profilemain6 = document.getElementById('profilemain6');
+        let profilemain1 = document.getElementById('profilemain1');
+        let profilemain2 = document.getElementById('profilemain2');
+        let breaker2 = document.getElementById('breaker2');
+        let breaker3 = document.getElementById('breaker3');
+        let breaker4 = document.getElementById('breaker4');
+        let containerparent1 = document.getElementById('containerparent1');
+        let containerparent = document.getElementById('containerparent');
+        let right_link1 = document.getElementById('right_link1');
+        let right_link2 = document.getElementById('right_link2');
+        let right_link3 = document.getElementById('right_link3');
+        let right_link4 = document.getElementById('right_link4');
+        let right_link5 = document.getElementById('right_link5');
+        let right_link6 = document.getElementById('right_link6');
+
+        element.classList.toggle("dark-mode");
+        navigation.classList.toggle("navigation_bg");
+        container.classList.toggle("dark-mode");
+        container1.classList.toggle("navigation_bg");
+        container14.classList.toggle("navigation_bg");
+
+
+        if (all.style.backgroundColor == 'black') {
+                all.style.backgroundColor = 'white'
+        } else {
+                all.style.backgroundColor = 'black'
+        }
+
+
+        if (document.getElementById('dark_btn').textContent == "Apply Light Mode") {
+                document.getElementById('dark_btn').textContent = "Apply Dark Mode";
+        } else {
+                document.getElementById('dark_btn').textContent = "Apply Light Mode";
+        }
+        if (side_btn.style.background != "black") {
+                btn_back();
+        }
+        else {
+                side_btn.style.background = "#ffffff";
+        }
+        nav_links()
+        if (containerparent.style.background != "black") {
+                containerparent.style.background = "black";
+        }
+        else {
+                containerparent.style.background = "whitesmoke";
+        }
+
+        if (containerparent1.style.background != "black") {
+                containerparent1.style.background = "black";
+        }
+        else {
+                containerparent1.style.background = "whitesmoke";
+        }
+
+
+        if (containerparent2.style.background != "black") {
+                containerparent2.style.background = "black";
+        }
+        else {
+                containerparent2.style.background = "whitesmoke";
+        }
+
+        if (iteminbtn1.style.background != "white") {
+                iteminbtn1.style.background = "white";
+        }
+        else {
+                iteminbtn1.style.background = "black";
+        }
+
+        if (iteminbtn2.style.background != "white") {
+                iteminbtn2.style.background = "white";
+        }
+        else {
+                iteminbtn2.style.background = "black";
+        }
+
+        if (iteminbtn3.style.background != "white") {
+                iteminbtn3.style.background = "white";
+        }
+        else {
+                iteminbtn3.style.background = "black";
+        }
+
+        if (breaker.style.backgroundColor != "black") {
+                breaker.style.backgroundColor = "black";
+        }
+        else {
+                breaker.style.backgroundColor = "whitesmoke";
+        }
+        if (breaker2.style.backgroundColor != "black") {
+                breaker2.style.backgroundColor = "black";
+        }
+        else {
+                breaker2.style.backgroundColor = "whitesmoke";
+        }
+        if (breaker3.style.backgroundColor != "black") {
+                breaker3.style.backgroundColor = "black";
+        }
+        else {
+                breaker3.style.backgroundColor = "whitesmoke";
+        }
+        if (footerofweb.style.backgroundColor != "grey") {
+                footerofweb.style.backgroundColor = "grey";
+        }
+        else {
+                footerofweb.style.backgroundColor = "rgb(230 226 226)";
+        }
+        if (breaker4.style.backgroundColor != "black") {
+                breaker4.style.backgroundColor = "black";
+        }
+        else {
+                breaker4.style.backgroundColor = "whitesmoke";
+        }
+
+
+
+        if (right_link1.style.color != "white") {
+                right_link1.style.color = "white";
+        }
+        else {
+                right_link1.style.color = "black";
+        }
+
+
+
+        if (right_link2.style.color != "white") {
+                right_link2.style.color = "white";
+        }
+        else {
+                right_link2.style.color = "black";
+        }
+
+
+
+        if (right_link3.style.color != "white") {
+                right_link3.style.color = "white";
+        }
+        else {
+                right_link3.style.color = "black";
+        }
+
+
+
+        if (right_link4.style.color != "white") {
+                right_link4.style.color = "white";
+        }
+        else {
+                right_link4.style.color = "black";
+        }
+
+
+
+        if (right_link5.style.color != "white") {
+                right_link5.style.color = "white";
+        }
+        else {
+                right_link5.style.color = "black";
+        }
+
+
+
+        if (right_link6.style.color != "white") {
+                right_link6.style.color = "white";
+        }
+        else {
+                right_link6.style.color = "black";
+        }
+        if (firstlink1.style.color != "white") {
+                firstlink1.style.color = "white";
+        }
+        else {
+                firstlink1.style.color = "black";
+        }
+
+
+        if (firstlink2.style.color != "white") {
+                firstlink2.style.color = "white";
+        }
+        else {
+                firstlink2.style.color = "black";
+        }
+
+
+        if (firstlink3.style.color != "white") {
+                firstlink3.style.color = "white";
+        }
+        else {
+                firstlink3.style.color = "black";
+        }
+
+
+        if (firstlink4.style.color != "white") {
+                firstlink4.style.color = "white";
+        }
+        else {
+                firstlink4.style.color = "black";
+        }
+
+
+
+        if (firstlink5.style.color != "white") {
+                firstlink5.style.color = "white";
+        }
+        else {
+                firstlink5.style.color = "black";
+        }
+
+        clearTimeout(dark_timeout);
+        if (firstlink6.style.color != "white") {
+                firstlink6.style.color = "white";
+        }
+        else {
+                firstlink6.style.color = "black";
+        }
+
+
+        if (firstlink7.style.color != "white") {
+                firstlink7.style.color = "white";
+        }
+        else {
+                firstlink7.style.color = "black";
+        }
+
+
+        if (firstlink8.style.color != "white") {
+                firstlink8.style.color = "white";
+        }
+        else {
+                firstlink8.style.color = "black";
+        }
+
+
+        if (firstlink9.style.color != "white") {
+                firstlink9.style.color = "white";
+        }
+        else {
+                firstlink9.style.color = "black";
+        }
+
+
+        if (firstlink10.style.color != "white") {
+                firstlink10.style.color = "white";
+        }
+        else {
+                firstlink10.style.color = "black";
+        }
+
+
+        if (firstlink11.style.color != "white") {
+                firstlink11.style.color = "white";
+        }
+        else {
+                firstlink11.style.color = "black";
+        }
+
+
+        if (firstlink12.style.color != "white") {
+                firstlink12.style.color = "white";
+        }
+        else {
+                firstlink12.style.color = "black";
+        }
+
+
+        if (firstlink13.style.color != "white") {
+                firstlink13.style.color = "white";
+        }
+        else {
+                firstlink13.style.color = "black";
+        }
+
+
+        if (firstlink14.style.color != "white") {
+                firstlink14.style.color = "white";
+        }
+        else {
+                firstlink14.style.color = "black";
+        }
+
+
+        if (firstlink15.style.color != "white") {
+                firstlink15.style.color = "white";
+        }
+        else {
+                firstlink15.style.color = "black";
+        }
+
+
+        if (firstlink16.style.color != "white") {
+                firstlink16.style.color = "white";
+        }
+        else {
+                firstlink16.style.color = "black";
+        }
+
+
+        if (hide1.style.color != "white") {
+                hide1.style.color = "white";
+        }
+        else {
+                hide1.style.color = "black";
+        }
+
+
+        if (hide2.style.color != "white") {
+                hide2.style.color = "white";
+        }
+        else {
+                hide2.style.color = "black";
+        }
+        if (downloadstitle.style.backgroundColor != "black") {
+                downloadstitle.style.backgroundColor = "black";
+        }
+        else {
+                downloadstitle.style.backgroundColor = "whitesmoke";
+        }
+
+
+        if (softwaretitle.style.backgroundColor != "black") {
+                softwaretitle.style.backgroundColor = "black";
+        }
+        else {
+                softwaretitle.style.backgroundColor = "whitesmoke";
+        }
+
+        if (musictitle.style.backgroundColor != "black") {
+                musictitle.style.backgroundColor = "black";
+        }
+        else {
+                musictitle.style.backgroundColor = "whitesmoke";
+        }
+
+        if (shoppingtitle.style.backgroundColor != "black") {
+                shoppingtitle.style.backgroundColor = "black";
+        }
+        else {
+                shoppingtitle.style.backgroundColor = "whitesmoke";
+        }
+
+        if (sportstitle.style.backgroundColor != "black") {
+                sportstitle.style.backgroundColor = "black";
+        }
+        else {
+                sportstitle.style.backgroundColor = "whitesmoke";
+        }
+
+        if (newstitle.style.backgroundColor != "black") {
+                newstitle.style.backgroundColor = "black";
+        }
+        else {
+                newstitle.style.backgroundColor = "whitesmoke";
+        }
 
 
 }
 downloadslinks.addEventListener("mouseover", function over_right_link5() {
-  if (right_link5.style.color != "black") {
-    right_link5.style.color = "black";
-  } else {
-    downloadslinks.addEventListener('mouseout', function out_right_link5() {
-      if (right_link5.style.color != "black") {
-        right_link5.style.color = "black";
-      } else {
-        right_link5.style.color = "white";
-      }
-    });
-  }
+        if (right_link5.style.color != "black") {
+                right_link5.style.color = "black";
+        } else {
+                downloadslinks.addEventListener('mouseout', function out_right_link5() {
+                        if (right_link5.style.color != "black") {
+                                right_link5.style.color = "black";
+                        } else {
+                                right_link5.style.color = "white";
+                        }
+                });
+        }
 })
 
 
@@ -3842,9 +4062,9 @@ let side_panel = document.getElementById('side_panel')
 // hover.addEventListener('clickon', function run() {
 //   alert("You are over the navigation bar. please click on ok to continue......")
 // })
-function  loading_items_fnc(){
+function loading_items_fnc() {
         let beep = new Audio();
-        beep.src="Files/Audio Files/loading_items.mp3";
+        beep.src = "Files/Audio Files/loading_items.mp3";
         beep.play();
 }
 
@@ -3854,51 +4074,71 @@ function  loading_items_fnc(){
 
 
 function side() {
-      
-  let navigation12 = document.getElementById("navigation12");
-  let top_container_of_parent_side = document.getElementById("top_container_of_parent_side");
-  let side_links = document.getElementById("side_links");
-  
-  
-  let beep = new Audio();
-  beep.src="Files/Audio Files/beep.mp3";
-  beep.play();
-  if (side_links.style.display!="flex") {
-    side_links.style.display="flex";
-    
-    loading_items_fnc();
-  } else {
-    side_links.style.display="none";
-  }
-  // let a = screen.width;
-  // console.log(a);
-  if (screen.width <= 1070) {
-    if (navigation12.style.height != "10rem") {
-      navigation12.style.height="10rem";
-      
-    } else {
-      navigation12.style.height="6rem";
-    }
 
-    if (top_container_of_parent_side.style.height != "10rem") {
-      top_container_of_parent_side.style.height = "10rem"
-    } else {
-      top_container_of_parent_side.style.height = "6rem"
-    }
+        let navigation12 = document.getElementById("navigation12");
+        let top_container_of_parent_side = document.getElementById("top_container_of_parent_side");
+        let side_links = document.getElementById("side_links");
+        let iteminbtn5 = document.getElementById("iteminbtn5");
+        let iteminbtn4 = document.getElementById("iteminbtn4");
+        let iteminbtn6 = document.getElementById("iteminbtn6");
+        let iteminbtn41 = document.getElementById("iteminbtn4");
 
-  } else {
-    if (navigation12.style.height != "6rem") {
-      navigation12.style.height = "6rem"
-    } else {
-      navigation12.style.height = "3rem"
-    }
 
-    if (top_container_of_parent_side.style.height != "6rem") {
-      top_container_of_parent_side.style.height = "6rem"
-    } else {
-      top_container_of_parent_side.style.height = "3rem"
-    }
-  }
+
+        if (iteminbtn6.style.transform != "rotate(-45deg)") {
+                iteminbtn6.style.transform = "rotate(-45deg)"
+        } else {
+                iteminbtn6.style.transform = "rotate(0deg)"
+        }
+        if (iteminbtn4.style.transform != "rotate(45deg)") {
+                iteminbtn4.style.transform = "rotate(45deg)"
+        } else {
+                iteminbtn4.style.transform = "rotate(0deg)"
+        }
+        if (iteminbtn5.style.display != "none") {
+                iteminbtn5.style.display = "none";
+        } else {
+                iteminbtn5.style.display = "flex";
+        }
+        let beep = new Audio();
+        beep.src = "Files/Audio Files/beep.mp3";
+        beep.play();
+        if (side_links.style.display != "flex") {
+                side_links.style.display = "flex";
+
+                loading_items_fnc();
+        } else {
+                side_links.style.display = "none";
+        }
+        // let a = screen.width;
+        // console.log(a);
+        if (screen.width <= 1070) {
+                if (navigation12.style.height != "10rem") {
+                        navigation12.style.height = "10rem";
+
+                } else {
+                        navigation12.style.height = "6rem";
+                }
+
+                if (top_container_of_parent_side.style.height != "10rem") {
+                        top_container_of_parent_side.style.height = "10rem"
+                } else {
+                        top_container_of_parent_side.style.height = "6rem"
+                }
+
+        } else {
+                if (navigation12.style.height != "6rem") {
+                        navigation12.style.height = "6rem"
+                } else {
+                        navigation12.style.height = "3rem"
+                }
+
+                if (top_container_of_parent_side.style.height != "6rem") {
+                        top_container_of_parent_side.style.height = "6rem"
+                } else {
+                        top_container_of_parent_side.style.height = "3rem"
+                }
+        }
 
 }
 
@@ -3925,11 +4165,11 @@ function side() {
 // }
 // let side_panel = document.getElementById('side_panel');
 function btn_back() {
-  side_btn.style.background = "black";
+        side_btn.style.background = "black";
 }
 
 function btn_back1() {
-  side_btn.style.background = "black";
+        side_btn.style.background = "black";
 }
 // This function is used to display time into webpage
 
@@ -3970,52 +4210,52 @@ function btn_back1() {
 
 //Function Of nav links 
 function nav_links() {
-  if (profilemain4.style.color != "white") {
-    profilemain4.style.color = "white";
-  }
-  else {
-    profilemain4.style.color = "black";
-  }
+        if (profilemain4.style.color != "white") {
+                profilemain4.style.color = "white";
+        }
+        else {
+                profilemain4.style.color = "black";
+        }
 
-  if (profilemain5.style.color != "white") {
-    profilemain5.style.color = "white";
-  }
-  else {
-    profilemain5.style.color = "black";
-  }
-
-
-  if (profilemain3.style.color != "white") {
-    profilemain3.style.color = "white";
-  }
-  else {
-    profilemain3.style.color = "black";
-  }
+        if (profilemain5.style.color != "white") {
+                profilemain5.style.color = "white";
+        }
+        else {
+                profilemain5.style.color = "black";
+        }
 
 
-  if (profilemain2.style.color != "white") {
-    profilemain2.style.color = "white";
-  }
-  else {
-    profilemain2.style.color = "black";
-  }
+        if (profilemain3.style.color != "white") {
+                profilemain3.style.color = "white";
+        }
+        else {
+                profilemain3.style.color = "black";
+        }
 
 
-  if (profilemain6.style.color != "white") {
-    profilemain6.style.color = "white";
-  }
-  else {
-    profilemain6.style.color = "black";
-  }
+        if (profilemain2.style.color != "white") {
+                profilemain2.style.color = "white";
+        }
+        else {
+                profilemain2.style.color = "black";
+        }
+
+
+        if (profilemain6.style.color != "white") {
+                profilemain6.style.color = "white";
+        }
+        else {
+                profilemain6.style.color = "black";
+        }
 
 
 
-  if (profilemain1.style.color != "white") {
-    profilemain1.style.color = "white";
-  }
-  else {
-    profilemain1.style.color = "black";
-  }
+        if (profilemain1.style.color != "white") {
+                profilemain1.style.color = "white";
+        }
+        else {
+                profilemain1.style.color = "black";
+        }
 
 }
 
@@ -4023,9 +4263,9 @@ function nav_links() {
 let popup1 = document.getElementById("popup1");
 let container_of_pop = document.getElementById("container_of_pop");
 function pop_display() {
-  popup1.style.display = "flex";
-  popup1.style.height = "5rem";
-  container_of_pop.style.height = "5rem";
+        popup1.style.display = "flex";
+        popup1.style.height = "5rem";
+        container_of_pop.style.height = "5rem";
 }
 setTimeout(pop_display, 4000);
 
@@ -4033,340 +4273,386 @@ setTimeout(pop_display, 4000);
 let btn_of_cut1 = document.getElementById("btn_of_cut1");
 
 btn_of_cut1.addEventListener("click", function btn_of_cut1() {
-  popup1.style.height = "0rem";
-  container_of_pop.style.height = "0rem";
-  popup1.style.display = "none";
-  if (popup1.style.display = !"none") {
-    popup1.style.display = "none"
-  } else {
-    let popup2 = document.getElementById("popup2");
-    let container_of_pop1 = document.getElementById("container_of_pop1");
-    function pop_display2() {
-      popup2.style.display = "flex";
-      popup2.style.height = "5rem";
-      container_of_pop1.style.height = "5rem";
-    }
-    setTimeout(pop_display2, 3000);
+        popup1.style.height = "0rem";
+        container_of_pop.style.height = "0rem";
+        popup1.style.display = "none";
+        if (popup1.style.display = !"none") {
+                popup1.style.display = "none"
+        } else {
+                let popup2 = document.getElementById("popup2");
+                let container_of_pop1 = document.getElementById("container_of_pop1");
+                function pop_display2() {
+                        popup2.style.display = "flex";
+                        popup2.style.height = "5rem";
+                        container_of_pop1.style.height = "5rem";
+                }
+                setTimeout(pop_display2, 3000);
 
-    // BTN OF POPUP To close it section 
-    let btn_of_cut2 = document.getElementById("btn_of_cut2");
+                // BTN OF POPUP To close it section 
+                let btn_of_cut2 = document.getElementById("btn_of_cut2");
 
-    btn_of_cut2.addEventListener("click", function btn_of_cut2() {
-      popup2.style.height = "0rem";
-      container_of_pop1.style.height = "0rem";
-      popup2.style.display = "none";
+                btn_of_cut2.addEventListener("click", function btn_of_cut2() {
+                        popup2.style.height = "0rem";
+                        container_of_pop1.style.height = "0rem";
+                        popup2.style.display = "none";
 
-    });
-  }
+                });
+        }
 
 });
 
 function Audio_controller() {
-        
-// Google Audio Controller
-let first1 = document.getElementById("first1");
-first1.addEventListener("mouseover", function google_aud_fnc() {
-        let myAudio1 = document.getElementById("myAudio1");
-        myAudio1.play();
-}); 
-function time_of_aud1() {
-        let myAudio1 = document.getElementById("myAudio1");
-        myAudio1.pause();
-        
-}
-first1.addEventListener("mouseout", function google_aud_fnc2() {
-        time_of_aud1();
-});
 
-// Facebook Audio Controller
-let first2 = document.getElementById("first2");
-first2.addEventListener("mouseover", function facebook_aud_fnc() {
-        let myAudio2 = document.getElementById("myAudio2");
-        myAudio2.play();
-}); 
-function time_of_aud2() {
-        let myAudio2 = document.getElementById("myAudio2");
-        myAudio2.pause();
-        
-}
-first2.addEventListener("mouseout", function facebook_aud_fnc2() {
-        time_of_aud2();
-});
+        // Google Audio Controller
+        let first1 = document.getElementById("first1");
+        first1.addEventListener("mouseover", function google_aud_fnc() {
+                let myAudio1 = document.getElementById("myAudio1");
+                myAudio1.play();
+        });
+        function time_of_aud1() {
+                let myAudio1 = document.getElementById("myAudio1");
+                myAudio1.pause();
 
+        }
+        first1.addEventListener("mouseout", function google_aud_fnc2() {
+                time_of_aud1();
+        });
 
-// YouTube Audio Controller
-let first3 = document.getElementById("first3");
-first3.addEventListener("mouseover", function Youtube_aud_fnc() {
-        let myAudio1 = document.getElementById("myAudio3");
-        myAudio1.play();
-}); 
-function time_of_aud3() {
-        let myAudio1 = document.getElementById("myAudio3");
-        myAudio1.pause();
-        
-}
-first3.addEventListener("mouseout", function Youtube_aud_fnc() {
-        time_of_aud3();
-});
-// first2.addEventListener("mouseout", function facebook_aud_fnc() {
-        
-// let clean = setTimeout(time_of_aud, 1000);
-// clearTimeout(clean);
-// });
+        // Facebook Audio Controller
+        let first2 = document.getElementById("first2");
+        first2.addEventListener("mouseover", function facebook_aud_fnc() {
+                let myAudio2 = document.getElementById("myAudio2");
+                myAudio2.play();
+        });
+        function time_of_aud2() {
+                let myAudio2 = document.getElementById("myAudio2");
+                myAudio2.pause();
+
+        }
+        first2.addEventListener("mouseout", function facebook_aud_fnc2() {
+                time_of_aud2();
+        });
 
 
-// Whatsapp Audio Controller
-let first4 = document.getElementById("first4");
-first4.addEventListener("mouseover", function Whatsapp_aud_fnc() {
-        let myAudio1 = document.getElementById("myAudio4");
-        myAudio1.play();
-}); 
-function time_of_aud4() {
-        let myAudio1 = document.getElementById("myAudio4");
-        myAudio1.pause();
-        
-}
-first4.addEventListener("mouseout", function Whatsapp_aud_fnc2() {
-        time_of_aud4();
-});
+        // YouTube Audio Controller
+        let first3 = document.getElementById("first3");
+        first3.addEventListener("mouseover", function Youtube_aud_fnc() {
+                let myAudio1 = document.getElementById("myAudio3");
+                myAudio1.play();
+        });
+        function time_of_aud3() {
+                let myAudio1 = document.getElementById("myAudio3");
+                myAudio1.pause();
+
+        }
+        first3.addEventListener("mouseout", function Youtube_aud_fnc() {
+                time_of_aud3();
+        });
+
+        // Whatsapp Audio Controller
+        let first4 = document.getElementById("first4");
+        first4.addEventListener("mouseover", function Whatsapp_aud_fnc() {
+                let myAudio1 = document.getElementById("myAudio4");
+                myAudio1.play();
+        });
+        function time_of_aud4() {
+                let myAudio1 = document.getElementById("myAudio4");
+                myAudio1.pause();
+
+        }
+        first4.addEventListener("mouseout", function Whatsapp_aud_fnc2() {
+                time_of_aud4();
+        });
 
 
-// Instagram Audio Controller
-let first5 = document.getElementById("first5");
-first5.addEventListener("mouseover", function Instagram_aud_fnc() {
-        let myAudio1 = document.getElementById("myAudio5");
-        myAudio1.play();
-}); 
-function time_of_aud5() {
-        let myAudio1 = document.getElementById("myAudio5");
-        myAudio1.pause();
-        
-}
-first5.addEventListener("mouseout", function Instagram_aud_fnc2() {
-        time_of_aud5();
-});
+        // Instagram Audio Controller
+        let first5 = document.getElementById("first5");
+        first5.addEventListener("mouseover", function Instagram_aud_fnc() {
+                let myAudio1 = document.getElementById("myAudio5");
+                myAudio1.play();
+        });
+        function time_of_aud5() {
+                let myAudio1 = document.getElementById("myAudio5");
+                myAudio1.pause();
+
+        }
+        first5.addEventListener("mouseout", function Instagram_aud_fnc2() {
+                time_of_aud5();
+        });
 
 
-// twitter Audio Controller
-let first6 = document.getElementById("first6");
-first6.addEventListener("mouseover", function Twitter_aud_fnc() {
-        let myAudio1 = document.getElementById("myAudio6");
-        myAudio1.play();
-}); 
-function time_of_aud6() {
-        let myAudio1 = document.getElementById("myAudio6");
-        myAudio1.pause();
-        
-}
-first6.addEventListener("mouseout", function Twitter_aud_fnc2() {
-        time_of_aud6();
-});
+        // twitter Audio Controller
+        let first6 = document.getElementById("first6");
+        first6.addEventListener("mouseover", function Twitter_aud_fnc() {
+                let myAudio1 = document.getElementById("myAudio6");
+                myAudio1.play();
+        });
+        function time_of_aud6() {
+                let myAudio1 = document.getElementById("myAudio6");
+                myAudio1.pause();
+
+        }
+        first6.addEventListener("mouseout", function Twitter_aud_fnc2() {
+                time_of_aud6();
+        });
 
 
-// Flipkart Audio Controller
-let first7 = document.getElementById("first7");
-first7.addEventListener("mouseover", function Flipkart_aud_fnc() {
-        let myAudio1 = document.getElementById("myAudio7");
-        myAudio1.play();
-}); 
-function time_of_aud7() {
-        let myAudio1 = document.getElementById("myAudio7");
-        myAudio1.pause();
-        
-}
-first7.addEventListener("mouseout", function Flipkart_aud_fnc2() {
-        
-        time_of_aud7();
-});
+        // Flipkart Audio Controller
+        let first7 = document.getElementById("first7");
+        first7.addEventListener("mouseover", function Flipkart_aud_fnc() {
+                let myAudio1 = document.getElementById("myAudio7");
+                myAudio1.play();
+        });
+        function time_of_aud7() {
+                let myAudio1 = document.getElementById("myAudio7");
+                myAudio1.pause();
 
-// Snapdeal Audio Controller
-let first8 = document.getElementById("first8");
-first8.addEventListener("mouseover", function snapdeal_aud_fnc() {
-        let myAudio1 = document.getElementById("myAudio8");
-        myAudio1.play();
-}); 
-function time_of_aud8() {
-        let myAudio1 = document.getElementById("myAudio8");
-        myAudio1.pause();
-        
-}
-first8.addEventListener("mouseout", function snapdeal_aud_fnc2() {
-        
-        time_of_aud8();
-});
+        }
+        first7.addEventListener("mouseout", function Flipkart_aud_fnc2() {
 
-// OLX Audio Controller
-let first9 = document.getElementById("first9");
-first9.addEventListener("mouseover", function olx_aud_fnc() {
-        let myAudio1 = document.getElementById("myAudio9");
-        myAudio1.play();
-}); 
-function time_of_aud9() {
-        let myAudio1 = document.getElementById("myAudio9");
-        myAudio1.pause();
-        
-}
-first9.addEventListener("mouseout", function olx_aud_fnc2() {
-        
-        time_of_aud9();
-});
+                time_of_aud7();
+        });
 
-// YT Studio Audio Controller
-let first10 = document.getElementById("first10");
-first10.addEventListener("mouseover", function studio_aud_fnc() {
-        let myAudio1 = document.getElementById("myAudio10");
-        myAudio1.play();
-}); 
-function time_of_aud10() {
-        let myAudio1 = document.getElementById("myAudio10");
-        myAudio1.pause();
-        
-}
-first10.addEventListener("mouseout", function studio_aud_fnc2() {
-        
-        time_of_aud10();
-});
+        // Snapdeal Audio Controller
+        let first8 = document.getElementById("first8");
+        first8.addEventListener("mouseover", function snapdeal_aud_fnc() {
+                let myAudio1 = document.getElementById("myAudio8");
+                myAudio1.play();
+        });
+        function time_of_aud8() {
+                let myAudio1 = document.getElementById("myAudio8");
+                myAudio1.pause();
 
-// Telegram Audio Controller
-let first11 = document.getElementById("first11");
-first11.addEventListener("mouseover", function telegram_aud_fnc() {
-        let myAudio1 = document.getElementById("myAudio11");
-        myAudio1.play();
-}); 
-function time_of_aud11() {
-        let myAudio1 = document.getElementById("myAudio11");
-        myAudio1.pause();
-        
-}
-first11.addEventListener("mouseout", function telegram_aud_fnc2() {
-        
-        time_of_aud11();
-});
+        }
+        first8.addEventListener("mouseout", function snapdeal_aud_fnc2() {
 
-// SkillClash Audio Controller
-let first12 = document.getElementById("first12");
-first12.addEventListener("mouseover", function clash_aud_fnc() {
-        let myAudio1 = document.getElementById("myAudio12");
-        myAudio1.play();
-}); 
-function time_of_aud12() {
-        let myAudio1 = document.getElementById("myAudio12");
-        myAudio1.pause();
-        
-}
-first12.addEventListener("mouseout", function clash_aud_fnc2() {
-        
-        time_of_aud12();
-});
+                time_of_aud8();
+        });
 
-// Paytm Audio Controller
-let first13 = document.getElementById("first13");
-first13.addEventListener("mouseover", function Paytm_aud_fnc() {
-        let myAudio1 = document.getElementById("myAudio13");
-        myAudio1.play();
-}); 
-function time_of_aud13() {
-        let myAudio1 = document.getElementById("myAudio13");
-        myAudio1.pause();
-        
-}
-first13.addEventListener("mouseout", function Paytm_aud_fnc2() {
-        
-        time_of_aud13();
-});
+        // OLX Audio Controller
+        let first9 = document.getElementById("first9");
+        first9.addEventListener("mouseover", function olx_aud_fnc() {
+                let myAudio1 = document.getElementById("myAudio9");
+                myAudio1.play();
+        });
+        function time_of_aud9() {
+                let myAudio1 = document.getElementById("myAudio9");
+                myAudio1.pause();
 
-// Utorrent Audio Controller
-let first14 = document.getElementById("first14");
-first14.addEventListener("mouseover", function torrent_aud_fnc() {
-        let myAudio1 = document.getElementById("myAudio14");
-        myAudio1.play();
-}); 
-function time_of_aud14() {
-        let myAudio1 = document.getElementById("myAudio14");
-        myAudio1.pause();
-        
-}
-first14.addEventListener("mouseout", function torrent_aud_fnc2() {
-        
-        time_of_aud14();
-});
+        }
+        first9.addEventListener("mouseout", function olx_aud_fnc2() {
 
-// smartprix Audio Controller
-let first15 = document.getElementById("first15");
-first15.addEventListener("mouseover", function smartprix_aud_fnc() {
-        let myAudio1 = document.getElementById("myAudio15");
-        myAudio1.play();
-}); 
-function time_of_aud15() {
-        let myAudio1 = document.getElementById("myAudio15");
-        myAudio1.pause();
-        
-}
-first15.addEventListener("mouseout", function smartprix_aud_fnc2() {
-        
-        time_of_aud15();
-});
+                time_of_aud9();
+        });
 
-// Amazon Audio Controller
-let first16 = document.getElementById("first16");
-first16.addEventListener("mouseover", function Amazon_aud_fnc() {
-        let myAudio1 = document.getElementById("myAudio16");
-        myAudio1.play();
-}); 
-function time_of_aud16() {
-        let myAudio1 = document.getElementById("myAudio16");
-        myAudio1.pause();
-        
-}
-first16.addEventListener("mouseout", function Amazon_aud_fnc2() {
-        
-        time_of_aud16();
-});
+        // YT Studio Audio Controller
+        let first10 = document.getElementById("first10");
+        first10.addEventListener("mouseover", function studio_aud_fnc() {
+                let myAudio1 = document.getElementById("myAudio10");
+                myAudio1.play();
+        });
+        function time_of_aud10() {
+                let myAudio1 = document.getElementById("myAudio10");
+                myAudio1.pause();
 
-// Hotstar Audio Controller
-let hide1 = document.getElementById("hide1");
-hide1.addEventListener("mouseover", function Hotstar_aud_fnc() {
-        let myAudio1 = document.getElementById("myAudio17");
-        myAudio1.play();
-}); 
-function time_of_aud17() {
-        let myAudio1 = document.getElementById("myAudio17");
-        myAudio1.pause();
-        
-}
-hide1.addEventListener("mouseout", function Hotstar_aud_fnc2() {
-        
-        time_of_aud17();
-});
+        }
+        first10.addEventListener("mouseout", function studio_aud_fnc2() {
 
-// 9apps Audio Controller
-let hide2 = document.getElementById("hide2");
-hide2.addEventListener("mouseover", function apps_aud_fnc() {
-        let myAudio1 = document.getElementById("myAudio18");
-        myAudio1.play();
-}); 
-function time_of_aud18() {
-        let myAudio1 = document.getElementById("myAudio18");
-        myAudio1.pause();
-        
-}
-hide2.addEventListener("mouseout", function apps_aud_fnc2() {
-        
-        time_of_aud18();
-});
+                time_of_aud10();
+        });
+
+        // Telegram Audio Controller
+        let first11 = document.getElementById("first11");
+        first11.addEventListener("mouseover", function telegram_aud_fnc() {
+                let myAudio1 = document.getElementById("myAudio11");
+                myAudio1.play();
+        });
+        function time_of_aud11() {
+                let myAudio1 = document.getElementById("myAudio11");
+                myAudio1.pause();
+
+        }
+        first11.addEventListener("mouseout", function telegram_aud_fnc2() {
+
+                time_of_aud11();
+        });
+
+        // SkillClash Audio Controller
+        let first12 = document.getElementById("first12");
+        first12.addEventListener("mouseover", function clash_aud_fnc() {
+                let myAudio1 = document.getElementById("myAudio12");
+                myAudio1.play();
+        });
+        function time_of_aud12() {
+                let myAudio1 = document.getElementById("myAudio12");
+                myAudio1.pause();
+
+        }
+        first12.addEventListener("mouseout", function clash_aud_fnc2() {
+
+                time_of_aud12();
+        });
+
+        // Paytm Audio Controller
+        let first13 = document.getElementById("first13");
+        first13.addEventListener("mouseover", function Paytm_aud_fnc() {
+                let myAudio1 = document.getElementById("myAudio13");
+                myAudio1.play();
+        });
+        function time_of_aud13() {
+                let myAudio1 = document.getElementById("myAudio13");
+                myAudio1.pause();
+
+        }
+        first13.addEventListener("mouseout", function Paytm_aud_fnc2() {
+
+                time_of_aud13();
+        });
+
+        // Utorrent Audio Controller
+        let first14 = document.getElementById("first14");
+        first14.addEventListener("mouseover", function torrent_aud_fnc() {
+                let myAudio1 = document.getElementById("myAudio14");
+                myAudio1.play();
+        });
+        function time_of_aud14() {
+                let myAudio1 = document.getElementById("myAudio14");
+                myAudio1.pause();
+
+        }
+        first14.addEventListener("mouseout", function torrent_aud_fnc2() {
+
+                time_of_aud14();
+        });
+
+        // smartprix Audio Controller
+        let first15 = document.getElementById("first15");
+        first15.addEventListener("mouseover", function smartprix_aud_fnc() {
+                let myAudio1 = document.getElementById("myAudio15");
+                myAudio1.play();
+        });
+        function time_of_aud15() {
+                let myAudio1 = document.getElementById("myAudio15");
+                myAudio1.pause();
+
+        }
+        first15.addEventListener("mouseout", function smartprix_aud_fnc2() {
+
+                time_of_aud15();
+        });
+
+        // Amazon Audio Controller
+        let first16 = document.getElementById("first16");
+        first16.addEventListener("mouseover", function Amazon_aud_fnc() {
+                let myAudio1 = document.getElementById("myAudio16");
+                myAudio1.play();
+        });
+        function time_of_aud16() {
+                let myAudio1 = document.getElementById("myAudio16");
+                myAudio1.pause();
+
+        }
+        first16.addEventListener("mouseout", function Amazon_aud_fnc2() {
+
+                time_of_aud16();
+        });
+
+        // Hotstar Audio Controller
+        let hide1 = document.getElementById("hide1");
+        hide1.addEventListener("mouseover", function Hotstar_aud_fnc() {
+                let myAudio1 = document.getElementById("myAudio17");
+                myAudio1.play();
+        });
+        function time_of_aud17() {
+                let myAudio1 = document.getElementById("myAudio17");
+                myAudio1.pause();
+
+        }
+        hide1.addEventListener("mouseout", function Hotstar_aud_fnc2() {
+
+                time_of_aud17();
+        });
+
+        // 9apps Audio Controller
+        let hide2 = document.getElementById("hide2");
+        hide2.addEventListener("mouseover", function apps_aud_fnc() {
+                let myAudio1 = document.getElementById("myAudio18");
+                myAudio1.play();
+        });
+        function time_of_aud18() {
+                let myAudio1 = document.getElementById("myAudio18");
+                myAudio1.pause();
+
+        }
+        hide2.addEventListener("mouseout", function apps_aud_fnc2() {
+
+                time_of_aud18();
+        });
 }
 
 // Audio Turn on or off section 
 function btn_of_aud_icons_fnc() {
-        if (btn_of_aud_icons.value!="Turn off") {
-                btn_of_aud_icons.value="Turn off";
-              let aud =  Audio_controller();
+        if (btn_of_aud_icons.value != "Turn off") {
+                btn_of_aud_icons.value = "Turn off";
+                let aud = Audio_controller();
         } else {
-                btn_of_aud_icons.value="Turn off";
-                  }
-}
+                btn_of_aud_icons.value = "Turn off";
+                aud = "hello";
+        }
+};
+
+//Link Switcher Google To Youtube Section
+//All Variable Section
+let google_swt = document.getElementById("btn_to_swith_g_yt");
+let youtube_swt = document.getElementById("btn_to_swith_ty_yt");
+let search_swt = document.getElementById("J_searchSubmit");
+let text1 = document.getElementById("textsearch");
+var var_for_link = "https://www.google.co.in/search?q=";
 
 
+//By Default Settings When WebSite Loaded
+google_swt.style.backgroundColor = "#6b9af10c";
+
+//All Function Section
+//Google Link Switching Function
+google_swt.addEventListener("click", function google_link_swt_func() {
+        var_for_link = "https://www.google.co.in/search?q=";
+        google_swt.style.backgroundColor = "#6b9af10c";
+        youtube_swt.style.background = "none";
+        text1.style.outline="none";
+});
+
+//YouTube Link Switching Function
+youtube_swt.addEventListener("click", function google_link_swt_func() {
+        var_for_link = "https://www.youtube.co.in/search?q=";
+        youtube_swt.style.backgroundColor = "#dc2c280d";
+        google_swt.style.background = "none";
+        text1.style.outline="none";
+});
+
+//Search BTN Action
+search_swt.addEventListener("click", function search_act() {
+        if (text1.value!=""){
+               
+                window.open(`${var_for_link}${text1.value}`);
+        }
+        else{
+                text1.style.outline="2px solid red";
+        }
+    
+});
+
+//When User Press Enter Action Function
+text1.addEventListener("keyup", function prs_enter_by_user_func() {
+    if (text1.value!="") {text1.style.outline="none"; 
+        if (event.keyCode === 13) {
+            window.open(`${var_for_link}${text1.value}`);
+            
+            }
+    } else{
+        text1.style.outline="2px solid red";
+};
+});
 
 </script>
 </body>
