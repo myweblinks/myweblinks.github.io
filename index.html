@@ -12,8 +12,9 @@
         <title>My-Web-Links</title>
 </head>
 
-<style>body{
-    margin: 0em;
+<style>
+        body{
+    margin: 0em; 
     background-color: #f5f5f5;
      
 }  
@@ -442,6 +443,7 @@
 }
 #side1:hover{
     background-color: rgba(255, 196, 0, 0.178);
+    border: 1px solid rgba(255, 196, 0, 0.178);
 }
 #side2{
     transition-property: background-color;
@@ -467,6 +469,7 @@
 }
 #side2:hover{
     background-color: rgba(255, 0, 191, 0.247);
+    border: 1px solid rgba(255, 0, 191, 0.247);
 }
 #side3{
     transition-property: background-color;
@@ -476,11 +479,14 @@
     background-color: rgba(243, 243, 243, 0.329);
     animation-name: side3;
     animation-timing-function: ease-in-out;
-    animation-delay: 0.4s;
+    animation-delay: 0.7s;
     animation-fill-mode: both;
     animation-direction: alternate;
     animation-iteration-count: 1;
     animation-duration: 0.5s;
+    cursor: pointer;
+    /* outline: none; */
+    /* border: none; */
 }
 @keyframes side3{
     from{
@@ -491,7 +497,8 @@
     }
 }
 #side3:hover{
-    background-color: rgba(0, 81, 255, 0.233);
+    background-color: rgba(0, 81, 255, 0.103);
+    border: 1px solid rgba(0, 81, 255, 0.103);
 }
 #side4{
     transition-property: background-color;
@@ -501,7 +508,7 @@
     background-color: rgba(243, 243, 243, 0.329);
     animation-name: side4;
     animation-timing-function: ease-in-out;
-    animation-delay: 0.5s;
+    animation-delay: 0.4s;
     animation-fill-mode: both;
     animation-direction: alternate;
     animation-iteration-count: 1;
@@ -517,6 +524,7 @@
 }
 #side4:hover{
     background-color: rgba(0, 255, 213, 0.281);
+    border: 1px solid rgba(0, 255, 213, 0.281);
 }
 #side5{
     transition-property: background-color;
@@ -526,7 +534,7 @@
     background-color: rgba(243, 243, 243, 0.329);
     animation-name: side5;
     animation-timing-function: ease-in-out;
-    animation-delay: 0.6s;
+    animation-delay: 0.5s;
     animation-fill-mode: both;
     animation-direction: alternate;
     animation-iteration-count: 1;
@@ -542,6 +550,7 @@
 }
 #side5:hover{
     background-color: rgba(60, 255, 0, 0.253);
+    border: 1px solid rgba(60, 255, 0, 0.253);
 }
 #side6{
     transition-property: background-color;
@@ -551,7 +560,7 @@
     background-color: rgba(243, 243, 243, 0.329);
     animation-name: side6;
     animation-timing-function: ease-in-out;
-    animation-delay: 0.7s;
+    animation-delay: 0.6s;
     animation-fill-mode: both;
     animation-direction: alternate;
     animation-iteration-count: 1;
@@ -567,6 +576,7 @@
 }
 #side6:hover{
     background-color: rgba(255, 0, 119, 0.322);
+    border: 1px solid rgba(255, 0, 119, 0.322);
 }
 /* Navigation Links Section  */
 .navlinks{
@@ -592,9 +602,10 @@ flex-direction: row;
     justify-content: center;
     align-items: center;
     justify-content: space-evenly;
+    color: black;
 }
 .navitems{
-    /* border: 2px solid red; */
+    border: 1px solid rgba(131, 131, 131, 0.397);
     border-radius: 100rem;
     width: 7.5rem;
     height: 1.7rem;
@@ -610,7 +621,7 @@ flex-direction: row;
     font-size: 1.1rem;
 }
 .side_items{
-    /* border: 2px solid red; */
+    border: 1px solid rgba(131, 131, 131, 0.397);
     border-radius: 100rem;
     width: 7.5rem;
     height: 1.7rem;
@@ -837,7 +848,8 @@ input[type="button"]{
     justify-content: center;
     align-items: center;
     background: none;
-    /* background-color: #6b9af10e; */
+    /* background-color: #6b9af160;  Changer*/
+    /* background-color: #6b9af10c; */
     outline: none;
     cursor: pointer;
     height: 3rem;
@@ -895,6 +907,7 @@ input[type="button"]{
     border-bottom-right-radius: 0.3rem;
     border-top-right-radius: 0.3rem;
     cursor: pointer;
+    border: none;
 }
 #J_searchSubmit:hover{
     /* border: 2px solid red; */
@@ -1224,7 +1237,7 @@ width: 3.8rem;
     height: 12rem;
     margin-top: 1rem;
     /* justify-content: space-evenly; */
-    background-color: white;
+    /* background-color: white; */
     justify-content: center;
 }
 .container3{
@@ -1288,7 +1301,7 @@ width: 3.8rem;
     margin-top: 1.5rem;
     justify-content: center;
     display: flex;
-    background-color: white;
+    /* background-color: white; */
 }
 .container5{
     border: 2px solid red;
@@ -1341,7 +1354,7 @@ width: 3.8rem;
     margin-top: 1.5rem;
     justify-content: center;
     display: flex;
-    background-color: white;
+    /* background-color: white; */
 }
 .container7{
     border: 2px solid red;
@@ -2438,11 +2451,32 @@ width: 3.8rem;
     to{
         height: 0.8rem;
     }
-} </style>
+}
+
+#text_of_dark_btn{
+    /* border:  2px solid red; */
+    /* font: caption; */
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 10rem;
+    position: relative;
+    margin: 0pc;
+    height: 1rem;
+}
+#img_derknight{
+    /* border:  2px solid red; */
+    width: 1.3rem;
+    height: 1.3rem;
+}
+/* #containeralp1{
+    background-color: black;
+} */</style>
 
 
 <body>
-
 
         <!-- Navigation Section  -->
         <div id="container_of_pop">
@@ -2492,30 +2526,33 @@ width: 3.8rem;
                                 <div id="side_links">
                                         <div id="container_of_three3">
                                                 <a href="" id="side1" class="side_items">
-                                                        <img src="Files/home_icon.png" id="navamazon" alt="">
+                                                        <img src="Files/home_icon.png" style="width: 1.4rem; 
+                                                        margin-right: 0.5rem;" id="home" alt="">
                                                         Home</a>
                                                 <a href="https://mail.google.com" id="side2" class="side_items"
                                                         target="_blank"><img src="Files/youtube.png" id="navgmail"
                                                                 alt="">
                                                         Channel</a>
-                                                <a href="https://www.microsoft.com" id="side3" class="side_items"
-                                                        target="_blank">
-                                                        <img src="Files/instagramicon.png" id="navmicrosoft" alt="">
-                                                        Instagram</a>
+                                               <a href="http://www.speedtest.net/" id="side4" class="side_items"
+                                                        target="_blank"> 
+                                                        <img src="Files/about_me.png"  id="about_me_pic" style="width: 1.4rem; 
+                                                         margin-right: 0.5rem;" alt="">
+                                                        About Me</a>
                                         </div>
                                         <div id="container_of_three4">
-                                                <a href="http://www.speedtest.net/" id="side4" class="side_items"
-                                                        target="_blank">
-                                                        <img src="Files/about_me.png" id="navspeed" alt="">
-                                                        About Me</a>
+                                              
                                                 <a href="https://translate.google.com/" id="side5" class="side_items"
-                                                        target="_blank"> <img src="Files/contactus.png"
-                                                                id="navtranslate" alt="">
+                                                        target="_blank"> <img style="width: 1.4rem; 
+                                                        margin-right: 0.5rem;" src="Files/contactus.png"
+                                                                id="contact_uspng" alt="">
                                                         Contact</a>
                                                 <a href="https://web.whatsapp.com/" id="side6" class="side_items"
                                                         target="_blank">
-                                                        <img src="Files/feedback.png" id="navwhatsapp" alt="">
+                                                        <img src="Files/feedback.png" style="width: 1.4rem; 
+                                                        margin-right: 0.5rem;" id="feed" alt="">
                                                         Feedback</a>
+                                                        
+                                                        <button id="side3" class="side_items"> <img  id="img_derknight" src="Files/darknight.png" alt="">  <p id="text_of_dark_btn">DarkMode</p> </button>
                                         </div>
                                 </div>
                                 <!-- Nav Links Main  -->
@@ -2577,10 +2614,10 @@ width: 3.8rem;
         <div id="search">
                
                         <div id="all">
-                                <button id="btn_to_swith_g_yt"><img id="googlesearchiconmain" class="googlesearchitems"
+                                <button id="btn_to_swith_g_yt"><img draggable="false" id="googlesearchiconmain" class="googlesearchitems"
                                 src="Files/googlesearchicon.png" alt=""></button> 
 
-                                <button id="btn_to_swith_ty_yt"><img id="youtubesearchiconmain" class="youtubeearchitems"
+                                <button id="btn_to_swith_ty_yt"><img draggable="false" id="youtubesearchiconmain" class="youtubeearchitems"
                                 src="Files/youtube_search_images.png" alt=""></button> 
                                  <input class="youtubesearchitems"
                                         id="textsearch" class="search-input"  type="text" 
@@ -2708,8 +2745,8 @@ width: 3.8rem;
                 </div>
         </div>
         <!-- More Liks in titles  -->
-        <div id="containerparent" class="containerparent">
-                <div class="container3">
+        <div id="containerparentid" class="containerparent">
+                <div  class="container3">
                         <p id="downloadstitle">Download <img src="Files/package.png" id="packagemainicon" alt=""> </p>
                         <div class="containerofextradownloads">
                                 <a target="_blank" class="extradownloads" href="http://pagalworld.me/">Pagalworld</a>
@@ -2840,9 +2877,10 @@ width: 3.8rem;
                 </div>
                 <p id="footercopy">Copyright &copy; 2021. All Rights Reserved.</p>
         </footer>
-        <script>let side_btn = document.getElementById('side_btn');
+        <script>
+               let side_btn = document.getElementById('side_btn');
 
-// Sign BTN Section 
+// Sign BTN Section  
 let signin_btn = document.getElementById("signin_btn");
 let body = document.body;
 signin_btn.addEventListener("click", function signin_btn_fcn() {
@@ -3612,9 +3650,6 @@ signin_btn.addEventListener("click", function signin_btn_fcn() {
   </footer>`;
                 })
         })
-
-
-
         //Back From Sign Function 
         let back_from_sign = document.getElementById("back_from_sign");
         back_from_sign.addEventListener("click", function back_from_sign_fnc() {
@@ -3642,405 +3677,6 @@ signin_btn.addEventListener("click", function signin_btn_fcn() {
         })
 })
 
-
-
-
-
-
-
-
-// console.log(body_childs);
-let right_link5 = document.getElementById('right_link5');
-function switch_theme(el) {
-        let element = document.body;
-        let navigation = document.getElementById('navigation12');
-        let container = document.getElementById('container12');
-        let container1 = document.getElementById('container13');
-        let container14 = document.getElementById('container14');
-        let breaker = document.getElementById('breaker');
-        let firstlink1 = document.getElementById('first1');
-        let firstlink2 = document.getElementById('first2');
-        let firstlink3 = document.getElementById('first3');
-        let firstlink4 = document.getElementById('first4');
-        let firstlink5 = document.getElementById('first5');
-        let firstlink6 = document.getElementById('first6');
-        let firstlink7 = document.getElementById('first7');
-        let firstlink8 = document.getElementById('first8');
-        let firstlink9 = document.getElementById('first9');
-        let firstlink10 = document.getElementById('first10');
-        let firstlink11 = document.getElementById('first11');
-        let firstlink12 = document.getElementById('first12');
-        let firstlink13 = document.getElementById('first13');
-        let firstlink14 = document.getElementById('first14');
-        let firstlink15 = document.getElementById('first15');
-        let firstlink16 = document.getElementById('first16');
-        let all = document.getElementById('all');
-        let hide1 = document.getElementById('hide1');
-        let hide2 = document.getElementById('hide2');
-        let side_btn = document.getElementById('side_btn');
-        let side_btn1 = document.getElementById('side_btn1');
-        let iteminbtn1 = document.getElementById('iteminbtn1');
-        let iteminbtn2 = document.getElementById('iteminbtn2');
-        let iteminbtn3 = document.getElementById('iteminbtn3');
-        let profilemain4 = document.getElementById('profilemain4');
-        let profilemain5 = document.getElementById('profilemain5');
-        let profilemain3 = document.getElementById('profilemain3');
-        let profilemain6 = document.getElementById('profilemain6');
-        let profilemain1 = document.getElementById('profilemain1');
-        let profilemain2 = document.getElementById('profilemain2');
-        let breaker2 = document.getElementById('breaker2');
-        let breaker3 = document.getElementById('breaker3');
-        let breaker4 = document.getElementById('breaker4');
-        let containerparent1 = document.getElementById('containerparent1');
-        let containerparent = document.getElementById('containerparent');
-        let right_link1 = document.getElementById('right_link1');
-        let right_link2 = document.getElementById('right_link2');
-        let right_link3 = document.getElementById('right_link3');
-        let right_link4 = document.getElementById('right_link4');
-        let right_link5 = document.getElementById('right_link5');
-        let right_link6 = document.getElementById('right_link6');
-
-        element.classList.toggle("dark-mode");
-        navigation.classList.toggle("navigation_bg");
-        container.classList.toggle("dark-mode");
-        container1.classList.toggle("navigation_bg");
-        container14.classList.toggle("navigation_bg");
-
-
-        if (all.style.backgroundColor == 'black') {
-                all.style.backgroundColor = 'white'
-        } else {
-                all.style.backgroundColor = 'black'
-        }
-
-
-        if (document.getElementById('dark_btn').textContent == "Apply Light Mode") {
-                document.getElementById('dark_btn').textContent = "Apply Dark Mode";
-        } else {
-                document.getElementById('dark_btn').textContent = "Apply Light Mode";
-        }
-        if (side_btn.style.background != "black") {
-                btn_back();
-        }
-        else {
-                side_btn.style.background = "#ffffff";
-        }
-        nav_links()
-        if (containerparent.style.background != "black") {
-                containerparent.style.background = "black";
-        }
-        else {
-                containerparent.style.background = "whitesmoke";
-        }
-
-        if (containerparent1.style.background != "black") {
-                containerparent1.style.background = "black";
-        }
-        else {
-                containerparent1.style.background = "whitesmoke";
-        }
-
-
-        if (containerparent2.style.background != "black") {
-                containerparent2.style.background = "black";
-        }
-        else {
-                containerparent2.style.background = "whitesmoke";
-        }
-
-        if (iteminbtn1.style.background != "white") {
-                iteminbtn1.style.background = "white";
-        }
-        else {
-                iteminbtn1.style.background = "black";
-        }
-
-        if (iteminbtn2.style.background != "white") {
-                iteminbtn2.style.background = "white";
-        }
-        else {
-                iteminbtn2.style.background = "black";
-        }
-
-        if (iteminbtn3.style.background != "white") {
-                iteminbtn3.style.background = "white";
-        }
-        else {
-                iteminbtn3.style.background = "black";
-        }
-
-        if (breaker.style.backgroundColor != "black") {
-                breaker.style.backgroundColor = "black";
-        }
-        else {
-                breaker.style.backgroundColor = "whitesmoke";
-        }
-        if (breaker2.style.backgroundColor != "black") {
-                breaker2.style.backgroundColor = "black";
-        }
-        else {
-                breaker2.style.backgroundColor = "whitesmoke";
-        }
-        if (breaker3.style.backgroundColor != "black") {
-                breaker3.style.backgroundColor = "black";
-        }
-        else {
-                breaker3.style.backgroundColor = "whitesmoke";
-        }
-        if (footerofweb.style.backgroundColor != "grey") {
-                footerofweb.style.backgroundColor = "grey";
-        }
-        else {
-                footerofweb.style.backgroundColor = "rgb(230 226 226)";
-        }
-        if (breaker4.style.backgroundColor != "black") {
-                breaker4.style.backgroundColor = "black";
-        }
-        else {
-                breaker4.style.backgroundColor = "whitesmoke";
-        }
-
-
-
-        if (right_link1.style.color != "white") {
-                right_link1.style.color = "white";
-        }
-        else {
-                right_link1.style.color = "black";
-        }
-
-
-
-        if (right_link2.style.color != "white") {
-                right_link2.style.color = "white";
-        }
-        else {
-                right_link2.style.color = "black";
-        }
-
-
-
-        if (right_link3.style.color != "white") {
-                right_link3.style.color = "white";
-        }
-        else {
-                right_link3.style.color = "black";
-        }
-
-
-
-        if (right_link4.style.color != "white") {
-                right_link4.style.color = "white";
-        }
-        else {
-                right_link4.style.color = "black";
-        }
-
-
-
-        if (right_link5.style.color != "white") {
-                right_link5.style.color = "white";
-        }
-        else {
-                right_link5.style.color = "black";
-        }
-
-
-
-        if (right_link6.style.color != "white") {
-                right_link6.style.color = "white";
-        }
-        else {
-                right_link6.style.color = "black";
-        }
-        if (firstlink1.style.color != "white") {
-                firstlink1.style.color = "white";
-        }
-        else {
-                firstlink1.style.color = "black";
-        }
-
-
-        if (firstlink2.style.color != "white") {
-                firstlink2.style.color = "white";
-        }
-        else {
-                firstlink2.style.color = "black";
-        }
-
-
-        if (firstlink3.style.color != "white") {
-                firstlink3.style.color = "white";
-        }
-        else {
-                firstlink3.style.color = "black";
-        }
-
-
-        if (firstlink4.style.color != "white") {
-                firstlink4.style.color = "white";
-        }
-        else {
-                firstlink4.style.color = "black";
-        }
-
-
-
-        if (firstlink5.style.color != "white") {
-                firstlink5.style.color = "white";
-        }
-        else {
-                firstlink5.style.color = "black";
-        }
-
-        clearTimeout(dark_timeout);
-        if (firstlink6.style.color != "white") {
-                firstlink6.style.color = "white";
-        }
-        else {
-                firstlink6.style.color = "black";
-        }
-
-
-        if (firstlink7.style.color != "white") {
-                firstlink7.style.color = "white";
-        }
-        else {
-                firstlink7.style.color = "black";
-        }
-
-
-        if (firstlink8.style.color != "white") {
-                firstlink8.style.color = "white";
-        }
-        else {
-                firstlink8.style.color = "black";
-        }
-
-
-        if (firstlink9.style.color != "white") {
-                firstlink9.style.color = "white";
-        }
-        else {
-                firstlink9.style.color = "black";
-        }
-
-
-        if (firstlink10.style.color != "white") {
-                firstlink10.style.color = "white";
-        }
-        else {
-                firstlink10.style.color = "black";
-        }
-
-
-        if (firstlink11.style.color != "white") {
-                firstlink11.style.color = "white";
-        }
-        else {
-                firstlink11.style.color = "black";
-        }
-
-
-        if (firstlink12.style.color != "white") {
-                firstlink12.style.color = "white";
-        }
-        else {
-                firstlink12.style.color = "black";
-        }
-
-
-        if (firstlink13.style.color != "white") {
-                firstlink13.style.color = "white";
-        }
-        else {
-                firstlink13.style.color = "black";
-        }
-
-
-        if (firstlink14.style.color != "white") {
-                firstlink14.style.color = "white";
-        }
-        else {
-                firstlink14.style.color = "black";
-        }
-
-
-        if (firstlink15.style.color != "white") {
-                firstlink15.style.color = "white";
-        }
-        else {
-                firstlink15.style.color = "black";
-        }
-
-
-        if (firstlink16.style.color != "white") {
-                firstlink16.style.color = "white";
-        }
-        else {
-                firstlink16.style.color = "black";
-        }
-
-
-        if (hide1.style.color != "white") {
-                hide1.style.color = "white";
-        }
-        else {
-                hide1.style.color = "black";
-        }
-
-
-        if (hide2.style.color != "white") {
-                hide2.style.color = "white";
-        }
-        else {
-                hide2.style.color = "black";
-        }
-        if (downloadstitle.style.backgroundColor != "black") {
-                downloadstitle.style.backgroundColor = "black";
-        }
-        else {
-                downloadstitle.style.backgroundColor = "whitesmoke";
-        }
-
-
-        if (softwaretitle.style.backgroundColor != "black") {
-                softwaretitle.style.backgroundColor = "black";
-        }
-        else {
-                softwaretitle.style.backgroundColor = "whitesmoke";
-        }
-
-        if (musictitle.style.backgroundColor != "black") {
-                musictitle.style.backgroundColor = "black";
-        }
-        else {
-                musictitle.style.backgroundColor = "whitesmoke";
-        }
-
-        if (shoppingtitle.style.backgroundColor != "black") {
-                shoppingtitle.style.backgroundColor = "black";
-        }
-        else {
-                shoppingtitle.style.backgroundColor = "whitesmoke";
-        }
-
-        if (sportstitle.style.backgroundColor != "black") {
-                sportstitle.style.backgroundColor = "black";
-        }
-        else {
-                sportstitle.style.backgroundColor = "whitesmoke";
-        }
-
-        if (newstitle.style.backgroundColor != "black") {
-                newstitle.style.backgroundColor = "black";
-        }
-        else {
-                newstitle.style.backgroundColor = "whitesmoke";
-        }
-
-
-}
 downloadslinks.addEventListener("mouseover", function over_right_link5() {
         if (right_link5.style.color != "black") {
                 right_link5.style.color = "black";
@@ -4058,20 +3694,11 @@ downloadslinks.addEventListener("mouseover", function over_right_link5() {
 
 let side_panel = document.getElementById('side_panel')
 
-// Event listener
-// hover.addEventListener('clickon', function run() {
-//   alert("You are over the navigation bar. please click on ok to continue......")
-// })
 function loading_items_fnc() {
         let beep = new Audio();
         beep.src = "Files/Audio Files/loading_items.mp3";
         beep.play();
 }
-
-
-
-
-
 
 function side() {
 
@@ -4082,8 +3709,6 @@ function side() {
         let iteminbtn4 = document.getElementById("iteminbtn4");
         let iteminbtn6 = document.getElementById("iteminbtn6");
         let iteminbtn41 = document.getElementById("iteminbtn4");
-
-
 
         if (iteminbtn6.style.transform != "rotate(-45deg)") {
                 iteminbtn6.style.transform = "rotate(-45deg)"
@@ -4142,28 +3767,7 @@ function side() {
 
 }
 
-//Side Panel Function Of without any problems ]
-// function side() {
-//   let side_btn = document.getElementById("side_btn");
-//   let side_panel = document.getElementById('side_panel')
-//   //   let body_childs = document.body;
-//   //   body_childs.addEventListener('click', function body_onclick() {
-//   //   // alert("jhjkshjaskdhjashkdahjsda");
-//   // })
-//   if (side_btn.style.border!="none") {
-//     side_btn.style.border="none"
-//   } else {
-//     side_btn.style.border!="none"
-//   }
-//   if (side_panel.style.display != 'flex') {
-//     side_panel.style.display = 'flex';
-//   } else {
-//     side_panel.style.display = 'none';
-//   }
 
-
-// }
-// let side_panel = document.getElementById('side_panel');
 function btn_back() {
         side_btn.style.background = "black";
 }
@@ -4171,93 +3775,7 @@ function btn_back() {
 function btn_back1() {
         side_btn.style.background = "black";
 }
-// This function is used to display time into webpage
 
-// function time_display() {
-//   let time = new Date;
-
-//   document.getElementById('side_parent').innerHTML=time;
-//   let str_time = document.getElementById('side_parent').children;
-
-// }
-
-//This function is used to alert the user to sign in to this website 
-
-// function alert_user_signin() {
-//    let alert_var = confirm("Please Sign Into This website to continue....");
-//    console.log(alert_var);
-//    if (alert_var != true) {
-// You can use a function on a function 
-//       false_alert();
-//     }
-//     else{
-//       // location.href = "www.yoursite.com";
-//    }
-// }
-// This is close function to close setted timeout 
-
-// let close_timeout = setTimeout(alert_user_signin, 10000);
-// This is used to give time to display a element to webpage
-
-// setInterval(time_display, 1000);
-
-// function false_alert() {
-//   // location.href = "https://www.google.com/";
-// }
-// function signin_page() {
-// }
-
-
-//Function Of nav links 
-function nav_links() {
-        if (profilemain4.style.color != "white") {
-                profilemain4.style.color = "white";
-        }
-        else {
-                profilemain4.style.color = "black";
-        }
-
-        if (profilemain5.style.color != "white") {
-                profilemain5.style.color = "white";
-        }
-        else {
-                profilemain5.style.color = "black";
-        }
-
-
-        if (profilemain3.style.color != "white") {
-                profilemain3.style.color = "white";
-        }
-        else {
-                profilemain3.style.color = "black";
-        }
-
-
-        if (profilemain2.style.color != "white") {
-                profilemain2.style.color = "white";
-        }
-        else {
-                profilemain2.style.color = "black";
-        }
-
-
-        if (profilemain6.style.color != "white") {
-                profilemain6.style.color = "white";
-        }
-        else {
-                profilemain6.style.color = "black";
-        }
-
-
-
-        if (profilemain1.style.color != "white") {
-                profilemain1.style.color = "white";
-        }
-        else {
-                profilemain1.style.color = "black";
-        }
-
-}
 
 // popup section 
 let popup1 = document.getElementById("popup1");
@@ -4277,7 +3795,7 @@ btn_of_cut1.addEventListener("click", function btn_of_cut1() {
         container_of_pop.style.height = "0rem";
         popup1.style.display = "none";
         if (popup1.style.display = !"none") {
-                popup1.style.display = "none"
+                popup1.style.display = "none";
         } else {
                 let popup2 = document.getElementById("popup2");
                 let container_of_pop1 = document.getElementById("container_of_pop1");
@@ -4654,6 +4172,315 @@ text1.addEventListener("keyup", function prs_enter_by_user_func() {
 };
 });
 
+//Dark mode Section
+//Global Color Variables
+var Black = "black";
+var LiteBlack = "rgb(31, 31, 31)";
+var MoreLiteBlack = "rgb(54, 54, 54)";
+var White = "white";
+var Bor_line = "#e0e0e0";
+
+//All Variable 
+let all = document.getElementById("all");
+let home = document.getElementById("home");
+let feed = document.getElementById("feed");
+let side1 = document.getElementById("side1");
+let side2 = document.getElementById("side2");
+let side3 = document.getElementById("side3");
+let side4 = document.getElementById("side4");
+let side5 = document.getElementById("side5");
+let side6 = document.getElementById("side6");
+let hide1 = document.getElementById("hide1");
+let hide2 = document.getElementById("hide2");
+let slide1 = document.getElementById("slide1");
+let first1 = document.getElementById("first1");
+let first2 = document.getElementById("first2");
+let first3 = document.getElementById("first3");
+let first4 = document.getElementById("first4");
+let first5 = document.getElementById("first5");
+let first6 = document.getElementById("first6");
+let first7 = document.getElementById("first7");
+let first8 = document.getElementById("first8");
+let first9 = document.getElementById("first9");
+let first10 = document.getElementById("first10");
+let first11 = document.getElementById("first11");
+let first12 = document.getElementById("first12");
+let first13 = document.getElementById("first13");
+let first14 = document.getElementById("first14");
+let first15 = document.getElementById("first15");
+let first16 = document.getElementById("first16");
+let breaker = document.getElementById("breaker");
+let iteminbtn4 = document.getElementById("iteminbtn4");
+let iteminbtn5 = document.getElementById("iteminbtn5");
+let iteminbtn6 = document.getElementById("iteminbtn6");
+let container14 = document.getElementById("container14");
+let navigation12 = document.getElementById("navigation12");
+let about_me_pic = document.getElementById("about_me_pic");
+let contact_uspng = document.getElementById("contact_uspng");
+let text_of_dark_btn = document.getElementById("text_of_dark_btn");
+let navi_links_2_contains = document.getElementById("navi_links_2_contains");
+let youtubesearchiconmain = document.getElementById("youtubesearchiconmain");
+let right_link1 = document.getElementById("right_link1");
+let right_link2 = document.getElementById("right_link2");
+let right_link3 = document.getElementById("right_link3");
+let right_link4 = document.getElementById("right_link4");
+let right_link5 = document.getElementById("right_link5");
+let right_link6 = document.getElementById("right_link6");
+let firstlink16 = document.getElementById("firstlink16");
+let amazonprime = document.getElementById("amazonprime");
+let navamazon = document.getElementById("navamazon");
+let textsearch = document.getElementById("textsearch");         
+let J_searchSubmit = document.getElementById("J_searchSubmit");  
+let containerparentid = document.getElementById("containerparentid") ;
+let containerparent1 = document.getElementById("containerparent1");
+let containerparent2 = document.getElementById("containerparent2");
+let breaker2 = document.getElementById("breaker2");
+let breaker3 = document.getElementById("breaker3");
+let breaker4 = document.getElementById("breaker4");
+let profilemain1 = document.getElementById("profilemain1");
+let profilemain2 = document.getElementById("profilemain2");
+let profilemain3 = document.getElementById("profilemain3");
+let profilemain4 = document.getElementById("profilemain4");
+let profilemain5 = document.getElementById("profilemain5");
+let profilemain6 = document.getElementById("profilemain6");
+
+
+//Functions
+side3.addEventListener("click", function side3_click_func() {
+        if (iteminbtn4.style.backgroundColor!=White) {
+                iteminbtn4.style.backgroundColor=White;
+                textsearch.style.backgroundColor=MoreLiteBlack;
+                textsearch.style.border=`1px solid ${Bor_line}` ;
+                textsearch.style.color="white";
+                profilemain1.style.color="white";
+                profilemain2.style.color="white";
+                profilemain3.style.color="white";
+                profilemain4.style.color="white";
+                profilemain5.style.color="white";
+                profilemain6.style.color="white";
+                J_searchSubmit.style.border="none";
+                containerparentid.style.backgroundColor=LiteBlack;
+                containerparent1.style.backgroundColor=LiteBlack;
+                containerparent2.style.backgroundColor=LiteBlack;
+                breaker2.style.backgroundColor=Black;
+                breaker3.style.backgroundColor=Black;
+                breaker4.style.backgroundColor=Black;
+
+        } else {
+                iteminbtn4.style.backgroundColor=Black;
+                textsearch.style.backgroundColor=White;
+                textsearch.style.border="1px solid black";
+                textsearch.style.color="black"; 
+                containerparentid.style.backgroundColor=White;
+                containerparent1.style.backgroundColor=White;
+                containerparent2.style.backgroundColor=White;
+                breaker2.style.backgroundColor="Whitesmoke";
+                breaker3.style.backgroundColor="Whitesmoke";
+                breaker4.style.backgroundColor="Whitesmoke";
+                profilemain1.style.color=Black;
+                profilemain2.style.color=Black;
+                profilemain3.style.color=Black;
+                profilemain4.style.color=Black;
+                profilemain5.style.color=Black;
+                profilemain6.style.color=Black;
+        }
+       
+
+
+        if (iteminbtn6.style.backgroundColor!=White) {
+                iteminbtn6.style.backgroundColor=White;
+        } else {
+                iteminbtn6.style.backgroundColor=Black;
+        };
+        
+        if (body.style.backgroundColor!=Black) {
+                body.style.backgroundColor=Black;
+        } else {
+                body.style.backgroundColor="whitesmoke";
+        };
+        
+        if (body.style.color!=White) {
+                body.style.color=White;
+        } else {
+                body.style.color=Black;
+        };
+        
+        if (side1.style.color!=White) {
+                side1.style.color=White;
+        } else {
+                side1.style.color=Black;
+        };
+        
+        if (side2.style.color!=White) {
+                side2.style.color=White;
+        } else {
+                side2.style.color=Black;
+        };
+        
+        if (side3.style.color!=White) {
+                side3.style.color=White;
+        } else {
+                side3.style.color=Black;
+        };
+        
+        if (side4.style.color!=White) {
+                side4.style.color=White;
+        } else {
+                side4.style.color=Black;
+        };
+        
+        if (side5.style.color!=White) {
+                side5.style.color=White;
+        } else {
+                side5.style.color=Black;
+        };
+        
+        if (side6.style.color!=White) {
+                side6.style.color=White;
+        } else {
+                side6.style.color=Black;
+        };
+        
+        if (navi_links_2_contains.style.color!=White) {
+                navi_links_2_contains.style.color=White;
+        } else {
+                navi_links_2_contains.style.color=Black;
+        };
+        
+        if (navigation12.style.backgroundColor!=LiteBlack) {
+                navigation12.style.backgroundColor=LiteBlack;
+        } else {
+                navigation12.style.backgroundColor="white";
+        };
+        
+        if (side_btn.style.backgroundColor!=LiteBlack) {
+                side_btn.style.backgroundColor=LiteBlack;
+        } else {
+                side_btn.style.backgroundColor="white";
+        };
+        
+        if (text_of_dark_btn.textContent!="LightMode") {
+                text_of_dark_btn.textContent="LightMode"
+        } else {
+                text_of_dark_btn.textContent="DarkMode"
+        };
+        if (iteminbtn5.style.backgroundColor!=White) {
+                iteminbtn5.style.backgroundColor=White;
+                about_me_pic.setAttribute("src",`Files/about_me_for Dark.png`);
+                firstlink16.setAttribute("src",`Files/amazonDark.png`);
+                navamazon.setAttribute("src",`Files/navamazonDark.png`);
+                home.setAttribute("src",`Files/home_iconfordark.png`);
+                contact_uspng.setAttribute("src",`Files/contactdark.png`);
+                feed.setAttribute("src",`Files/feedbackdark.png`);
+                amazonprime.setAttribute("src",`Files/primedark.png`);
+                youtubesearchiconmain.setAttribute("src",`Files/youtube_title Image For dark mode.png`);
+                all.style.backgroundColor=LiteBlack;
+                slide1.style.backgroundColor=LiteBlack;
+                container14.style.backgroundColor=LiteBlack;
+                breaker.style.backgroundColor=Black;
+                first1.style.color=White;
+                first2.style.color=White;
+                first3.style.color=White;
+                first4.style.color=White;
+                first5.style.color=White;
+                first6.style.color=White;
+                first7.style.color=White;
+                first8.style.color=White;
+                first9.style.color=White;
+                first10.style.color=White;
+                first11.style.color=White;
+                first12.style.color=White;
+                first13.style.color=White;
+                first14.style.color=White;
+                first15.style.color=White;
+                first16.style.color=White;
+                hide1.style.color=White;
+                hide2.style.color=White;
+                right_link1.style.color=White;
+                right_link2.style.color=White;
+                right_link3.style.color=White;
+                right_link4.style.color=White;
+                right_link5.style.color=White;
+                right_link6.style.color=White;             
+                 first1.style.borderColor=MoreLiteBlack;
+                 first2.style.borderColor=MoreLiteBlack;
+                 first3.style.borderColor=MoreLiteBlack;
+                 first4.style.borderColor=MoreLiteBlack;
+                 first5.style.borderColor=MoreLiteBlack;
+                 first6.style.borderColor=MoreLiteBlack;
+                 first7.style.borderColor=MoreLiteBlack;
+                 first8.style.borderColor=MoreLiteBlack;
+                 first9.style.borderColor=MoreLiteBlack;
+                first10.style.borderColor=MoreLiteBlack;
+                first11.style.borderColor=MoreLiteBlack;
+                first12.style.borderColor=MoreLiteBlack;
+                first13.style.borderColor=MoreLiteBlack;
+                first14.style.borderColor=MoreLiteBlack;
+                first15.style.borderColor=MoreLiteBlack;
+                first16.style.borderColor=MoreLiteBlack; 
+                  hide1.style.borderColor=MoreLiteBlack;
+                  hide2.style.borderColor=MoreLiteBlack;     
+
+
+        } else {
+                iteminbtn5.style.backgroundColor=Black;
+                about_me_pic.setAttribute("src",`Files/about_me.png`);
+                home.setAttribute("src",`Files/home_icon.png`);
+                contact_uspng.setAttribute("src",`Files/contactus.png`);
+                firstlink16.setAttribute("src",`Files/amazon.png`);
+                feed.setAttribute("src",`Files/feedback.png`);
+                youtubesearchiconmain.setAttribute("src",`Files/youtube_search_images.png`);
+                navamazon.setAttribute("src",`Files/navamazon.png`);
+                amazonprime.setAttribute("src",`Files/prime.png`);
+                all.style.backgroundColor=White;
+                slide1.style.backgroundColor=White;
+                container14.style.backgroundColor=White;
+                breaker.style.backgroundColor="Whitesmoke";
+                first1.style.color=Black;
+                first2.style.color=Black;
+                first3.style.color=Black;
+                first4.style.color=Black;
+                first5.style.color=Black;
+                first6.style.color=Black;
+                first7.style.color=Black;
+                first8.style.color=Black;
+                first9.style.color=Black;
+                first10.style.color=Black;
+                first11.style.color=Black;
+                first12.style.color=Black;
+                first13.style.color=Black;
+                first14.style.color=Black;
+                first15.style.color=Black;
+                first16.style.color=Black;   
+                 first1.style.borderColor=Bor_line;
+                 first2.style.borderColor=Bor_line;
+                 first3.style.borderColor=Bor_line;
+                 first4.style.borderColor=Bor_line;
+                 first5.style.borderColor=Bor_line;
+                 first6.style.borderColor=Bor_line;
+                 first7.style.borderColor=Bor_line;
+                 first8.style.borderColor=Bor_line;
+                 first9.style.borderColor=Bor_line;
+                first10.style.borderColor=Bor_line;
+                first11.style.borderColor=Bor_line;
+                first12.style.borderColor=Bor_line;
+                first13.style.borderColor=Bor_line;
+                first14.style.borderColor=Bor_line;
+                first15.style.borderColor=Bor_line;
+                first16.style.borderColor=Bor_line; 
+                  hide1.style.borderColor=Bor_line;
+                  hide2.style.borderColor=Bor_line;     
+                hide1.style.color=Black;
+                hide2.style.color=Black;  
+                right_link1.style.color=Black;
+                right_link2.style.color=Black;
+                right_link3.style.color=Black;
+                right_link4.style.color=Black;
+                right_link5.style.color=Black;
+                right_link6.style.color=Black;        
+        };
+        
+});
 </script>
 </body>
 
