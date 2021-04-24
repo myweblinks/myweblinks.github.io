@@ -2478,6 +2478,7 @@ width: 3.8rem;
 
 <body>
 
+
         <!-- Navigation Section  -->
         <div id="container_of_pop">
                 <div id="popup1"> <button id="btn_of_cut1"><img id="cut_image" src="Files/cut_image.png"
@@ -2704,11 +2705,11 @@ width: 3.8rem;
                         <h3 id="email">Emails</h3>
                         <!-- <iframe width="240" id="whatsappimagesforlook" height="150" src="/Files/navwhatsapp.png" frameborder="0" allow="accelerometer; no; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
                         <div id="emailsseaction">
-                                <a class="gmailselecthref" href="https://mail.google.com/" target="_blank"> <img
+                                <a class="gmailselecthref" id="gon" href="https://mail.google.com/" target="_blank"> <img
                                                 id="gmailselect" src="Files/navgmail.png" alt="">
                                         <p class="all_margin_off" id="right_link1">Gmail</p>
                                 </a>
-                                <a class="gmailselecthref" href="https://www.outlook.com/" target="_blank"> <img
+                                <a class="gmailselecthref" id="ounin" href="https://www.outlook.com/" target="_blank"> <img
                                                 id="gmailselect1" src="Files/navoutlook.png" alt="">
                                         <p class="all_margin_off" id="right_link2">Outlook</p>
                                 </a>
@@ -2716,11 +2717,11 @@ width: 3.8rem;
 
                         <h3 id="watchonline">Watch Online</h3>
                         <div class="watchonlineweb">
-                                <a target="_blank" class="watchonline_web" href="https://www.primevideo.com/"> <img
+                                <a target="_blank" id="prion" class="watchonline_web" href="https://www.primevideo.com/"> <img
                                                 src="Files/prime.png" id="amazonprime" alt="">
                                         <p class="all_margin_off" id="right_link3">Prime </p>
                                 </a>
-                                <a target="_blank" class="watchonline_web" href="https://www.netflix.com/"> <img
+                                <a target="_blank" id="neton" class="watchonline_web" href="https://www.netflix.com/"> <img
                                                 src="Files/netflix.png" id="netflix" alt="">
                                         <p class="all_margin_off" id="right_link4">Netflix </p>
                                 </a>
@@ -2736,7 +2737,7 @@ width: 3.8rem;
                                         <img src="Files/chrome.png" id="chromedownload" alt="">
                                         <p class="all_margin_off" id="right_link5">Chrome</p>
                                 </a>
-                                <a target="_blank" class="downloadslinks"
+                                <a target="_blank" id="mozi_down" class="downloadslinks"
                                         href="https://www.mozilla.org/en-US/firefox/new/"> <img src="Files/mozilla.png"
                                                 id="mozilladownload" alt="">
                                         <p class="all_margin_off" id="right_link6">Mozilla</p>
@@ -2878,7 +2879,7 @@ width: 3.8rem;
                 <p id="footercopy">Copyright &copy; 2021. All Rights Reserved.</p>
         </footer>
         <script>
-               let side_btn = document.getElementById('side_btn');
+              let side_btn = document.getElementById('side_btn');
 
 // Sign BTN Section  
 let signin_btn = document.getElementById("signin_btn");
@@ -3677,19 +3678,19 @@ signin_btn.addEventListener("click", function signin_btn_fcn() {
         })
 })
 
-downloadslinks.addEventListener("mouseover", function over_right_link5() {
-        if (right_link5.style.color != "black") {
-                right_link5.style.color = "black";
-        } else {
-                downloadslinks.addEventListener('mouseout', function out_right_link5() {
-                        if (right_link5.style.color != "black") {
-                                right_link5.style.color = "black";
-                        } else {
-                                right_link5.style.color = "white";
-                        }
-                });
-        }
-})
+// downloadslinks.addEventListener("mouseover", function over_right_link5() {
+//         if (right_link5.style.color != "black") {
+//                 right_link5.style.color = "black";
+//         } else {
+//                 downloadslinks.addEventListener('mouseout', function out_right_link5() {
+//                         if (right_link5.style.color != "black") {
+//                                 right_link5.style.color = "black";
+//                         } else {
+//                                 right_link5.style.color = "white";
+//                         }
+//                 });
+//         }
+// })
 
 
 let side_panel = document.getElementById('side_panel')
@@ -4179,6 +4180,7 @@ var LiteBlack = "rgb(31, 31, 31)";
 var MoreLiteBlack = "rgb(54, 54, 54)";
 var White = "white";
 var Bor_line = "#e0e0e0";
+var hoverColor = "#646464";
 
 //All Variable 
 let all = document.getElementById("all");
@@ -4243,6 +4245,24 @@ let profilemain3 = document.getElementById("profilemain3");
 let profilemain4 = document.getElementById("profilemain4");
 let profilemain5 = document.getElementById("profilemain5");
 let profilemain6 = document.getElementById("profilemain6");
+let img_derknight = document.getElementById("img_derknight");
+let downloadslinks = document.getElementById("downloadslinks");
+let gon = document.getElementById("gon");
+let ounin = document.getElementById("ounin");
+let prion = document.getElementById("prion");
+let neton = document.getElementById("neton");
+let mozi_down = document.getElementById("mozi_down");
+
+
+
+
+
+
+
+
+
+
+
 
 
 //Functions
@@ -4252,12 +4272,35 @@ side3.addEventListener("click", function side3_click_func() {
                 textsearch.style.backgroundColor=MoreLiteBlack;
                 textsearch.style.border=`1px solid ${Bor_line}` ;
                 textsearch.style.color="white";
+
+                
                 profilemain1.style.color="white";
                 profilemain2.style.color="white";
                 profilemain3.style.color="white";
                 profilemain4.style.color="white";
                 profilemain5.style.color="white";
                 profilemain6.style.color="white";
+
+
+let all_firstlinks =[profilemain1 ,profilemain2 ,profilemain3 ,profilemain4 ,profilemain5 ,profilemain6];
+for (let i = 0; i < all_firstlinks.length; i++) {
+        
+all_firstlinks[i].addEventListener("mouseover", function over_first() {
+        all_firstlinks[i].style.backgroundColor=MoreLiteBlack;
+        // profilemain1.style.backgroundColor=LiteBlack;
+        // profilemain2.style.backgroundColor=LiteBlack;
+        // profilemain3.style.backgroundColor=LiteBlack;
+        // profilemain4.style.backgroundColor=LiteBlack;
+        // profilemain5.style.backgroundColor=LiteBlack;
+        // profilemain6.style.backgroundColor=LiteBlack;
+})
+all_firstlinks[i].addEventListener("mouseleave", function over_first2() {
+        all_firstlinks[i].style.backgroundColor=hoverColor;
+})
+
+        
+all_firstlinks[i].style.backgroundColor=hoverColor;
+};
                 J_searchSubmit.style.border="none";
                 containerparentid.style.backgroundColor=LiteBlack;
                 containerparent1.style.backgroundColor=LiteBlack;
@@ -4267,6 +4310,27 @@ side3.addEventListener("click", function side3_click_func() {
                 breaker4.style.backgroundColor=Black;
 
         } else {
+                let all_firstlinks =[profilemain1 ,profilemain2 ,profilemain3 ,profilemain4 ,profilemain5 ,profilemain6];
+                for (let i = 0; i < all_firstlinks.length; i++) {
+                        
+                all_firstlinks[i].addEventListener("mouseover", function over_first3() {
+                        all_firstlinks[i].style.backgroundColor=White;
+                        // profilemain1.style.backgroundColor=LiteBlack;
+                        // profilemain2.style.backgroundColor=LiteBlack;
+                        // profilemain3.style.backgroundColor=LiteBlack;
+                        // profilemain4.style.backgroundColor=LiteBlack;
+                        // profilemain5.style.backgroundColor=LiteBlack;
+                        // profilemain6.style.backgroundColor=LiteBlack;
+                })
+                all_firstlinks[i].addEventListener("mouseleave", function over_first24() {
+                        all_firstlinks[i].style.backgroundColor="#fbfbfb";
+                })
+                all_firstlinks[i].style.backgroundColor="#fbfbfb";
+                        
+                }
+
+
+
                 iteminbtn4.style.backgroundColor=Black;
                 textsearch.style.backgroundColor=White;
                 textsearch.style.border="1px solid black";
@@ -4360,20 +4424,22 @@ side3.addEventListener("click", function side3_click_func() {
         };
         
         if (text_of_dark_btn.textContent!="LightMode") {
-                text_of_dark_btn.textContent="LightMode"
+                text_of_dark_btn.textContent="LightMode";
+                img_derknight.setAttribute("src", "Files/daymode.png");
         } else {
-                text_of_dark_btn.textContent="DarkMode"
+                text_of_dark_btn.textContent="DarkMode";
+                img_derknight.setAttribute("src", "Files/darknight.png");
         };
         if (iteminbtn5.style.backgroundColor!=White) {
-                youtubesearchiconmain.setAttribute("src","Files/youtube_title Image For dark mode.png");
                 iteminbtn5.style.backgroundColor=White;
-              about_me_pic.setAttribute("src","Files/about_me_for Dark.png");
+                about_me_pic.setAttribute("src","Files/about_me_for Dark.png");
                 firstlink16.setAttribute("src","Files/amazonDark.png");
                 navamazon.setAttribute("src","Files/navamazonDark.png");
                 home.setAttribute("src","Files/home_iconfordark.png");
                 contact_uspng.setAttribute("src","Files/contactdark.png");
                 feed.setAttribute("src","Files/feedbackdark.png");
                 amazonprime.setAttribute("src","Files/primedark.png");
+                youtubesearchiconmain.setAttribute("src","Files/youtube_title Image For dark mode.png");
                 all.style.backgroundColor=LiteBlack;
                 slide1.style.backgroundColor=LiteBlack;
                 container14.style.backgroundColor=LiteBlack;
@@ -4420,9 +4486,38 @@ side3.addEventListener("click", function side3_click_func() {
                 first16.style.borderColor=MoreLiteBlack; 
                   hide1.style.borderColor=MoreLiteBlack;
                   hide2.style.borderColor=MoreLiteBlack;     
+                let obj1  = [first1, first2, first3, first4, first5, first6, first7, first8, first9, first10, first11, first12, first13, first14, first15, first16, hide1, hide2, gon, ounin, prion, neton, mozi_down, downloadslinks
+                ];
+                for (let i = 0; i < obj1.length; i++) {
+                        obj1[i].addEventListener("mouseover", function () {
+                                
+                                obj1[i].style.backgroundColor=MoreLiteBlack;
+                        })
+                        obj1[i].addEventListener("mouseleave", function () {
+                                
+                                obj1[i].style.backgroundColor=LiteBlack;
+                        })
+                        obj1[i].style.backgroundColor=LiteBlack;
+                        
+                }
+
 
 
         } else {
+
+                let obj2  = [first1, first2, first3, first4, first5, first6, first7, first8, first9, first10, first11, first12, first13, first14, first15, first16, hide1, hide2, gon, ounin, prion, neton, mozi_down, downloadslinks];
+                for (let i = 0; i < obj2.length; i++) {
+                        obj2[i].addEventListener("mouseover", function () {
+                                
+                                obj2[i].style.backgroundColor="Whitesmoke";
+                        })
+                        obj2[i].addEventListener("mouseleave", function () {
+                                
+                                obj2[i].style.backgroundColor=White;
+                        })
+                        obj2[i].style.backgroundColor=White;
+                        
+                }
                 iteminbtn5.style.backgroundColor=Black;
                 about_me_pic.setAttribute("src","Files/about_me.png");
                 home.setAttribute("src","Files/home_icon.png");
