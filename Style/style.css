@@ -1,0 +1,454 @@
+/* Additional Classes */
+
+.ClickInAni {
+    transition: 0.2s ease;
+    background-color: rgba(221, 0, 255, 0.44);
+}
+
+.ClickOutAni {
+    transition: 0.2s ease;
+    background-color: rgba(221, 0, 255, 0);
+}
+
+
+/* Animation here  */
+
+
+/* CSS Here  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 12;
+}
+
+body {
+    background-color: black;
+}
+
+body::before {
+    content: "";
+    /* background: linear-gradient(to bottom, rgb(0, 72, 255), violet); */
+    background-color: #3671f2;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+}
+
+
+/* Navigation */
+
+nav {
+    background-color: #009eff;
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+    overflow: hidden;
+    flex-wrap: wrap;
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+#UpsideNavBarLinks {
+    background-color: #009eff;
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0rem 0.5rem;
+    justify-content: center;
+}
+
+.topNavLinks {
+    width: auto;
+    max-width: 10rem;
+    height: 2.5rem;
+    margin: auto 0.5rem;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    overflow: hidden;
+    user-select: none;
+    padding: 0rem 0.5rem;
+    text-decoration: none;
+}
+
+.topNavLinks:hover {
+    /* transition: 0.5s; */
+    /* background-color: #007cca; */
+    cursor: pointer;
+}
+
+.navLinksImgs {
+    height: 1.4rem;
+    width: 1.4rem;
+    overflow: hidden;
+}
+
+.navTopLinksName {
+    color: white;
+    font: caption;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-left: 0.3rem;
+    font-variant: small-caps;
+}
+
+.moreOptInNavTopBTN {
+    background-color: #007cca;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 5px;
+    margin-left: auto;
+    cursor: pointer;
+    flex-direction: column;
+}
+
+.Lines {
+    background-color: white;
+    width: 80%;
+    height: 4px;
+    margin: 3px 0px;
+    position: absolute;
+    transition: 0.5s;
+}
+
+.Lines:nth-child(1) {
+    transform: translateY(-5px);
+}
+
+.Lines:nth-child(2) {
+    transform: translateY(5px);
+}
+
+
+/* Adding Curstom URL Section  */
+
+#CstmURLInP {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 45rem;
+    height: 100%;
+    margin: auto;
+}
+
+.InputTextForURL {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 18rem;
+    height: 2rem;
+    border: 2px solid black;
+    outline: none;
+    background-color: transparent;
+    user-select: none;
+    padding: 0rem 0.5rem;
+    font: caption;
+    font-variant: small-caps;
+    margin: 0rem 0.5rem;
+}
+
+.InputTextForURL::placeholder {
+    color: rgb(219, 219, 219);
+}
+
+#FinalAddBTN {
+    background-color: skyblue;
+    width: 4rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: caption;
+    text-transform: uppercase;
+    outline: none;
+    border: 2px solid black;
+}
+
+
+/*Bottom Side Container*/
+
+#navBottom {
+    background-color: #007cca;
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    z-index: 10;
+    padding: 0rem 0.5rem;
+}
+
+
+/* Search Section  */
+
+#searchCont {
+    background-color: #009eff;
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.6rem 0ex;
+}
+
+.SearchSwtBTN {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    width: auto;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 2rem;
+    background-color: transparent;
+    color: white;
+    font: caption;
+    outline: none;
+    user-select: none;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: auto 0.5rem;
+    font-variant: small-caps;
+}
+
+#MainGYTSearch {
+    background-color: white;
+    width: 30rem;
+    height: 2.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: 2px solid skyblue;
+    border-radius: 5px;
+    color: white;
+    padding: 0rem 0.5rem;
+    outline: none;
+    user-select: none;
+    margin: 0rem 0.5rem;
+    font: caption;
+    font-size: 1.05rem;
+}
+
+#MainGYTSearch::placeholder {
+    color: skyblue;
+}
+
+#SearchBTN {
+    background-color: transparent;
+    border: 2px solid black;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    font: caption;
+    font-variant: small-caps;
+    color: white;
+    margin: 0rem 0.5rem;
+    border-radius: 10rem;
+    background-color: rgba(0, 51, 255, 0.485);
+    cursor: pointer;
+}
+
+
+/* Links With Icons Sectino Customization  */
+
+#LlinksWIconMParent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 24rem;
+    background-color: #009eff;
+}
+
+#IconLinkScrn {
+    background-color: #3671f2;
+    width: 64rem;
+    overflow: hidden;
+    height: 24rem;
+}
+
+#IconLinkRight {
+    background-color: #3671f2;
+    width: 20rem;
+    height: 24rem;
+    border-left: 0.6rem solid #3671f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#IconLinkRight::before {
+    content: "";
+    background-color: #009eff;
+    width: 0.2rem;
+    height: 17rem;
+    position: absolute;
+    left: 0rem;
+}
+
+.RightSideLinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5.5rem;
+    height: 5.5rem;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 1rem 2rem;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+#LinkPageContnr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 128rem;
+    height: 23rem;
+    transition: 0.5s;
+    flex-wrap: wrap;
+    margin-left: 0rem;
+}
+
+:root {
+    --widthOfCusEle: 12.6rem;
+    --heightOfCusEle: 3.5rem;
+}
+
+#LinkContnr {
+    width: 64rem;
+    height: auto;
+    display: grid;
+    grid-template-columns: var(--widthOfCusEle) var(--widthOfCusEle) var(--widthOfCusEle) var(--widthOfCusEle) var(--widthOfCusEle);
+    grid-template-rows: var(--heightOfCusEle) var(--heightOfCusEle) var(--heightOfCusEle) var(--heightOfCusEle) var(--heightOfCusEle)var(--heightOfCusEle);
+}
+
+#MainCusCont {
+    width: 64rem;
+    height: auto;
+    display: grid;
+    grid-template-columns: var(--widthOfCusEle) var(--widthOfCusEle) var(--widthOfCusEle) var(--widthOfCusEle) var(--widthOfCusEle);
+    grid-template-rows: var(--heightOfCusEle) var(--heightOfCusEle) var(--heightOfCusEle) var(--heightOfCusEle) var(--heightOfCusEle)var(--heightOfCusEle);
+}
+
+#Title1 {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 0rem;
+    padding: 1rem;
+    font: caption;
+    font-size: 1rem;
+    font-family: monospace;
+    color: wheat;
+}
+
+.LinkContnr1 {
+    width: 64rem;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.CurMaiEleLinks {
+    border-radius: 3rem;
+    background-color: rgb(0, 0, 146);
+    width: 10.6rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem 1rem;
+    text-decoration: none;
+    font: caption;
+    color: white;
+}
+
+.CusLinkElets {
+    border-radius: 3rem;
+    background-color: rgb(0, 0, 146);
+    width: 10.6rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem 1rem;
+    text-decoration: none;
+    font: caption;
+    color: white;
+}
+
+.Dltation {
+    display: none;
+    background-image: url(../Files/deleteImages.png);
+    background-repeat: no-repeat;
+    background-position: -3px -76px;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 100%;
+    position: absolute;
+    top: -5%;
+    right: -5%;
+    cursor: pointer;
+}
+
+.CLIWP {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5.4rem;
+    height: 5.4rem;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 1rem 2.5rem;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+.Linkimgs {
+    width: 2.8rem;
+    height: 2.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.CLIWPNTxt {
+    color: white;
+    font: caption;
+    font-size: 1rem;
+    margin-top: 0.3rem;
+}
+
+#WinStcheBTNPa {
+    width: 100%;
+    height: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.WinSwtchrBTNs {
+    background-color: #fff;
+    width: 2rem;
+    height: 0.4rem;
+    margin: 0em 0.3rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
